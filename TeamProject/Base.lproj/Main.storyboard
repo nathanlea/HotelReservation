@@ -484,7 +484,7 @@
         <!--View Controller(Deepthi)-->
         <scene sceneID="4IO-eF-1PQ">
             <objects>
-                <viewController id="4He-Pr-RlL" userLabel="View Controller(Deepthi)" customClass="ViewController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4He-Pr-RlL" userLabel="View Controller(Deepthi)" customClass="ViewControllerDeepthi" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qnw-Nf-ova"/>
                         <viewControllerLayoutGuide type="bottom" id="VAo-xI-Cae"/>
@@ -744,7 +744,7 @@
         <!--Home-->
         <scene sceneID="r6u-Ta-0NA">
             <objects>
-                <viewController title="Home" id="X9h-6n-ri4" customClass="ViewController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="X9h-6n-ri4" customClass="ViewControllerDerrian" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CST-E3-eKa"/>
                         <viewControllerLayoutGuide type="bottom" id="xhj-tr-7TF"/>
@@ -787,7 +787,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6R-p5-cwa" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1021" y="584"/>
+            <point key="canvasLocation" x="-1021" y="576"/>
         </scene>
         <!--Sign In Page-->
         <scene sceneID="S9q-5O-WRv">
@@ -857,7 +857,7 @@
         <!--Sign Up Page-->
         <scene sceneID="m9R-io-6Q7">
             <objects>
-                <viewController title="Sign Up Page" id="NqH-WP-U1q" customClass="ViewController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sign Up Page" id="NqH-WP-U1q" customClass="ViewControllerDerrian" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iLd-Gw-klW"/>
                         <viewControllerLayoutGuide type="bottom" id="CAg-Nu-4fQ"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewControllerDeepthi: UIViewController {
 
     @IBAction func clickbutton(sender: AnyObject) {
         self.performSegueWithIdentifier("mysegue", sender: self)

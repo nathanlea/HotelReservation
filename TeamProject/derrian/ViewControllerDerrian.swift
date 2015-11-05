@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
+class ViewControllerDerrian: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
