@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mypages" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -45,7 +45,7 @@
         <!--View Controller1-->
         <scene sceneID="edn-MN-gHZ">
             <objects>
-                <viewController id="87m-lT-3F0" customClass="ViewController1" customModule="mypages" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="87m-lT-3F0" customClass="ViewController1" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wEw-Ia-9Ao"/>
                         <viewControllerLayoutGuide type="bottom" id="GY7-Lm-BA5"/>
@@ -160,7 +160,7 @@
         <!--View Controller2-->
         <scene sceneID="Rrz-BK-OxC">
             <objects>
-                <viewController id="lzr-CL-o4Q" customClass="ViewController2" customModule="mypages" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lzr-CL-o4Q" customClass="ViewController2" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xa1-Dv-3Cs"/>
                         <viewControllerLayoutGuide type="bottom" id="vQN-H5-LKi"/>

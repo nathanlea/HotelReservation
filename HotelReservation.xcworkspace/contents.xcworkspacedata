@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TeamProject/Connor">
+   </FileRef>
+   <FileRef
       location = "group:/Users/nathahl/Documents/HotelReservation/Hotel Reservation.xcodeproj">
    </FileRef>
    <FileRef

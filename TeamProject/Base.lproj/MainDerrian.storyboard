@@ -7,7 +7,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="Hotel_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -162,7 +162,7 @@
         <!--Sign Up Page-->
         <scene sceneID="bbM-53-b43">
             <objects>
-                <viewController title="Sign Up Page" id="5m8-ch-6Fg" customClass="ViewController" customModule="Hotel_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sign Up Page" id="5m8-ch-6Fg" customClass="ViewController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CT5-fT-9bL"/>
                         <viewControllerLayoutGuide type="bottom" id="hq6-hQ-8ln"/>
@@ -269,7 +269,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="cY4-3h-8q7">
             <objects>
-                <viewController id="gZa-LW-xef" customClass="SignUpViewController" customModule="Hotel_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gZa-LW-xef" customClass="SignUpViewController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iv4-F5-olk"/>
                         <viewControllerLayoutGuide type="bottom" id="xez-Jd-3Tg"/>
