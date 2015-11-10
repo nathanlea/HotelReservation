@@ -19,6 +19,8 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad()
     {
+        /*
+        Commenting out becuse I don't know what these are - Nathan
         if let savedInfo = loadInfo()
         {
         
@@ -26,7 +28,7 @@ class SignUpViewController: UIViewController {
         else
         {
             loadSampleInfo()
-        }
+        }*/
         
         func loadSampleInfo()
         {

@@ -16,7 +16,7 @@ class ViewControllerDerrian: UIViewController, UITextFieldDelegate, UINavigation
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var reTypePasswordField: UITextField!
     
-    @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var saveInfoButton: UIBarButtonItem!
     
     //@IBOutlet weak var FullNameLabel: UILabel!
     
@@ -57,7 +57,7 @@ class ViewControllerDerrian: UIViewController, UITextFieldDelegate, UINavigation
     
     func textFieldDidBeginEditing(textField: UITextField) {
         // Disable the Save button while editing.
-        saveButton.enabled = false
+        saveInfoButton.enabled = false
     }
 
     func checkValidUserInfo() {
@@ -67,12 +67,12 @@ class ViewControllerDerrian: UIViewController, UITextFieldDelegate, UINavigation
         let text3 = phoneField.text ?? ""
         let text4 = passwordField.text ?? ""
         
-        saveButton.enabled = !text.isEmpty && !text2.isEmpty && !text3.isEmpty &&  !text4.isEmpty
+        saveInfoButton.enabled = !text.isEmpty && !text2.isEmpty && !text3.isEmpty &&  !text4.isEmpty
     }
 
     // This method lets you configure a view controller before it's presented.
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if saveButton === sender {
+        if saveInfoButton === sender {
             let name = nameField.text ?? ""
             let email = emailField.text ?? ""
             let number = phoneField.text ?? ""

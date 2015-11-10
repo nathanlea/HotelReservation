@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B50215F271E08517FD6D5A5 /* Pods_TeamProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172CF3FB74A1F0F8A77FC64D /* Pods_TeamProject.framework */; };
 		0E1DD1A91BD9337B0002DD69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1DD1A81BD9337B0002DD69 /* AppDelegate.swift */; };
 		0E1DD1AB1BD9337B0002DD69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1DD1AA1BD9337B0002DD69 /* ViewController.swift */; };
 		0E1DD1AE1BD9337B0002DD69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1DD1AC1BD9337B0002DD69 /* Main.storyboard */; };
@@ -15,9 +14,13 @@
 		0E1DD1B31BD9337B0002DD69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1DD1B21BD9337B0002DD69 /* Assets.xcassets */; };
 		0E1DD1B61BD9337B0002DD69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1DD1B41BD9337B0002DD69 /* LaunchScreen.storyboard */; };
 		0E1DD1CC1BD9337B0002DD69 /* TeamProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1DD1CB1BD9337B0002DD69 /* TeamProjectUITests.swift */; };
-		0EFB6B181BEBCAFA00B8C7E2 /* Deepthi in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB6B171BEBCAFA00B8C7E2 /* Deepthi */; };
-		0EFB6B1C1BEBCB3200B8C7E2 /* derrian in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB6B1B1BEBCB3200B8C7E2 /* derrian */; };
-		0EFB6B301BEBCB8100B8C7E2 /* Connor in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB6B2F1BEBCB8100B8C7E2 /* Connor */; };
+		0ECA0E401BF25B910057640E /* ReservationVallidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA0E3F1BF25B910057640E /* ReservationVallidationViewController.swift */; };
+		0ECA0E421BF25B9D0057640E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA0E411BF25B9D0057640E /* SignUpViewController.swift */; };
+		0ECA0E461BF25BAD0057640E /* userAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA0E451BF25BAD0057640E /* userAccount.swift */; };
+		0ECA0E481BF25BB10057640E /* view1controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA0E471BF25BB10057640E /* view1controller.swift */; };
+		0ECA0E4A1BF25BB50057640E /* view2controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA0E491BF25BB50057640E /* view2controller.swift */; };
+		0ECA0E4C1BF25BB90057640E /* ViewControllerDeepthi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA0E4B1BF25BB90057640E /* ViewControllerDeepthi.swift */; };
+		0ECA0E4E1BF25BBF0057640E /* ViewControllerDerrian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA0E4D1BF25BBF0057640E /* ViewControllerDerrian.swift */; };
 		0EFB6B371BEBCBBF00B8C7E2 /* MainConnor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB6B311BEBCBBF00B8C7E2 /* MainConnor.storyboard */; };
 		0EFB6B381BEBCBBF00B8C7E2 /* MainDeepthi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB6B331BEBCBBF00B8C7E2 /* MainDeepthi.storyboard */; };
 		0EFB6B391BEBCBBF00B8C7E2 /* MainDerrian.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB6B351BEBCBBF00B8C7E2 /* MainDerrian.storyboard */; };
@@ -48,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E1DD1A51BD9337B0002DD69 /* Hotel Reservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hotel Reservation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E1DD1A51BD9337B0002DD69 /* Hotel Reservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Hotel Reservation.app"; path = "/Users/nathahl/Documents/Team Project/HotelReservation/build/Debug-iphoneos/Hotel Reservation.app"; sourceTree = "<absolute>"; };
 		0E1DD1A81BD9337B0002DD69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E1DD1AA1BD9337B0002DD69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E1DD1AD1BD9337B0002DD69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,11 +61,16 @@
 		0E1DD1B71BD9337B0002DD69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E1DD1C01BD9337B0002DD69 /* TeamProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamProjectTests.swift; sourceTree = "<group>"; };
 		0E1DD1C21BD9337B0002DD69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E1DD1C71BD9337B0002DD69 /* Hotel Reservation.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hotel Reservation.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E1DD1C71BD9337B0002DD69 /* Hotel Reservation.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Hotel Reservation.xctest"; path = "/Users/nathahl/Documents/Team Project/HotelReservation/build/Debug-iphoneos/Hotel Reservation.xctest"; sourceTree = "<absolute>"; };
 		0E1DD1CB1BD9337B0002DD69 /* TeamProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamProjectUITests.swift; sourceTree = "<group>"; };
 		0E1DD1CD1BD9337B0002DD69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EFB6B171BEBCAFA00B8C7E2 /* Deepthi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Deepthi; sourceTree = "<group>"; };
-		0EFB6B1B1BEBCB3200B8C7E2 /* derrian */ = {isa = PBXFileReference; lastKnownFileType = folder; path = derrian; sourceTree = "<group>"; };
+		0ECA0E3F1BF25B910057640E /* ReservationVallidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationVallidationViewController.swift; sourceTree = "<group>"; };
+		0ECA0E411BF25B9D0057640E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0ECA0E451BF25BAD0057640E /* userAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userAccount.swift; sourceTree = "<group>"; };
+		0ECA0E471BF25BB10057640E /* view1controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = view1controller.swift; sourceTree = "<group>"; };
+		0ECA0E491BF25BB50057640E /* view2controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = view2controller.swift; sourceTree = "<group>"; };
+		0ECA0E4B1BF25BB90057640E /* ViewControllerDeepthi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDeepthi.swift; sourceTree = "<group>"; };
+		0ECA0E4D1BF25BBF0057640E /* ViewControllerDerrian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDerrian.swift; sourceTree = "<group>"; };
 		0EFB6B1D1BEBCB6800B8C7E2 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "Font/Lato-Black.ttf"; sourceTree = "<group>"; };
 		0EFB6B1E1BEBCB6800B8C7E2 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "Font/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
 		0EFB6B1F1BEBCB6800B8C7E2 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "Font/Lato-Bold.ttf"; sourceTree = "<group>"; };
@@ -81,22 +89,18 @@
 		0EFB6B2C1BEBCB6800B8C7E2 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-SemiboldItalic.ttf"; path = "Font/Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		0EFB6B2D1BEBCB6800B8C7E2 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "Font/Lato-Thin.ttf"; sourceTree = "<group>"; };
 		0EFB6B2E1BEBCB6800B8C7E2 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-ThinItalic.ttf"; path = "Font/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
-		0EFB6B2F1BEBCB8100B8C7E2 /* Connor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Connor; sourceTree = "<group>"; };
 		0EFB6B321BEBCBBF00B8C7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainConnor.storyboard; sourceTree = "<group>"; };
 		0EFB6B341BEBCBBF00B8C7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainDeepthi.storyboard; sourceTree = "<group>"; };
 		0EFB6B361BEBCBBF00B8C7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainDerrian.storyboard; sourceTree = "<group>"; };
-		172CF3FB74A1F0F8A77FC64D /* Pods_TeamProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC9A9F11D85E13396163F668 /* Pods-TeamProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamProject/Pods-TeamProject.debug.xcconfig"; sourceTree = "<group>"; };
 		D805DC3A1BDE849600402B04 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		D805DC3C1BDEA6A000402B04 /* CVCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewController.swift; sourceTree = "<group>"; };
 		D805DC3E1BDEBD6B00402B04 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		D805DC421BDEC42600402B04 /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
-		D805DC481BDEDE2700402B04 /* Hotel Reservation.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hotel Reservation.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D805DC481BDEDE2700402B04 /* Hotel Reservation.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Hotel Reservation.xctest"; path = "/Users/nathahl/Documents/Team Project/HotelReservation/build/Debug-iphoneos/Hotel Reservation.xctest"; sourceTree = "<absolute>"; };
 		D805DC4A1BDEDE2800402B04 /* TeamProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamProjectTests.swift; sourceTree = "<group>"; };
 		D805DC4C1BDEDE2800402B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D83FB1FF1BD9AA7F00F942F6 /* CypressRoom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CypressRoom@3x.png"; sourceTree = "<group>"; };
 		D83FB2021BD9AB9600F942F6 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		EC5D82F787E6333EE25FCAC4 /* Pods-TeamProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamProject/Pods-TeamProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,12 +167,16 @@
 				D805DC421BDEC42600402B04 /* PageItemController.swift */,
 				D805DC3C1BDEA6A000402B04 /* CVCalendarViewController.swift */,
 				D83FB2021BD9AB9600F942F6 /* TableViewController.swift */,
+				0ECA0E3F1BF25B910057640E /* ReservationVallidationViewController.swift */,
+				0ECA0E411BF25B9D0057640E /* SignUpViewController.swift */,
+				0ECA0E451BF25BAD0057640E /* userAccount.swift */,
+				0ECA0E471BF25BB10057640E /* view1controller.swift */,
+				0ECA0E491BF25BB50057640E /* view2controller.swift */,
+				0ECA0E4B1BF25BB90057640E /* ViewControllerDeepthi.swift */,
+				0ECA0E4D1BF25BBF0057640E /* ViewControllerDerrian.swift */,
 				0E1DD1B21BD9337B0002DD69 /* Assets.xcassets */,
 				0E1DD1B41BD9337B0002DD69 /* LaunchScreen.storyboard */,
 				0E1DD1B71BD9337B0002DD69 /* Info.plist */,
-				0EFB6B2F1BEBCB8100B8C7E2 /* Connor */,
-				0EFB6B1B1BEBCB3200B8C7E2 /* derrian */,
-				0EFB6B171BEBCAFA00B8C7E2 /* Deepthi */,
 				0E1DD1AF1BD9337B0002DD69 /* HotelReservation.xcdatamodeld */,
 			);
 			name = HotelReservation;
@@ -348,7 +356,7 @@
 				Base,
 			);
 			mainGroup = 0E1DD19C1BD9337B0002DD69;
-			productRefGroup = 0E1DD1A61BD9337B0002DD69 /* Products */;
+			productRefGroup = 0E1DD19C1BD9337B0002DD69;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -368,10 +376,7 @@
 				D83FB2001BD9AA7F00F942F6 /* CypressRoom@3x.png in Resources */,
 				0EFB6B391BEBCBBF00B8C7E2 /* MainDerrian.storyboard in Resources */,
 				0E1DD1B31BD9337B0002DD69 /* Assets.xcassets in Resources */,
-				0EFB6B181BEBCAFA00B8C7E2 /* Deepthi in Resources */,
 				0E1DD1AE1BD9337B0002DD69 /* Main.storyboard in Resources */,
-				0EFB6B301BEBCB8100B8C7E2 /* Connor in Resources */,
-				0EFB6B1C1BEBCB3200B8C7E2 /* derrian in Resources */,
 				0EFB6B371BEBCBBF00B8C7E2 /* MainConnor.storyboard in Resources */,
 				D805DC3B1BDE849600402B04 /* background.png in Resources */,
 				0EFB6B381BEBCBBF00B8C7E2 /* MainDeepthi.storyboard in Resources */,
@@ -451,9 +456,16 @@
 				0E1DD1A91BD9337B0002DD69 /* AppDelegate.swift in Sources */,
 				D805DC431BDEC42600402B04 /* PageItemController.swift in Sources */,
 				D805DC3D1BDEA6A000402B04 /* CVCalendarViewController.swift in Sources */,
+				0ECA0E461BF25BAD0057640E /* userAccount.swift in Sources */,
+				0ECA0E4A1BF25BB50057640E /* view2controller.swift in Sources */,
 				D805DC3F1BDEBD6B00402B04 /* PageViewController.swift in Sources */,
+				0ECA0E401BF25B910057640E /* ReservationVallidationViewController.swift in Sources */,
+				0ECA0E421BF25B9D0057640E /* SignUpViewController.swift in Sources */,
 				0E1DD1B11BD9337B0002DD69 /* HotelReservation.xcdatamodeld in Sources */,
+				0ECA0E4E1BF25BBF0057640E /* ViewControllerDerrian.swift in Sources */,
+				0ECA0E4C1BF25BB90057640E /* ViewControllerDeepthi.swift in Sources */,
 				D83FB2031BD9AB9600F942F6 /* TableViewController.swift in Sources */,
+				0ECA0E481BF25BB10057640E /* view1controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,7 +688,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TeamProjectTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS4153AppDev.TeamProjectTests;
 				PRODUCT_NAME = "Hotel Reservation";
@@ -689,7 +701,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TeamProjectTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS4153AppDev.TeamProjectTests;
 				PRODUCT_NAME = "Hotel Reservation";
