@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49t-N1-ZDH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49t-N1-ZDH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
@@ -20,7 +20,7 @@
         <!--Itinerary-->
         <scene sceneID="g2r-rt-X4f">
             <objects>
-                <tableViewController id="j30-Pl-y5e" customClass="TableViewController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="j30-Pl-y5e" customClass="TableViewController" customModule="Hotel_Reservation" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="221" sectionHeaderHeight="22" sectionFooterHeight="22" id="LNb-9H-tgR">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,8 +132,7 @@
                                                         <color key="titleColor" red="0.25490196079999999" green="0.26274509800000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="ViewOrderSummary:" destination="j30-Pl-y5e" eventType="touchUpInside" id="ePq-7u-pCY"/>
-                                                        <segue destination="47o-2G-UdA" kind="show" identifier="ViewOrderSummary" id="a8B-yY-Mve"/>
+                                                        <segue destination="47o-2G-UdA" kind="show" id="gbG-3T-cWW"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -158,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="99" y="-639"/>
         </scene>
-        <!--Calendar Appearance Delegate-->
+        <!--Calendar View Controller-->
         <scene sceneID="6OK-rR-LX2">
             <objects>
-                <viewController id="JD4-ov-ES0" customClass="CVCalendarViewController" customModule="TeamProject" sceneMemberID="viewController">
+                <viewController id="JD4-ov-ES0" customClass="CVCalendarViewController" customModule="Hotel_Reservation" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mvb-Vk-JTH"/>
                         <viewControllerLayoutGuide type="bottom" id="gut-0D-gsK"/>
@@ -170,22 +169,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="768" placeholderIntrinsicHeight="31" translatesAutoresizingMaskIntoConstraints="NO" id="Qmk-YZ-5a8" customClass="CVCalendarMenuView" customModule="CVCalendar">
-                                <rect key="frame" x="0.0" y="99" width="768" height="31"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="menuViewDelegate" destination="JD4-ov-ES0" id="WuL-3l-Mxt"/>
-                                </connections>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s2t-gA-cP3" customClass="CVCalendarView" customModule="CVCalendar">
                                 <rect key="frame" x="0.0" y="129" width="768" height="53"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="calendarAppearanceDelegate" destination="JD4-ov-ES0" id="eL7-Of-1u3"/>
-                                    <outlet property="calendarDelegate" destination="JD4-ov-ES0" id="JkR-mU-VXf"/>
-                                </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="January, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gub-fb-suS">
                                 <rect key="frame" x="250" y="72" width="269" height="24"/>
@@ -206,6 +193,11 @@
                                     <segue destination="fqO-FC-leZ" kind="embed" id="QVi-P7-6QA"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="768" placeholderIntrinsicHeight="31" translatesAutoresizingMaskIntoConstraints="NO" id="Qmk-YZ-5a8" customClass="CVCalendarMenuView" customModule="CVCalendar">
+                                <rect key="frame" x="0.0" y="99" width="768" height="31"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -215,9 +207,9 @@
                     </toolbarItems>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="calendarView" destination="s2t-gA-cP3" id="dMS-jY-ah9"/>
-                        <outlet property="menuView" destination="Qmk-YZ-5a8" id="RiA-sB-FF2"/>
-                        <outlet property="monthLabel" destination="Gub-fb-suS" id="Ulw-VZ-gX9"/>
+                        <outlet property="calendarView" destination="s2t-gA-cP3" id="Jy6-3n-XKB"/>
+                        <outlet property="menuView" destination="Qmk-YZ-5a8" id="TSX-zr-OB6"/>
+                        <outlet property="monthLabel" destination="Gub-fb-suS" id="nUZ-CT-iBj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnJ-lL-5LU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -270,12 +262,12 @@
                         <animations/>
                     </toolbar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="794-C9-Alc"/>
+                        <segue destination="X9h-6n-ri4" kind="relationship" relationship="rootViewController" id="AiN-sm-Ble"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5G5-zD-AoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1946" y="-621"/>
+            <point key="canvasLocation" x="-3001" y="-621"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -298,20 +290,36 @@
                                     <segue destination="j30-Pl-y5e" kind="show" id="ZYy-KE-OGO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ch-0t-ZKO">
+                                <rect key="frame" x="306" y="239" width="156" height="57"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Summary"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-WN-PXl">
+                                <rect key="frame" x="288" y="304" width="193" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Hotel Name"/>
+                                <connections>
+                                    <segue destination="Eh5-LH-DY5" kind="show" id="bDe-ut-UfX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncl-TA-QFy">
+                                <rect key="frame" x="296" y="369" width="176" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Equipment"/>
+                                <connections>
+                                    <segue destination="qS1-Bp-NMT" kind="show" id="8XK-Nx-x2c"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRE-tv-qZr">
                                 <rect key="frame" x="320" y="157" width="128" height="55"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Reserve"/>
                                 <connections>
-                                    <segue destination="JD4-ov-ES0" kind="show" id="UZ8-0w-nPZ"/>
+                                    <segue destination="JD4-ov-ES0" kind="show" id="Wck-ji-HJa"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ch-0t-ZKO">
-                                <rect key="frame" x="306" y="239" width="156" height="57"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="Summary"/>
                             </button>
                         </subviews>
                         <animations/>
@@ -327,7 +335,7 @@
         <!--Page View Controller-->
         <scene sceneID="Kxn-iJ-Hnt">
             <objects>
-                <viewController id="fqO-FC-leZ" customClass="PageViewController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fqO-FC-leZ" customClass="PageViewController" customModule="Hotel_Reservation" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oyK-F9-KrQ"/>
                         <viewControllerLayoutGuide type="bottom" id="jsb-0f-kjc"/>
@@ -357,7 +365,7 @@
         <!--Page Item Controller-->
         <scene sceneID="9fy-v9-Gsw">
             <objects>
-                <viewController storyboardIdentifier="PageContentViewController" id="t7f-AD-6mP" customClass="PageItemController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageContentViewController" id="t7f-AD-6mP" customClass="PageItemController" customModule="Hotel_Reservation" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nhq-Jo-6Hd"/>
                         <viewControllerLayoutGuide type="bottom" id="VhD-AU-X6D"/>
@@ -415,13 +423,13 @@
         <!--Hotel Name-->
         <scene sceneID="1Vm-iM-yPt">
             <objects>
-                <viewController id="Eh5-LH-DY5" customClass="ReservationValidationViewController" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Eh5-LH-DY5" customClass="ReservationValidationViewController" customModule="Hotel_Reservation" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CkC-YC-xjO"/>
                         <viewControllerLayoutGuide type="bottom" id="H8j-Oj-xqO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fd6-x7-HnK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJq-uX-xpv">
@@ -442,20 +450,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFf-PC-R5D">
-                                <rect key="frame" x="20" y="168" width="335" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="startTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidBegin" id="zdc-wN-eYR"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oyu-H3-H1i">
                                 <rect key="frame" x="20" y="101" width="335" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="dateTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidBegin" id="eKJ-aW-iY0"/>
+                                    <action selector="dateTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="2rR-YE-I7y"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bP0-zk-gfx">
@@ -463,68 +463,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="endTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidBegin" id="UWZ-gc-MxY"/>
+                                    <action selector="endTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="n7m-7n-8ob"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFf-PC-R5D">
+                                <rect key="frame" x="20" y="168" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="startTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="PTA-ij-bYh"/>
                                 </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hotel Name" id="buN-MW-D3J"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="dateTextField" destination="Oyu-H3-H1i" id="wem-pw-A2d"/>
-                        <outlet property="endTimeTextField" destination="bP0-zk-gfx" id="Dud-W6-Eke"/>
-                        <outlet property="startTimeTextField" destination="gFf-PC-R5D" id="tE0-s8-XaS"/>
+                        <outlet property="dateTextField" destination="Oyu-H3-H1i" id="irN-D5-j8Q"/>
+                        <outlet property="endTimeTextField" destination="bP0-zk-gfx" id="llk-r4-U27"/>
+                        <outlet property="startTimeTextField" destination="gFf-PC-R5D" id="wDu-Lr-HUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMp-zd-2aO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2476.5" y="405.5"/>
-        </scene>
-        <!--View Controller(Deepthi)-->
-        <scene sceneID="4IO-eF-1PQ">
-            <objects>
-                <viewController id="4He-Pr-RlL" userLabel="View Controller(Deepthi)" customClass="ViewControllerDeepthi" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Qnw-Nf-ova"/>
-                        <viewControllerLayoutGuide type="bottom" id="VAo-xI-Cae"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VTQ-nn-Ree">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59f-mR-7NG">
-                                <rect key="frame" x="200" y="357" width="14" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6F-AO-LXd">
-                                <rect key="frame" x="191" y="408" width="32" height="30"/>
-                                <state key="normal" title="click"/>
-                                <connections>
-                                    <action selector="clickbutton:" destination="4He-Pr-RlL" eventType="touchUpInside" id="h6n-rQ-co1"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="kBT-Bv-aUf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M40-03-HmJ" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1862" y="374"/>
+            <point key="canvasLocation" x="-1087" y="577"/>
         </scene>
         <!--View Controller1-->
         <scene sceneID="zZu-jU-JhL">
             <objects>
-                <viewController id="GEM-PO-y5J" customClass="ViewController1" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GEM-PO-y5J" customClass="ViewController1" customModule="Hotel_Reservation" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H2Y-Zb-thu"/>
                         <viewControllerLayoutGuide type="bottom" id="0WG-EA-XEo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="t2h-Eg-KY8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food/Beverages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5a-SW-EIh">
@@ -616,7 +589,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="ddMenu" destination="LKS-BC-yUI" id="o2E-Y5-EAm"/>
                         <outlet property="ddshow" destination="zbv-co-Mu8" id="hH2-8S-CJ7"/>
@@ -627,18 +599,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7T1-QP-coL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1879" y="1996"/>
+            <point key="canvasLocation" x="-685" y="2798"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="Jnk-v9-Arg">
             <objects>
-                <viewController id="qS1-Bp-NMT" customClass="ViewController2" customModule="Hotel_Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qS1-Bp-NMT" customClass="ViewController2" customModule="Hotel_Reservation" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZXl-xK-1Ba"/>
                         <viewControllerLayoutGuide type="bottom" id="cSS-7l-GPM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HYD-tv-kxn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Equipment Available:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agV-9F-Ylb">
@@ -725,6 +697,9 @@
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RLD-51-SQ3">
                                 <rect key="frame" x="251" y="407" width="94" height="29"/>
+                                <connections>
+                                    <segue destination="GEM-PO-y5J" kind="show" id="G72-in-l69"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="r98-Nc-NTn">
                                 <rect key="frame" x="251" y="252" width="94" height="29"/>
@@ -732,14 +707,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="textview3" destination="oep-CG-8eD" id="tDx-dg-1Jc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxB-oY-dP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1879" y="1146"/>
+            <point key="canvasLocation" x="-685" y="1619"/>
         </scene>
         <!--Home-->
         <scene sceneID="r6u-Ta-0NA">
@@ -768,6 +742,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="NqH-WP-U1q" kind="show" id="Ey0-gQ-4N3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xe-tm-nTj">
                                 <rect key="frame" x="387" y="820" width="346" height="128"/>
@@ -775,6 +752,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="psM-G3-zLY" kind="show" id="nws-sJ-nCW"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="mS6-YO-gg5">
                                 <rect key="frame" x="219" y="332" width="316" height="178"/>
@@ -787,7 +767,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6R-p5-cwa" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1021" y="576"/>
+            <point key="canvasLocation" x="-3001" y="577"/>
         </scene>
         <!--Sign In Page-->
         <scene sceneID="S9q-5O-WRv">
@@ -844,6 +824,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="z5q-B5-6Rh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -852,12 +835,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="biq-VM-MtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1011" y="1726"/>
+            <point key="canvasLocation" x="-2101" y="577"/>
         </scene>
         <!--Sign Up Page-->
         <scene sceneID="m9R-io-6Q7">
             <objects>
-                <viewController title="Sign Up Page" id="NqH-WP-U1q" customClass="ViewControllerDerrian" sceneMemberID="viewController">
+                <viewController title="Sign Up Page" id="NqH-WP-U1q" customClass="ViewControllerDerrian" customModule="Hotel_Reservation" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iLd-Gw-klW"/>
                         <viewControllerLayoutGuide type="bottom" id="CAg-Nu-4fQ"/>
@@ -925,6 +908,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jeff Winger" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wOR-eL-Sns">
+                                <rect key="frame" x="392" y="266" width="269" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1A-q0-jrB">
                                 <rect key="frame" x="260" y="769" width="240" height="128"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -933,32 +921,27 @@
                                 </state>
                                 <connections>
                                     <action selector="signUpButton:" destination="NqH-WP-U1q" eventType="touchUpInside" id="WKW-uo-PUe"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="8C3-Qb-BUn"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jeff Winger" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wOR-eL-Sns">
-                                <rect key="frame" x="392" y="266" width="269" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8NQ-m6-l9a">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="WIO-I5-cOR"/>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="email" destination="3ix-75-TjH" id="xPY-Aa-kwI"/>
-                        <outlet property="nameField" destination="wOR-eL-Sns" id="aO8-vb-FT4"/>
-                        <outlet property="passwordField" destination="j5B-xr-dQE" id="CnR-rK-Ybd"/>
-                        <outlet property="phoneField" destination="FaL-Kq-tMv" id="tv8-tW-yL6"/>
-                        <outlet property="reTypePasswordField" destination="Utb-c0-mQy" id="qrW-Yz-jai"/>
-                        <outlet property="saveButton" destination="WIO-I5-cOR" id="bpf-2b-9Xh"/>
+                        <outlet property="emailField" destination="3ix-75-TjH" id="QRT-h5-8V6"/>
+                        <outlet property="nameField" destination="wOR-eL-Sns" id="ErZ-xn-Ovs"/>
+                        <outlet property="passwordField" destination="j5B-xr-dQE" id="7fX-Xv-uiS"/>
+                        <outlet property="phoneField" destination="FaL-Kq-tMv" id="xTa-mh-DCg"/>
+                        <outlet property="reTypePasswordField" destination="Utb-c0-mQy" id="7kQ-2w-xFj"/>
+                        <outlet property="saveInfoButton" destination="WIO-I5-cOR" id="WLe-St-fGF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hao-i2-dtf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1011" y="2839"/>
+            <point key="canvasLocation" x="-2101" y="1689"/>
         </scene>
     </scenes>
     <resources>
@@ -971,4 +954,7 @@
         <image name="SignInBg" width="250" height="445"/>
         <image name="SignUpButton" width="125" height="33"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8C3-Qb-BUn"/>
+    </inferredMetricsTieBreakers>
 </document>
