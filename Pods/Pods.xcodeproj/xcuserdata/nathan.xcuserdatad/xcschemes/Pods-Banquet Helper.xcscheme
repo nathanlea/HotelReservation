@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5CD1BACF4A8DCEC34A16B780'
+               BlueprintIdentifier = 'A289D11762AEC0A24B131D64'
                BlueprintName = 'Pods-Banquet Helper'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Banquet_Helper.framework'>

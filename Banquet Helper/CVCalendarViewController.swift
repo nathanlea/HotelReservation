@@ -11,10 +11,12 @@ import CVCalendar
 
 class CVCalendarViewController: UIViewController {
     // MARK: - Properties
+    
     @IBOutlet weak var calendarView: CVCalendarView!
     @IBOutlet weak var menuView: CVCalendarMenuView!
     @IBOutlet weak var monthLabel: UILabel!
     //@IBOutlet weak var daysOutSwitch: UISwitch!
+
     
     var shouldShowDaysOut = true
     var animationFinished = true
