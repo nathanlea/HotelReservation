@@ -1,17 +1,17 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, ‘9.1’
+platform :ios, '9.0'
 # Uncomment this line if you're using Swift
 use_frameworks!
 
-target 'TeamProject' do
+target 'Banquet Helper' do
 	pod 'CVCalendar', '~> 1.2.7’
 end
 
-target 'TeamProjectTests' do
+target 'Banquet HelperTests' do
 
 end
 
-target 'TeamProjectUITests' do
+target 'Banquet HelperUITests' do
 
 end
 
