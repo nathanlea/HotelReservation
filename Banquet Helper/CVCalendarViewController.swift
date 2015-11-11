@@ -32,7 +32,7 @@ class CVCalendarViewController: UIViewController {
         calendarView.commitCalendarViewUpdate()
         menuView.commitMenuViewUpdate()
         //calendarView.changeMode(.WeekView)
-
+        
     }
 }
 
@@ -206,7 +206,7 @@ extension CVCalendarViewController {
 extension CVCalendarViewController {
     func toggleMonthViewWithMonthOffset(offset: Int) {
         let calendar = NSCalendar.currentCalendar()
-        let _ = calendarView.manager
+        let calendarManager = calendarView.manager
         let components = Manager.componentsForDate(NSDate()) // from today
         
         components.month += offset
@@ -218,8 +218,8 @@ extension CVCalendarViewController {
     
     func didShowNextMonthView(date: NSDate)
     {
-        let _ = NSCalendar.currentCalendar()
-        let _ = calendarView.manager
+        let calendar = NSCalendar.currentCalendar()
+        let calendarManager = calendarView.manager
         let components = Manager.componentsForDate(date) // from today
         
         print("Showing Month: \(components.month)")
@@ -228,8 +228,8 @@ extension CVCalendarViewController {
     
     func didShowPreviousMonthView(date: NSDate)
     {
-        let _ = NSCalendar.currentCalendar()
-        let _ = calendarView.manager
+        let calendar = NSCalendar.currentCalendar()
+        let calendarManager = calendarView.manager
         let components = Manager.componentsForDate(date) // from today
         
         print("Showing Month: \(components.month)")
