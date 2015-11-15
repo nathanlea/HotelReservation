@@ -62,9 +62,8 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
     func viewControllerAtIndex(index: Int) -> PageItemController{
         if ((self.pageTitles.count == 0) || (index >= self.pageTitles.count)) {
-            
+            //parent.eventPlannerIndex = index
             return PageItemController()
-            
         }
         
         let vc: PageItemController = self.storyboard?.instantiateViewControllerWithIdentifier("PageContentViewController") as! PageItemController
@@ -72,9 +71,11 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         
         //vc.imageFile = self.pageImages[index]as! String
         //vc.titleText = self.pageTitles[index]as! String
+        print("PageIndex: ", terminator: "")
+        print(index)
         vc.pageIndex = index
         //rootvc.eventPlannerIndex = index
-        parent.eventPlannerIndex = index
+        //parent.eventPlannerIndex = index
         return vc
         
         
@@ -83,6 +84,9 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     {
         let vc = viewController as! PageItemController
         var index = vc.pageIndex as Int
+        parent.eventPlannerIndex = index
+        print("PageIndex B: ", terminator: "")
+        print(index)
         if (index == 0 || index == NSNotFound)
         {
             return nil
@@ -94,6 +98,9 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?{
         let vc = viewController as! PageItemController
         var index = vc.pageIndex as Int
+        parent.eventPlannerIndex = index
+        print("PageIndex A: ", terminator: "")
+        print(index)
         if (index == NSNotFound){
             return nil
         }

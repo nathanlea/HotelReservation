@@ -14,24 +14,16 @@ class CVCalendarViewController: UIViewController {
     
     var eventPlannerIndex = 0 {
         didSet {
-            switch eventPlannerIndex {
-            case 0 :
-                schedule = scheduleA
-                break
-            case 1 :
-                schedule = scheduleB
-                updateScheduleButtons(currentDate)
-                break
-            case 2 :
-                schedule = scheduleC
-                updateScheduleButtons(currentDate)
-                break
-            default: break
-            }
-            //Load new Schedule
-            //if secondTimeCallingFunc { updateScheduleButtonWithCurrentDay() }
+            print("Updating Schedule: ", terminator:"")
+            print(eventPlannerIndex)
+            print("Current Date: ", terminator:"")
+            print(currentDate)
+            if secondTimeCallingFunc { updateScheduleButtons(currentDate) }
+            else { secondTimeCallingFunc = true }
         }
     }
+    
+    var secondTimeCallingFunc = false;
     
     var currentDate = 0
     
@@ -74,7 +66,7 @@ class CVCalendarViewController: UIViewController {
         (date: 12, scheduleArr:[true, false, false, true, false, true, true]),
         (date: 13, scheduleArr:[false, false, false, false, false, false, false]),
         (date: 14, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 15, scheduleArr:[false, true, true, false, true, true, true]),
+        (date: 15, scheduleArr:[false, false, true, false, true, false, false]),
         (date: 16, scheduleArr:[true, true, true, true, true, true, false]),
         (date: 17, scheduleArr:[true, false, false, true, false, false, true]),
         (date: 18, scheduleArr:[true, false, true, false, true, true, true]),
@@ -197,6 +189,7 @@ class CVCalendarViewController: UIViewController {
         super.viewDidLoad()
         
         monthLabel.text = CVDate(date: NSDate()).globalDescription
+        updateScheduleButtonWithCurrentDay()
         
     }
     
@@ -206,7 +199,7 @@ class CVCalendarViewController: UIViewController {
         menuView.commitMenuViewUpdate()
         
         //Get intial Button layout correct
-        updateScheduleButtonWithCurrentDay()
+        //updateScheduleButtons(currentDate)
         
         (self.childViewControllers.last as! PageViewController).parent = self
     }
@@ -233,8 +226,22 @@ class CVCalendarViewController: UIViewController {
     
     func updateScheduleButtons(dayView: Int) {
         let day = dayView-1//(dayView.date.day)-1
-        currentDate = day
+        currentDate = day+1
         noMorningTimes.hidden = true
+        
+        switch eventPlannerIndex {
+        case 0 :
+            schedule = scheduleA
+            break
+        case 1 :
+            schedule = scheduleB
+            break
+        case 2 :
+            schedule = scheduleC
+            break
+        default: return
+        }
+
         if(schedule[day].scheduleArr[0] || schedule[day].scheduleArr[1] || schedule[day].scheduleArr[2]) {
             //Morning
             var morningTimes = 0
@@ -242,18 +249,15 @@ class CVCalendarViewController: UIViewController {
                 morningTimes+=1
                 mornButton1.hidden = false
                 mornButton1.setTitle("8:00a", forState: UIControlState.Normal)
-                mornButton1.sizeToFit()
             }
             if schedule[day].scheduleArr[1] {
                 morningTimes+=1
                 if morningTimes == 2 {
                     mornButton2.hidden = false
                     mornButton2.setTitle("9:30a", forState: UIControlState.Normal)
-                    mornButton2.autoresizesSubviews = true
                 } else if morningTimes == 1 {
                     mornButton1.hidden = false
                     mornButton1.setTitle("9:30a", forState: UIControlState.Normal)
-                    mornButton1.sizeToFit()
                 }
             }
             if schedule[day].scheduleArr[2] {
@@ -261,15 +265,13 @@ class CVCalendarViewController: UIViewController {
                 if morningTimes == 3 {
                     mornButton3.hidden = false
                     mornButton3.setTitle("11:00a", forState: UIControlState.Normal)
-                    mornButton3.sizeToFit()
                 } else if morningTimes == 2 {
                     mornButton2.hidden = false
                     mornButton2.setTitle("11:00a", forState: UIControlState.Normal)
-                    mornButton2.sizeToFit()
                 } else if morningTimes == 1 {
                     mornButton1.hidden = false
                     mornButton1.setTitle("11:00a", forState: UIControlState.Normal)
-                    mornButton1.sizeToFit()                }
+                }
             }
             if morningTimes == 0 {
                 mornButton1.hidden = true
@@ -299,18 +301,15 @@ class CVCalendarViewController: UIViewController {
                 afternoonTimes+=1
                 aftButton1.hidden = false
                 aftButton1.setTitle("2:00p", forState: UIControlState.Normal)
-                aftButton1.sizeToFit()
             }
             if schedule[day].scheduleArr[4] {
                 afternoonTimes+=1
                 if afternoonTimes == 2 {
                     aftButton2.hidden = false
                     aftButton2.setTitle("3:30p", forState: UIControlState.Normal)
-                    aftButton2.sizeToFit()
                 } else if afternoonTimes == 1 {
                     aftButton1.hidden = false
                     aftButton1.setTitle("3:30p", forState: UIControlState.Normal)
-                    aftButton1.sizeToFit()
                 }
             }
             if afternoonTimes == 0 {
@@ -334,18 +333,15 @@ class CVCalendarViewController: UIViewController {
                 eveningTimes+=1
                 eveButton1.hidden = false
                 eveButton1.setTitle("5:00p", forState: UIControlState.Normal)
-                eveButton1.sizeToFit()
             }
             if schedule[day].scheduleArr[6] {
                 eveningTimes+=1
                 if eveningTimes == 2 {
                     eveButton2.hidden = false
                     eveButton2.setTitle("7:00p", forState: UIControlState.Normal)
-                    eveButton1.sizeToFit()
                 } else if eveningTimes == 1 {
                     eveButton1.hidden = false
                     eveButton1.setTitle("7:00p", forState: UIControlState.Normal)
-                    eveButton1.sizeToFit()
                 }
             }
             if eveningTimes == 0 {
@@ -390,12 +386,14 @@ extension CVCalendarViewController: CVCalendarViewDelegate, CVCalendarMenuViewDe
     }
     
     func didSelectDayView(dayView: DayView) {
+        currentDate = dayView.date.day
         print("\(calendarView.presentedDate.commonDescription) is selected!")
         
         updateScheduleButtons(dayView.date.day)
     }
     
     func presentedDateUpdated(date: CVDate) {
+        currentDate = date.day
         if monthLabel.text != date.globalDescription && self.animationFinished {
             let updatedMonthLabel = UILabel()
             updatedMonthLabel.textColor = monthLabel.textColor
@@ -475,6 +473,7 @@ extension CVCalendarViewController: CVCalendarViewDelegate, CVCalendarMenuViewDe
     }
     
     func dotMarker(shouldMoveOnHighlightingOnDayView dayView: CVCalendarDayView) -> Bool {
+        currentDate = dayView.date.day
         return false
     }
     

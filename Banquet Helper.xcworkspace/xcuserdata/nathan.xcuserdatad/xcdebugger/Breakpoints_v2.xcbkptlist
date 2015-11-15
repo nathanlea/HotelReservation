@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "viewDidLayoutSubviews()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,71 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "401"
-            endingLineNumber = "401"
-            landmarkName = "presentedDateUpdated(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "402"
-            endingLineNumber = "402"
-            landmarkName = "presentedDateUpdated(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "scheduleA"
-            landmarkType = "19">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
-            landmarkName = "updateScheduleButtons(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "400"
@@ -106,11 +42,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "441"
-            endingLineNumber = "441"
+            startingLineNumber = "401"
+            endingLineNumber = "401"
+            landmarkName = "presentedDateUpdated(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Banquet Helper/CVCalendarViewController.swift"
+            timestampString = "469323890.658953"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "scheduleA"
+            landmarkType = "19">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Banquet Helper/CVCalendarViewController.swift"
+            timestampString = "469323890.658953"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
+            landmarkName = "updateScheduleButtons(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Banquet Helper/CVCalendarViewController.swift"
+            timestampString = "469323890.658953"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "399"
+            endingLineNumber = "399"
+            landmarkName = "presentedDateUpdated(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Banquet Helper/CVCalendarViewController.swift"
+            timestampString = "469323890.658953"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "440"
+            endingLineNumber = "440"
             landmarkName = "dotMarker(shouldShowOnDayView:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "508"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "517"
@@ -154,13 +154,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "532"
             endingLineNumber = "532"
-            landmarkName = "loadPrevious(_:)"
-            landmarkType = "5">
+            landmarkName = "CVCalendarViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "531"
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "536"
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "385"
-            endingLineNumber = "385"
+            startingLineNumber = "382"
+            endingLineNumber = "382"
             landmarkName = "shouldShowWeekdaysOut()"
             landmarkType = "5">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "395"
-            endingLineNumber = "395"
+            startingLineNumber = "393"
+            endingLineNumber = "393"
             landmarkName = "didSelectDayView(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/PageViewController.swift"
-            timestampString = "469321011.15758"
+            timestampString = "469323477.615713"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "viewControllerAtIndex(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -266,106 +266,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "CVCalendarViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Banquet_Helper.CVCalendarViewController.calendarView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;CVCalendar.CVCalendarView&gt;"
-                  moduleName = "Banquet Helper"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nathan/HotelReservation/Banquet%20Helper/Banquet%20Helper/CVCalendarViewController.swift"
-                  timestampString = "469318024.469876"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Banquet_Helper.CVCalendarViewController.calendarView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;CVCalendar.CVCalendarView&gt;"
-                  moduleName = "Banquet Helper"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nathan/HotelReservation/Banquet%20Helper/Banquet%20Helper/CVCalendarViewController.swift"
-                  timestampString = "469318024.47028"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Banquet_Helper.CVCalendarViewController.calendarView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;CVCalendar.CVCalendarView&gt;"
-                  moduleName = "Banquet Helper"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nathan/HotelReservation/Banquet%20Helper/Banquet%20Helper/CVCalendarViewController.swift"
-                  timestampString = "469318024.470726"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "29">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Banquet_Helper.CVCalendarViewController.init (Banquet_Helper.CVCalendarViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Banquet_Helper.CVCalendarViewController"
-                  moduleName = "Banquet Helper"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nathan/HotelReservation/Banquet%20Helper/Banquet%20Helper/CVCalendarViewController.swift"
-                  timestampString = "469318024.471003"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Banquet_Helper.CVCalendarViewController.init (Banquet_Helper.CVCalendarViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Banquet_Helper.CVCalendarViewController&gt;"
-                  moduleName = "Banquet Helper"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nathan/HotelReservation/Banquet%20Helper/Banquet%20Helper/CVCalendarViewController.swift"
-                  timestampString = "469318024.471271"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "53">
-               </Location>
-            </Locations>
+            startingLineNumber = "349"
+            endingLineNumber = "349"
+            landmarkName = "updateScheduleButtons(_:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/CVCalendarViewController.swift"
-            timestampString = "469321202.612394"
+            timestampString = "469323890.658953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "CVCalendarViewController"
-            landmarkType = "3">
+            startingLineNumber = "348"
+            endingLineNumber = "348"
+            landmarkName = "updateScheduleButtons(_:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
