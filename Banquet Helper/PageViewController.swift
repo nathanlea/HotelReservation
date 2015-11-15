@@ -14,6 +14,8 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     var pageTitles: NSArray!
     var pageImages: NSArray!
     
+    var parent: CVCalendarViewController = CVCalendarViewController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +28,13 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         self.pageViewController.dataSource = self
         
         
-        var startVC = self.viewControllerAtIndex(0) as PageItemController
+        let startVC = self.viewControllerAtIndex(0) as PageItemController
         
-        var viewControllers = NSArray(object: startVC)
+        let viewControllers = NSArray(object: startVC)
         
         
         
-        self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .Forward, animated: true, completion: nil)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion: nil)
         
         
         
@@ -51,10 +53,10 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
     @IBAction func restartAction(sender: AnyObject) {
         
-        var startVC = self.viewControllerAtIndex(0) as PageItemController
+        let startVC = self.viewControllerAtIndex(0) as PageItemController
         
-        var viewControllers = NSArray(object: startVC)
-        self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .Forward, animated: true, completion: nil)
+        let viewControllers = NSArray(object: startVC)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion: nil)
     }
     
     
@@ -66,9 +68,13 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         }
         
         let vc: PageItemController = self.storyboard?.instantiateViewControllerWithIdentifier("PageContentViewController") as! PageItemController
+        //let rootvc: CVCalendarViewController = self.parentViewController as! CVCalendarViewController
+        
         //vc.imageFile = self.pageImages[index]as! String
         //vc.titleText = self.pageTitles[index]as! String
         vc.pageIndex = index
+        //rootvc.eventPlannerIndex = index
+        parent.eventPlannerIndex = index
         return vc
         
         
