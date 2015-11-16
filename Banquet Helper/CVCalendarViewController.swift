@@ -14,10 +14,10 @@ class CVCalendarViewController: UIViewController {
     
     var eventPlannerIndex = 0 {
         didSet {
-            print("Updating Schedule: ", terminator:"")
-            print(eventPlannerIndex)
-            print("Current Date: ", terminator:"")
-            print(currentDate)
+            //print("Updating Schedule: ", terminator:"")
+            //print(eventPlannerIndex)
+            //print("Current Date: ", terminator:"")
+            //print(currentDate)
             if secondTimeCallingFunc { updateScheduleButtons(currentDate) }
             else { secondTimeCallingFunc = true }
         }
@@ -245,32 +245,35 @@ class CVCalendarViewController: UIViewController {
         if(schedule[day].scheduleArr[0] || schedule[day].scheduleArr[1] || schedule[day].scheduleArr[2]) {
             //Morning
             var morningTimes = 0
+            mornButton1.hidden = true
+            mornButton2.hidden = true
+            mornButton3.hidden = true
             if schedule[day].scheduleArr[0] {
                 morningTimes+=1
-                mornButton1.hidden = false
                 mornButton1.setTitle("8:00a", forState: UIControlState.Normal)
+                mornButton1.hidden = false
             }
             if schedule[day].scheduleArr[1] {
                 morningTimes+=1
                 if morningTimes == 2 {
-                    mornButton2.hidden = false
                     mornButton2.setTitle("9:30a", forState: UIControlState.Normal)
+                    mornButton2.hidden = false
                 } else if morningTimes == 1 {
-                    mornButton1.hidden = false
                     mornButton1.setTitle("9:30a", forState: UIControlState.Normal)
+                    mornButton1.hidden = false
                 }
             }
             if schedule[day].scheduleArr[2] {
                 morningTimes+=1
                 if morningTimes == 3 {
-                    mornButton3.hidden = false
                     mornButton3.setTitle("11:00a", forState: UIControlState.Normal)
+                    mornButton3.hidden = false
                 } else if morningTimes == 2 {
-                    mornButton2.hidden = false
                     mornButton2.setTitle("11:00a", forState: UIControlState.Normal)
+                    mornButton2.hidden = false
                 } else if morningTimes == 1 {
-                    mornButton1.hidden = false
                     mornButton1.setTitle("11:00a", forState: UIControlState.Normal)
+                    mornButton1.hidden = false
                 }
             }
             if morningTimes == 0 {
@@ -294,22 +297,24 @@ class CVCalendarViewController: UIViewController {
             noMorningTimes.hidden = false
         }
         noAfternoonTimes.hidden = true
+        aftButton1.hidden = true
+        aftButton2.hidden = true
         if(schedule[day].scheduleArr[3] || schedule[day].scheduleArr[4]) {
             //Afternoon
             var afternoonTimes = 0
             if schedule[day].scheduleArr[3] {
                 afternoonTimes+=1
-                aftButton1.hidden = false
                 aftButton1.setTitle("2:00p", forState: UIControlState.Normal)
+                aftButton1.hidden = false
             }
             if schedule[day].scheduleArr[4] {
                 afternoonTimes+=1
                 if afternoonTimes == 2 {
-                    aftButton2.hidden = false
                     aftButton2.setTitle("3:30p", forState: UIControlState.Normal)
+                    aftButton2.hidden = false
                 } else if afternoonTimes == 1 {
-                    aftButton1.hidden = false
                     aftButton1.setTitle("3:30p", forState: UIControlState.Normal)
+                    aftButton1.hidden = false
                 }
             }
             if afternoonTimes == 0 {
@@ -326,22 +331,24 @@ class CVCalendarViewController: UIViewController {
             
         }
         noEveningTimes.hidden = true
+        eveButton1.hidden = true
+        eveButton2.hidden = true
         if(schedule[day].scheduleArr[5] || schedule[day].scheduleArr[6]) {
             //Evening
             var eveningTimes = 0
             if schedule[day].scheduleArr[5] {
                 eveningTimes+=1
-                eveButton1.hidden = false
                 eveButton1.setTitle("5:00p", forState: UIControlState.Normal)
+                eveButton1.hidden = false
             }
             if schedule[day].scheduleArr[6] {
                 eveningTimes+=1
                 if eveningTimes == 2 {
-                    eveButton2.hidden = false
                     eveButton2.setTitle("7:00p", forState: UIControlState.Normal)
+                    eveButton2.hidden = false
                 } else if eveningTimes == 1 {
-                    eveButton1.hidden = false
                     eveButton1.setTitle("7:00p", forState: UIControlState.Normal)
+                    eveButton1.hidden = false
                 }
             }
             if eveningTimes == 0 {

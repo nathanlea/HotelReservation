@@ -67,15 +67,11 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         }
         
         let vc: PageItemController = self.storyboard?.instantiateViewControllerWithIdentifier("PageContentViewController") as! PageItemController
-        //let rootvc: CVCalendarViewController = self.parentViewController as! CVCalendarViewController
         
         //vc.imageFile = self.pageImages[index]as! String
         //vc.titleText = self.pageTitles[index]as! String
-        print("PageIndex: ", terminator: "")
-        print(index)
+
         vc.pageIndex = index
-        //rootvc.eventPlannerIndex = index
-        //parent.eventPlannerIndex = index
         return vc
         
         
@@ -84,9 +80,9 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     {
         let vc = viewController as! PageItemController
         var index = vc.pageIndex as Int
+        
         parent.eventPlannerIndex = index
-        print("PageIndex B: ", terminator: "")
-        print(index)
+
         if (index == 0 || index == NSNotFound)
         {
             return nil
@@ -98,9 +94,9 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?{
         let vc = viewController as! PageItemController
         var index = vc.pageIndex as Int
+        
         parent.eventPlannerIndex = index
-        print("PageIndex A: ", terminator: "")
-        print(index)
+        
         if (index == NSNotFound){
             return nil
         }
