@@ -50,7 +50,7 @@
         <!--Summary-->
         <scene sceneID="oOK-tL-ph7">
             <objects>
-                <viewController title="Summary" id="3f5-h2-MUN" sceneMemberID="viewController">
+                <viewController title="Summary" id="3f5-h2-MUN" customClass="SummaryViewController" customModule="Banquet_Helper" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hGe-tb-GGt"/>
                         <viewControllerLayoutGuide type="bottom" id="hbB-cp-vAH"/>
@@ -67,21 +67,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8 Hr - $/hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sp5-K8-tVJ">
-                                <rect key="frame" x="116" y="154" width="193" height="40"/>
+                                <rect key="frame" x="116" y="154" width="307" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Hairline" family="Lato" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hu-b5-gf8">
-                                <rect key="frame" x="662" y="111" width="86" height="40"/>
+                                <rect key="frame" x="635" y="111" width="113" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6w-Cz-cjw">
-                                <rect key="frame" x="670" y="154" width="78" height="40"/>
+                                <rect key="frame" x="635" y="154" width="113" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Hairline" family="Lato" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -95,21 +95,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8 Hr - $/hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0g-lu-0cb">
-                                <rect key="frame" x="116" y="321" width="193" height="40"/>
+                                <rect key="frame" x="116" y="321" width="307" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Hairline" family="Lato" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0V-vf-NuZ">
-                                <rect key="frame" x="662" y="278" width="86" height="40"/>
+                                <rect key="frame" x="635" y="278" width="113" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdt-1O-Iwe">
-                                <rect key="frame" x="670" y="321" width="78" height="40"/>
+                                <rect key="frame" x="635" y="321" width="113" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Hairline" family="Lato" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -129,22 +129,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8 Hr - $/hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rq-k1-3ek">
-                                <rect key="frame" x="116" y="488" width="193" height="40"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Hairline" family="Lato" pointSize="33"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMu-A4-Hu2">
-                                <rect key="frame" x="690" y="445" width="58" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMu-A4-Hu2">
+                                <rect key="frame" x="635" y="445" width="113" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLm-ya-Hdf">
-                                <rect key="frame" x="670" y="488" width="78" height="40"/>
+                                <rect key="frame" x="635" y="488" width="113" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Hairline" family="Lato" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -171,10 +164,17 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m0-nF-dih">
-                                <rect key="frame" x="683" y="573" width="65" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m0-nF-dih">
+                                <rect key="frame" x="635" y="573" width="113" height="45"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8 Hr - $/person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rq-k1-3ek">
+                                <rect key="frame" x="116" y="488" width="307" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Hairline" family="Lato" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -183,8 +183,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Submit" width="749" id="7eL-ci-QpF"/>
+                        <barButtonItem title="Submit" width="749" id="7eL-ci-QpF">
+                            <connections>
+                                <action selector="sumbitAction:" destination="3f5-h2-MUN" id="OZT-49-zzy"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
+                    <connections>
+                        <outlet property="equipmentRateCost" destination="Gdt-1O-Iwe" id="PSY-Vd-Mw5"/>
+                        <outlet property="equipmentRateLabel" destination="w0g-lu-0cb" id="qWO-gc-Coz"/>
+                        <outlet property="equipmentTotalCost" destination="i0V-vf-NuZ" id="3he-fV-SnZ"/>
+                        <outlet property="foodRateCost" destination="jLm-ya-Hdf" id="2qG-ED-Rsm"/>
+                        <outlet property="foodRateLabel" destination="4Rq-k1-3ek" id="wMw-52-l91"/>
+                        <outlet property="foodTotalCost" destination="fMu-A4-Hu2" id="rzj-O2-No9"/>
+                        <outlet property="roomRateCost" destination="H6w-Cz-cjw" id="eV0-N3-50E"/>
+                        <outlet property="roomRateLabel" destination="Sp5-K8-tVJ" id="o30-HD-w59"/>
+                        <outlet property="roomTotalCost" destination="7hu-b5-gf8" id="p9l-e7-Eqq"/>
+                        <outlet property="totalCost" destination="8m0-nF-dih" id="3l9-ik-N1Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iX7-qA-AVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,7 +226,7 @@
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ehc-BB-lxD" userLabel="TableViewCard">
                                             <rect key="frame" x="234" y="6" width="301" height="207"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CypressRoom.png" translatesAutoresizingMaskIntoConstraints="NO" id="K56-b7-avY">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CypressRoom" translatesAutoresizingMaskIntoConstraints="NO" id="K56-b7-avY">
                                                     <rect key="frame" x="0.0" y="3" width="301" height="204"/>
                                                     <animations/>
                                                 </imageView>
@@ -1317,7 +1333,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CypressRoom.png" width="250" height="125"/>
+        <image name="CypressRoom" width="250" height="126"/>
         <image name="FrederickProfile" width="46" height="47"/>
         <image name="LaunchScreenBg" width="250" height="445"/>
         <image name="LaunchScreenButton" width="125" height="33"/>
