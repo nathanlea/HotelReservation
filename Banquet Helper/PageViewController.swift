@@ -14,6 +14,8 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     var pageTitles: NSArray!
     var pageImages: NSArray!
     
+    var parent: CVCalendarViewController = CVCalendarViewController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +28,13 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         self.pageViewController.dataSource = self
         
         
-        var startVC = self.viewControllerAtIndex(0) as PageItemController
+        let startVC = self.viewControllerAtIndex(0) as PageItemController
         
-        var viewControllers = NSArray(object: startVC)
+        let viewControllers = NSArray(object: startVC)
         
         
         
-        self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .Forward, animated: true, completion: nil)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion: nil)
         
         
         
@@ -51,23 +53,24 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
     @IBAction func restartAction(sender: AnyObject) {
         
-        var startVC = self.viewControllerAtIndex(0) as PageItemController
+        let startVC = self.viewControllerAtIndex(0) as PageItemController
         
-        var viewControllers = NSArray(object: startVC)
-        self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .Forward, animated: true, completion: nil)
+        let viewControllers = NSArray(object: startVC)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion: nil)
     }
     
     
     func viewControllerAtIndex(index: Int) -> PageItemController{
         if ((self.pageTitles.count == 0) || (index >= self.pageTitles.count)) {
-            
+            //parent.eventPlannerIndex = index
             return PageItemController()
-            
         }
         
         let vc: PageItemController = self.storyboard?.instantiateViewControllerWithIdentifier("PageContentViewController") as! PageItemController
+        
         //vc.imageFile = self.pageImages[index]as! String
         //vc.titleText = self.pageTitles[index]as! String
+
         vc.pageIndex = index
         return vc
         
@@ -77,6 +80,9 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     {
         let vc = viewController as! PageItemController
         var index = vc.pageIndex as Int
+        
+        parent.eventPlannerIndex = index
+
         if (index == 0 || index == NSNotFound)
         {
             return nil
@@ -88,6 +94,9 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?{
         let vc = viewController as! PageItemController
         var index = vc.pageIndex as Int
+        
+        parent.eventPlannerIndex = index
+        
         if (index == NSNotFound){
             return nil
         }

@@ -9,7 +9,38 @@
 import UIKit
 
 class PageItemController: UIViewController {
-    var pageIndex: Int = 0
+    var pageIndex: Int = 0 {
+        didSet {
+            switch pageIndex {
+            case 0 :
+                //Event Planner 1
+                if let _ = nameLabel {
+                    nameLabel.text = "Event Planner A"
+                } else  {
+                    nameTitle = "Event Planner A"
+                }
+                
+                break
+            case 1 :
+                //Event Planner 2
+                if let _ = nameLabel {
+                    nameLabel.text = "Event Planner B"
+                } else  {
+                    nameTitle = "Event Planner B"
+                }
+                break
+            case 2 :
+                //Event Planner 3
+                if let _ = nameLabel {
+                    nameLabel.text = "Event Planner C"
+                } else  {
+                    nameTitle = "Event Planner C"
+                }
+                break
+            default : break
+            }
+        }
+    }
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -18,6 +49,8 @@ class PageItemController: UIViewController {
     @IBOutlet weak var aboutLabel: UILabel!
     
     @IBOutlet weak var bioTextView: UITextView!
+    
+    var nameTitle = ""
     
     var imageName: String = "" {
         
@@ -32,6 +65,8 @@ class PageItemController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = nameTitle
 
         // Do any additional setup after loading the view.
     }
