@@ -534,6 +534,24 @@
             </objects>
             <point key="canvasLocation" x="104" y="2180"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xaa-KX-rK6">
+            <objects>
+                <viewController id="xo3-Jm-seU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qt5-Up-PT6"/>
+                        <viewControllerLayoutGuide type="bottom" id="sLo-0y-5dH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MfG-gv-3hg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HfM-pN-fTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="2779"/>
+        </scene>
         <!--Hotel Name-->
         <scene sceneID="1Vm-iM-yPt">
             <objects>
