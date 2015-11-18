@@ -24,11 +24,14 @@ class signUpController: UIViewController, UITextFieldDelegate
     
     var pass = 0
     
+    
+    
     var name:String = "Jeff Winger"
     var email:String = ""
     var phone:String = ""
     var password:String = ""
     
+    //let user = userAccount(name, phone, email, password)
     
     @IBOutlet weak var nameField: UITextField!
     
@@ -143,11 +146,11 @@ class signUpController: UIViewController, UITextFieldDelegate
         
         if(segue.identifier == "signedUp")
         {
-            /*let secondVC: signUpTestController = segue.destinationViewController as! signUpTestController
+            let secondVC: MenuViewController = segue.destinationViewController as! MenuViewController
             secondVC.email = emailField.text!
             secondVC.name = nameField.text!
             secondVC.phone = phoneField.text!
-            secondVC.password = passField.text!*/
+            secondVC.password = passField.text!
         }
         if(segue.identifier == "ToSignIn")
         {
@@ -173,7 +176,7 @@ class signUpController: UIViewController, UITextFieldDelegate
     }
     
     override func viewWillAppear(animated: Bool) {
-        //self.navigationController?.navigationBarHidden = true
+        self.navigationController?.navigationBarHidden = true
     }
     /*override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
     <#code#>

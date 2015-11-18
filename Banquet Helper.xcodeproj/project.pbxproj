@@ -15,9 +15,11 @@
 		1C02547C1BFADB1500F7039E /* PagedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254741BFADB1500F7039E /* PagedViewController.swift */; };
 		1C02547D1BFADB1500F7039E /* ReservedTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254751BFADB1500F7039E /* ReservedTimeModel.swift */; };
 		1C02547E1BFADB1500F7039E /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254761BFADB1500F7039E /* Table.swift */; };
+		4E7751691BFBCE99004E4D1C /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7751681BFBCE99004E4D1C /* Appointment.swift */; };
 		4ED96D911BFB93A0002E75C9 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D901BFB93A0002E75C9 /* SignUpController.swift */; };
 		4ED96D931BFB93D1002E75C9 /* signInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D921BFB93D1002E75C9 /* signInController.swift */; };
-		4ED96D951BFB93F8002E75C9 /* SignInTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */; };
+		4ED96D991BFBAB83002E75C9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D981BFBAB83002E75C9 /* StartViewController.swift */; };
+		4ED96D9B1BFBABEF002E75C9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D9A1BFBABEF002E75C9 /* MenuViewController.swift */; };
 		7E1A1E1575C9FD2F817BE742 /* Pods_Banquet_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D23D7D5E5C6179EEEA705D /* Pods_Banquet_Helper.framework */; };
 		D8244FDA1BF2F3BE00F7053A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */; };
 		D8244FDC1BF2F3BE00F7053A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8244FDB1BF2F3BE00F7053A /* ViewController.swift */; };
@@ -33,7 +35,6 @@
 		D82450201BF2F55D00F7053A /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450111BF2F55D00F7053A /* PageItemController.swift */; };
 		D82450211BF2F55D00F7053A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450121BF2F55D00F7053A /* PageViewController.swift */; };
 		D82450221BF2F55D00F7053A /* ReservationVallidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450131BF2F55D00F7053A /* ReservationVallidationViewController.swift */; };
-		D82450231BF2F55D00F7053A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450141BF2F55D00F7053A /* SignUpViewController.swift */; };
 		D82450241BF2F55D00F7053A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450151BF2F55D00F7053A /* TableViewController.swift */; };
 		D82450251BF2F55D00F7053A /* userAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450161BF2F55D00F7053A /* userAccount.swift */; };
 		D82450261BF2F55D00F7053A /* view1controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450171BF2F55D00F7053A /* view1controller.swift */; };
@@ -88,9 +89,11 @@
 		1C0254751BFADB1500F7039E /* ReservedTimeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservedTimeModel.swift; sourceTree = "<group>"; };
 		1C0254761BFADB1500F7039E /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		385A335DB4BF638BEB7978CF /* Pods-Banquet Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banquet Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Banquet Helper/Pods-Banquet Helper.debug.xcconfig"; sourceTree = "<group>"; };
+		4E7751681BFBCE99004E4D1C /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		4ED96D901BFB93A0002E75C9 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		4ED96D921BFB93D1002E75C9 /* signInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInController.swift; sourceTree = "<group>"; };
-		4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTestController.swift; sourceTree = "<group>"; };
+		4ED96D981BFBAB83002E75C9 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		4ED96D9A1BFBABEF002E75C9 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		86A5768EF80B2C5D451135B6 /* Pods-Banquet Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banquet Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Banquet Helper/Pods-Banquet Helper.release.xcconfig"; sourceTree = "<group>"; };
 		D8244FD61BF2F3BE00F7053A /* Banquet Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banquet Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +115,6 @@
 		D82450111BF2F55D00F7053A /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
 		D82450121BF2F55D00F7053A /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		D82450131BF2F55D00F7053A /* ReservationVallidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationVallidationViewController.swift; sourceTree = "<group>"; };
-		D82450141BF2F55D00F7053A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D82450151BF2F55D00F7053A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D82450161BF2F55D00F7053A /* userAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userAccount.swift; sourceTree = "<group>"; };
 		D82450171BF2F55D00F7053A /* view1controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = view1controller.swift; sourceTree = "<group>"; };
@@ -210,10 +212,13 @@
 		D8244FD81BF2F3BE00F7053A /* Banquet Helper */ = {
 			isa = PBXGroup;
 			children = (
-				1C02546F1BFADB1500F7039E /* BaseModel.swift */,
+				4ED96D981BFBAB83002E75C9 /* StartViewController.swift */,
 				4ED96D901BFB93A0002E75C9 /* SignUpController.swift */,
 				4ED96D921BFB93D1002E75C9 /* signInController.swift */,
-				4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */,
+				D82450161BF2F55D00F7053A /* userAccount.swift */,
+				4E7751681BFBCE99004E4D1C /* Appointment.swift */,
+				4ED96D9A1BFBABEF002E75C9 /* MenuViewController.swift */,
+				1C02546F1BFADB1500F7039E /* BaseModel.swift */,
 				1C0254701BFADB1500F7039E /* CustomerModel.swift */,
 				1C0254711BFADB1500F7039E /* HotelModel.swift */,
 				1C0254721BFADB1500F7039E /* HotelRepository.swift */,
@@ -230,9 +235,7 @@
 				D82450111BF2F55D00F7053A /* PageItemController.swift */,
 				D82450121BF2F55D00F7053A /* PageViewController.swift */,
 				D82450131BF2F55D00F7053A /* ReservationVallidationViewController.swift */,
-				D82450141BF2F55D00F7053A /* SignUpViewController.swift */,
 				D82450151BF2F55D00F7053A /* TableViewController.swift */,
-				D82450161BF2F55D00F7053A /* userAccount.swift */,
 				D82450171BF2F55D00F7053A /* view1controller.swift */,
 				D82450181BF2F55D00F7053A /* view2controller.swift */,
 				D82450191BF2F55D00F7053A /* ViewControllerDeepthi.swift */,
@@ -494,12 +497,13 @@
 			files = (
 				1C0254791BFADB1500F7039E /* HotelModel.swift in Sources */,
 				1C0254771BFADB1500F7039E /* BaseModel.swift in Sources */,
-				D82450231BF2F55D00F7053A /* SignUpViewController.swift in Sources */,
+				4ED96D991BFBAB83002E75C9 /* StartViewController.swift in Sources */,
 				D8244FDC1BF2F3BE00F7053A /* ViewController.swift in Sources */,
 				D8244FE21BF2F3BE00F7053A /* Banquet_Helper.xcdatamodeld in Sources */,
 				D82450201BF2F55D00F7053A /* PageItemController.swift in Sources */,
 				1C02547A1BFADB1500F7039E /* HotelRepository.swift in Sources */,
 				4ED96D931BFB93D1002E75C9 /* signInController.swift in Sources */,
+				4ED96D9B1BFBABEF002E75C9 /* MenuViewController.swift in Sources */,
 				D8244FDA1BF2F3BE00F7053A /* AppDelegate.swift in Sources */,
 				D82450221BF2F55D00F7053A /* ReservationVallidationViewController.swift in Sources */,
 				D82653F41BF97CC10053748D /* SummaryViewController.swift in Sources */,
@@ -509,11 +513,11 @@
 				4ED96D911BFB93A0002E75C9 /* SignUpController.swift in Sources */,
 				D824501E1BF2F55D00F7053A /* HotelReservation.xcdatamodeld in Sources */,
 				1C02547C1BFADB1500F7039E /* PagedViewController.swift in Sources */,
-				4ED96D951BFB93F8002E75C9 /* SignInTestController.swift in Sources */,
 				D82450211BF2F55D00F7053A /* PageViewController.swift in Sources */,
 				1C02547E1BFADB1500F7039E /* Table.swift in Sources */,
 				D824501B1BF2F55D00F7053A /* CVCalendarViewController.swift in Sources */,
 				1C0254781BFADB1500F7039E /* CustomerModel.swift in Sources */,
+				4E7751691BFBCE99004E4D1C /* Appointment.swift in Sources */,
 				1C02547B1BFADB1500F7039E /* MeetingRoomModel.swift in Sources */,
 				D82450271BF2F55D00F7053A /* view2controller.swift in Sources */,
 				D82450291BF2F55D00F7053A /* ViewControllerDerrian.swift in Sources */,
@@ -667,6 +671,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS4153AppDev.Banquet-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -680,6 +685,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS4153AppDev.Banquet-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
