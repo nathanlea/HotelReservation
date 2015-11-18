@@ -12,10 +12,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let repository = HotelRepository()
-        var hotels = [HotelModel]()
-        repository.Get(Table.Name.Hotels, models: hotels)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

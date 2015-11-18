@@ -14,7 +14,31 @@ class HotelRepository {
     var delegate : BaseModel?
     
     
-    func Get(TableName : Table.Name, var models : [Any])
+    func ConvertToModels(jsonObjects : NSArray, TableName : Table.Name)-> [Any]
+    {
+        var models = [Any]()
+        for item in jsonObjects{
+            
+            switch(TableName){
+            case Table.Name.Customers :
+                models.append(CustomerModel(jsonObject: item as! NSDictionary))
+                break
+            case Table.Name.Hotels:
+                models.append(HotelModel(jsonObject: item as! NSDictionary))
+                break
+            case Table.Name.MeetingRooms:
+                models.append(MeetingRoomModel(jsonObject: item as! NSDictionary))
+                break
+            case Table.Name.ReservedTimes:
+                models.append(ReservedTimeModel(jsonObject: item as! NSDictionary))
+                break
+                
+            }
+        }
+        return models
+    }
+    
+    func Get(TableName : Table.Name, completion: (jsonArray : NSArray) -> Void)
     {
         tableName = TableName.rawValue
         var jsonObjects = NSArray()
@@ -44,24 +68,8 @@ class HotelRepository {
             {
                 jsonObjects =
                     try (NSJSONSerialization.JSONObjectWithData(resultData, options: []) as? NSArray)!
-                for item in jsonObjects{
-                    
-                    switch(TableName){
-                    case Table.Name.Customers :
-                        models.append(CustomerModel(jsonObject: item as! NSDictionary))
-                        break
-                    case Table.Name.Hotels:
-                        models.append(HotelModel(jsonObject: item as! NSDictionary))
-                        break
-                    case Table.Name.MeetingRooms:
-                        models.append(MeetingRoomModel(jsonObject: item as! NSDictionary))
-                        break
-                    case Table.Name.ReservedTimes:
-                        models.append(ReservedTimeModel(jsonObject: item as! NSDictionary))
-                        break
-                        
-                    }
-                }
+                
+                completion(jsonArray: jsonObjects)
                 
                 
             }
@@ -70,7 +78,7 @@ class HotelRepository {
                 print("Error trying to convert returned data to JSON")
                 return
             }
-            print("The returned data for Table "+TableName.rawValue+": \(jsonObjects.description)")
+            //print("The returned data for Table "+TableName.rawValue+": \(jsonObjects.description)")
             
             
             
@@ -82,6 +90,7 @@ class HotelRepository {
         task.resume()
         
     }
+    
     
     func SetReservation(meetingRoomId : Int, customerId : Int, dateTime : String)
     {
