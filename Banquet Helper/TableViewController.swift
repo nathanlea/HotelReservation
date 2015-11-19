@@ -56,6 +56,13 @@ class TableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.dequeueReusableCellWithIdentifier("IternaryCard", forIndexPath: indexPath)
+        
+        print("Touched Cell")
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.

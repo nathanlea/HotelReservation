@@ -230,44 +230,36 @@
         <scene sceneID="g2r-rt-X4f">
             <objects>
                 <tableViewController id="j30-Pl-y5e" customClass="TableViewController" customModule="Banquet_Helper" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="221" sectionHeaderHeight="22" sectionFooterHeight="22" id="LNb-9H-tgR">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="347" sectionHeaderHeight="22" sectionFooterHeight="22" id="LNb-9H-tgR">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="221" id="uHt-ta-kIU">
-                                <rect key="frame" x="0.0" y="86" width="768" height="221"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="347" id="uHt-ta-kIU">
+                                <rect key="frame" x="0.0" y="86" width="768" height="347"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uHt-ta-kIU" id="XuN-VT-Ey7">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="220"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="uHt-ta-kIU" id="XuN-VT-Ey7">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="346"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ehc-BB-lxD" userLabel="TableViewCard">
-                                            <rect key="frame" x="234" y="6" width="301" height="207"/>
+                                            <rect key="frame" x="52" y="6" width="665" height="334"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CypressRoom" translatesAutoresizingMaskIntoConstraints="NO" id="K56-b7-avY">
-                                                    <rect key="frame" x="0.0" y="3" width="301" height="204"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="665" height="334"/>
                                                     <animations/>
                                                 </imageView>
                                                 <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoy-dl-ISs" userLabel="TopLabelColor">
-                                                    <rect key="frame" x="0.0" y="0.0" width="301" height="47"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="665" height="64"/>
                                                     <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgM-ur-SVy" userLabel="BottomLabelColor">
-                                                    <rect key="frame" x="0.0" y="160" width="301" height="47"/>
-                                                    <animations/>
-                                                    <color key="backgroundColor" red="0.93333333333333335" green="0.8666666666666667" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEG-oH-jgK" userLabel="StatusColor">
-                                                    <rect key="frame" x="215" y="15" width="86" height="19"/>
+                                                    <rect key="frame" x="551" y="0.0" width="114" height="30"/>
                                                     <animations/>
                                                     <color key="backgroundColor" red="0.1529411765" green="0.65490196079999996" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -275,7 +267,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sa-ZY-Idu" userLabel="AddressColor">
-                                                    <rect key="frame" x="0.0" y="140" width="301" height="20"/>
+                                                    <rect key="frame" x="0.0" y="307" width="665" height="27"/>
                                                     <animations/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -283,67 +275,56 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lm6-ZJ-sNA" userLabel="DateColor">
-                                                    <rect key="frame" x="0.0" y="3" width="49" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="65" height="64"/>
                                                     <animations/>
                                                     <color key="backgroundColor" red="0.1529411765" green="0.65490196079999996" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jan " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfQ-18-koK" userLabel="Month">
-                                                    <rect key="frame" x="11" y="4" width="26" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jan " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfQ-18-koK" userLabel="Month">
+                                                    <rect key="frame" x="15" y="0.0" width="35" height="24"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpC-eb-zwH" userLabel="Day">
-                                                    <rect key="frame" x="10" y="19" width="28" height="28"/>
+                                                    <rect key="frame" x="15" y="28" width="35" height="36"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="23"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:30a" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImJ-ox-iKE" userLabel="Time">
-                                                    <rect key="frame" x="57" y="3" width="69" height="27"/>
+                                                    <rect key="frame" x="73" y="0.0" width="93" height="36"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                                     <color key="textColor" red="0.25490196078431371" green="0.2627450980392157" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Approved" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gj-jl-epB" userLabel="Status">
-                                                    <rect key="frame" x="222" y="13" width="79" height="21"/>
+                                                    <rect key="frame" x="557" y="4" width="108" height="21"/>
                                                     <animations/>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Smith" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnx-g8-NXQ" userLabel="Name">
-                                                    <rect key="frame" x="57" y="25" width="69" height="16"/>
+                                                    <rect key="frame" x="73" y="34" width="93" height="23"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
                                                     <color key="textColor" red="0.25490196079999999" green="0.26274509800000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dallas, TX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ4-Vn-P1T" userLabel="Address">
-                                                    <rect key="frame" x="0.0" y="142" width="65" height="17"/>
+                                                    <rect key="frame" x="0.0" y="307" width="96" height="27"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="22"/>
                                                     <color key="textColor" red="0.25490196079999999" green="0.26274509800000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4Y-hZ-hvN" userLabel="ViewOrderSummaryButton">
-                                                    <rect key="frame" x="0.0" y="160" width="301" height="47"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
-                                                    <state key="normal" title="View Order Summary">
-                                                        <color key="titleColor" red="0.25490196079999999" green="0.26274509800000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="3f5-h2-MUN" kind="show" id="7kI-Mi-3oh"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -401,7 +382,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotelCell" rowHeight="308" id="z9c-YC-tis" customClass="HotelListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="28" width="768" height="308"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="308"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z9c-YC-tis" id="a0y-fQ-faO">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="307"/>
@@ -455,7 +436,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jsb-0f-kjc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="a7w-2U-oa2">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="496"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -485,7 +466,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VhD-AU-X6D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LDC-ab-RO7">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="496"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuo-i3-d3J">
@@ -991,7 +972,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXH-WD-SOx">
-                                <rect key="frame" x="0.0" y="484" width="768" height="496"/>
+                                <rect key="frame" x="0.0" y="484" width="768" height="497"/>
                                 <animations/>
                                 <connections>
                                     <segue destination="fqO-FC-leZ" kind="embed" id="rt6-oM-8o3"/>
@@ -1118,16 +1099,20 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePI-do-Ifo">
+                                <rect key="frame" x="0.0" y="978" width="768" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Reserve"/>
+                                <connections>
+                                    <segue destination="uwQ-7c-ljj" kind="show" id="FGm-9K-fFt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Reserve" width="748" id="rdi-ft-cE9">
-                            <connections>
-                                <segue destination="uwQ-7c-ljj" kind="showDetail" id="rFp-gp-jY9"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem title="Reserve" width="748" id="rdi-ft-cE9"/>
                     </toolbarItems>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
@@ -1370,7 +1355,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="21u-gU-4ZB"/>
-        <segue reference="3bg-ly-44h"/>
+        <segue reference="h9n-85-Ngh"/>
         <segue reference="35F-op-qIW"/>
     </inferredMetricsTieBreakers>
 </document>
