@@ -11,10 +11,10 @@ import UIKit
 class ReservedTimeModel : BaseModel{
     var Id : Int?
     var RoomId : Int?
-    var ReservedTime : NSDate?
+    var ReservedTime : String?
     var CustomerId : Int?
     
-    func SetReservationTime(meetingRoomModel: MeetingRoomModel, date: NSDate, customerModel : CustomerModel){
+    func SetReservationTime(meetingRoomModel: MeetingRoomModel, date: String, customerModel : CustomerModel){
         //let dateFormatter = NSDateFormatter()
         RoomId = meetingRoomModel.Id
         ReservedTime = date
@@ -28,7 +28,7 @@ class ReservedTimeModel : BaseModel{
     init(jsonObject: NSDictionary) {
         self.Id = jsonObject["Id"]?.integerValue
         self.RoomId = jsonObject["RoomId"]?.integerValue
-        self.ReservedTime = jsonObject["ReservedTime"] as? NSDate
+        self.ReservedTime = jsonObject["ReservedTime"] as? String
         self.CustomerId = jsonObject["CustomerId"]?.integerValue
     }
     
