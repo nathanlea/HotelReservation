@@ -15,13 +15,15 @@
 		1C02547C1BFADB1500F7039E /* PagedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254741BFADB1500F7039E /* PagedViewController.swift */; };
 		1C02547D1BFADB1500F7039E /* ReservedTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254751BFADB1500F7039E /* ReservedTimeModel.swift */; };
 		1C02547E1BFADB1500F7039E /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254761BFADB1500F7039E /* Table.swift */; };
+		1C73C3CE1BFC52550091042B /* HotelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C73C3CC1BFC52550091042B /* HotelListCell.swift */; };
+		1C73C3CF1BFC52550091042B /* HotelListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C73C3CD1BFC52550091042B /* HotelListTableViewController.swift */; };
+		1C73C3D11BFC536F0091042B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C73C3D01BFC536F0091042B /* Main.storyboard */; };
 		4ED96D911BFB93A0002E75C9 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D901BFB93A0002E75C9 /* SignUpController.swift */; };
 		4ED96D931BFB93D1002E75C9 /* signInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D921BFB93D1002E75C9 /* signInController.swift */; };
 		4ED96D951BFB93F8002E75C9 /* SignInTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */; };
 		7E1A1E1575C9FD2F817BE742 /* Pods_Banquet_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D23D7D5E5C6179EEEA705D /* Pods_Banquet_Helper.framework */; };
 		D8244FDA1BF2F3BE00F7053A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */; };
 		D8244FDC1BF2F3BE00F7053A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8244FDB1BF2F3BE00F7053A /* ViewController.swift */; };
-		D8244FDF1BF2F3BE00F7053A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8244FDD1BF2F3BE00F7053A /* Main.storyboard */; };
 		D8244FE21BF2F3BE00F7053A /* Banquet_Helper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8244FE01BF2F3BE00F7053A /* Banquet_Helper.xcdatamodeld */; };
 		D8244FE41BF2F3BE00F7053A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8244FE31BF2F3BE00F7053A /* Assets.xcassets */; };
 		D8244FE71BF2F3BE00F7053A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8244FE51BF2F3BE00F7053A /* LaunchScreen.storyboard */; };
@@ -87,6 +89,9 @@
 		1C0254741BFADB1500F7039E /* PagedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedViewController.swift; sourceTree = "<group>"; };
 		1C0254751BFADB1500F7039E /* ReservedTimeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservedTimeModel.swift; sourceTree = "<group>"; };
 		1C0254761BFADB1500F7039E /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		1C73C3CC1BFC52550091042B /* HotelListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelListCell.swift; sourceTree = "<group>"; };
+		1C73C3CD1BFC52550091042B /* HotelListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelListTableViewController.swift; sourceTree = "<group>"; };
+		1C73C3D01BFC536F0091042B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		385A335DB4BF638BEB7978CF /* Pods-Banquet Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banquet Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Banquet Helper/Pods-Banquet Helper.debug.xcconfig"; sourceTree = "<group>"; };
 		4ED96D901BFB93A0002E75C9 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		4ED96D921BFB93D1002E75C9 /* signInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInController.swift; sourceTree = "<group>"; };
@@ -95,7 +100,6 @@
 		D8244FD61BF2F3BE00F7053A /* Banquet Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banquet Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8244FDB1BF2F3BE00F7053A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8244FDE1BF2F3BE00F7053A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8244FE11BF2F3BE00F7053A /* Banquet_Helper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Banquet_Helper.xcdatamodel; sourceTree = "<group>"; };
 		D8244FE31BF2F3BE00F7053A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8244FE61BF2F3BE00F7053A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -211,6 +215,8 @@
 			isa = PBXGroup;
 			children = (
 				1C02546F1BFADB1500F7039E /* BaseModel.swift */,
+				1C73C3CC1BFC52550091042B /* HotelListCell.swift */,
+				1C73C3CD1BFC52550091042B /* HotelListTableViewController.swift */,
 				4ED96D901BFB93A0002E75C9 /* SignUpController.swift */,
 				4ED96D921BFB93D1002E75C9 /* signInController.swift */,
 				4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */,
@@ -220,10 +226,10 @@
 				1C0254731BFADB1500F7039E /* MeetingRoomModel.swift */,
 				1C0254741BFADB1500F7039E /* PagedViewController.swift */,
 				1C0254751BFADB1500F7039E /* ReservedTimeModel.swift */,
+				1C73C3D01BFC536F0091042B /* Main.storyboard */,
 				1C0254761BFADB1500F7039E /* Table.swift */,
 				D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */,
 				D8244FDB1BF2F3BE00F7053A /* ViewController.swift */,
-				D8244FDD1BF2F3BE00F7053A /* Main.storyboard */,
 				D824500A1BF2F55D00F7053A /* CVCalendarViewController.swift */,
 				D824500C1BF2F55D00F7053A /* Hotel_Reservation.xcdatamodeld */,
 				D824500E1BF2F55D00F7053A /* HotelReservation.xcdatamodeld */,
@@ -404,6 +410,7 @@
 				D870942C1BF7D5260074C27C /* Lato-Light.ttf in Resources */,
 				D87094231BF7D5260074C27C /* Lato-Black.ttf in Resources */,
 				D87094251BF7D5260074C27C /* Lato-Bold.ttf in Resources */,
+				1C73C3D11BFC536F0091042B /* Main.storyboard in Resources */,
 				D8244FE71BF2F3BE00F7053A /* LaunchScreen.storyboard in Resources */,
 				D870942F1BF7D5260074C27C /* Lato-MediumItalic.ttf in Resources */,
 				D87094321BF7D5260074C27C /* Lato-SemiboldItalic.ttf in Resources */,
@@ -416,7 +423,6 @@
 				D870942E1BF7D5260074C27C /* Lato-Medium.ttf in Resources */,
 				D87094271BF7D5260074C27C /* Lato-Hairline.ttf in Resources */,
 				D870942B1BF7D5260074C27C /* Lato-Italic.ttf in Resources */,
-				D8244FDF1BF2F3BE00F7053A /* Main.storyboard in Resources */,
 				D87094331BF7D5260074C27C /* Lato-Thin.ttf in Resources */,
 				D870942D1BF7D5260074C27C /* Lato-LightItalic.ttf in Resources */,
 				D87094301BF7D5260074C27C /* Lato-Regular.ttf in Resources */,
@@ -494,6 +500,7 @@
 			files = (
 				1C0254791BFADB1500F7039E /* HotelModel.swift in Sources */,
 				1C0254771BFADB1500F7039E /* BaseModel.swift in Sources */,
+				1C73C3CF1BFC52550091042B /* HotelListTableViewController.swift in Sources */,
 				D82450231BF2F55D00F7053A /* SignUpViewController.swift in Sources */,
 				D8244FDC1BF2F3BE00F7053A /* ViewController.swift in Sources */,
 				D8244FE21BF2F3BE00F7053A /* Banquet_Helper.xcdatamodeld in Sources */,
@@ -518,6 +525,7 @@
 				D82450271BF2F55D00F7053A /* view2controller.swift in Sources */,
 				D82450291BF2F55D00F7053A /* ViewControllerDerrian.swift in Sources */,
 				D824501D1BF2F55D00F7053A /* Hotel_Reservation.xcdatamodeld in Sources */,
+				1C73C3CE1BFC52550091042B /* HotelListCell.swift in Sources */,
 				D82450261BF2F55D00F7053A /* view1controller.swift in Sources */,
 				D82450251BF2F55D00F7053A /* userAccount.swift in Sources */,
 			);
@@ -555,14 +563,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8244FDD1BF2F3BE00F7053A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8244FDE1BF2F3BE00F7053A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D8244FE51BF2F3BE00F7053A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

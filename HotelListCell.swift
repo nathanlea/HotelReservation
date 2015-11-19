@@ -9,18 +9,18 @@
 import UIKit
 
 class HotelListCell: UITableViewCell {
-    
+
     @IBOutlet weak var HotelNameLabel: UILabel!
     @IBOutlet weak var HotelAddress: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
+
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
+
         // Configure the view for the selected state
     }
-    
+
 }
