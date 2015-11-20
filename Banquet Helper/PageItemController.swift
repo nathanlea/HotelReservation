@@ -15,26 +15,41 @@ class PageItemController: UIViewController {
             case 0 :
                 //Event Planner 1
                 if let _ = nameLabel {
-                    nameLabel.text = "Event Planner A"
+                    nameLabel.text = "David Davis"
+                    bioTextView.text = "David has been an event coordinator with our team for the past 14 years. David was second baseman for the Cincinnati Reds until he decided to follow his true passion for event planning. He specializes in corporate events, but also enjoys planning events for the community, including our annual Yom Kippur food drive."
+                    aboutLabel.text = "About David Davis"
                 } else  {
-                    nameTitle = "Event Planner A"
+                    nameTitle = "David Davis"
+                    bioText = "David has been an event coordinator with our team for the past 14 years. David was second baseman for the Cincinnati Reds until he decided to follow his true passion for event planning. He specializes in corporate events, but also enjoys planning events for the community, including our annual Yom Kippur food drive."
+                    about = "About David Davis"
+                    imageName = "ddavis"
                 }
                 
                 break
             case 1 :
                 //Event Planner 2
                 if let _ = nameLabel {
-                    nameLabel.text = "Event Planner B"
+                    nameLabel.text = "Blayne Mayfield"
+                    aboutLabel.text = "About Blayne Mayfield"
+                    bioTextView.text = "Blayne has been an event coordinator with our team for the past 5 years. Blayne was a professional ukulele player until he decided to follow his true calling for event planning. He specializes in family reuions, nonprofit fundraisers, and rap battles."
                 } else  {
-                    nameTitle = "Event Planner B"
+                    nameTitle = "Blayne Mayfield"
+                    bioText = "Blayne has been an event coordinator with our team for the past 5 years. Blayne was a professional ukulele player until he decided to follow his true calling for event planning. He specializes in family reuions, nonprofit fundraisers, and rap battles."
+                    about = "About Blayne Mayfield"
+                    imageName = "mayfield"
                 }
                 break
             case 2 :
                 //Event Planner 3
                 if let _ = nameLabel {
-                    nameLabel.text = "Event Planner C"
+                    nameLabel.text = "Derrian"
+                    aboutLabel.text = "About Derrian"
+                    bioTextView.text = "Just testing to see if you actually look completely at what the app does :)"
                 } else  {
-                    nameTitle = "Event Planner C"
+                    nameTitle = "Derrian"
+                    bioText = "Just testing to see if you actually look completely at what the app does :)"
+                    about = "About Derrian"
+                    imageName = "FrederickProfile"
                 }
                 break
             default : break
@@ -51,23 +66,23 @@ class PageItemController: UIViewController {
     @IBOutlet weak var bioTextView: UITextView!
     
     var nameTitle = ""
+    var bioText = ""
+    var about = ""
     
-    var imageName: String = "" {
-        
-        didSet {
-            
-            if let imageView = mugShotImageView {
-                imageView.image = UIImage(named: imageName)
-            }
-            
-        }
-    }
+    var imageName: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         nameLabel.text = nameTitle
-
+        bioTextView.text = bioText
+        aboutLabel.text = about
+        let frame = mugShotImageView.frame
+        mugShotImageView.frame = CGRectMake(frame.origin.x, frame.origin.y, 50, 50)
+        mugShotImageView.image = UIImage(named: imageName)
+        mugShotImageView.contentMode = .ScaleAspectFit
+        mugShotImageView.frame = CGRectMake(frame.origin.x, frame.origin.y, 50, 50)
+        
         // Do any additional setup after loading the view.
     }
 

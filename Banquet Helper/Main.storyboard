@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49t-N1-ZDH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
@@ -246,9 +247,8 @@
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ehc-BB-lxD" userLabel="TableViewCard">
                                             <rect key="frame" x="52" y="6" width="665" height="334"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CypressRoom" translatesAutoresizingMaskIntoConstraints="NO" id="K56-b7-avY">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Map1" translatesAutoresizingMaskIntoConstraints="NO" id="3YX-fw-cKC">
                                                     <rect key="frame" x="0.0" y="0.0" width="665" height="334"/>
-                                                    <animations/>
                                                 </imageView>
                                                 <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoy-dl-ISs" userLabel="TopLabelColor">
                                                     <rect key="frame" x="0.0" y="0.0" width="665" height="64"/>
@@ -476,7 +476,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-6g-q6a">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-6g-q6a">
                                 <rect key="frame" x="187" y="165" width="395" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -484,8 +484,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About John Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayj-CG-KbF">
-                                <rect key="frame" x="316" y="136" width="137" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About John Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayj-CG-KbF">
+                                <rect key="frame" x="265" y="136" width="239" height="20"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -496,9 +496,14 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FrederickProfile" translatesAutoresizingMaskIntoConstraints="NO" id="6pT-hC-jOa">
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="FrederickProfile" translatesAutoresizingMaskIntoConstraints="NO" id="6pT-hC-jOa">
                                 <rect key="frame" x="360" y="69" width="49" height="50"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="BDY-dt-8Ku"/>
+                                    <constraint firstAttribute="width" secondItem="6pT-hC-jOa" secondAttribute="height" multiplier="49:50" id="BMs-PO-hNK"/>
+                                    <constraint firstAttribute="height" constant="50" id="oub-iw-zee"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <animations/>
@@ -513,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3n-6y-dkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="2214"/>
+            <point key="canvasLocation" x="1716" y="2213.5"/>
         </scene>
         <!--Hotel Name-->
         <scene sceneID="1Vm-iM-yPt">
@@ -1344,11 +1349,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CypressRoom" width="250" height="126"/>
         <image name="FrederickProfile" width="46" height="47"/>
         <image name="LaunchScreenBg" width="250" height="445"/>
         <image name="LaunchScreenButton" width="125" height="33"/>
         <image name="MainLogo" width="161" height="86"/>
+        <image name="Map1" width="735" height="413"/>
         <image name="SecondLogo" width="105" height="28"/>
         <image name="SignInBg" width="250" height="445"/>
         <image name="SignUpButton" width="125" height="33"/>
