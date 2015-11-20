@@ -247,9 +247,8 @@
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ehc-BB-lxD" userLabel="TableViewCard">
                                             <rect key="frame" x="52" y="6" width="665" height="334"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CypressRoom" translatesAutoresizingMaskIntoConstraints="NO" id="K56-b7-avY">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Map1" translatesAutoresizingMaskIntoConstraints="NO" id="3YX-fw-cKC">
                                                     <rect key="frame" x="0.0" y="0.0" width="665" height="334"/>
-                                                    <animations/>
                                                 </imageView>
                                                 <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoy-dl-ISs" userLabel="TopLabelColor">
                                                     <rect key="frame" x="0.0" y="0.0" width="665" height="64"/>
@@ -1350,11 +1349,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CypressRoom" width="250" height="126"/>
         <image name="FrederickProfile" width="46" height="47"/>
         <image name="LaunchScreenBg" width="250" height="445"/>
         <image name="LaunchScreenButton" width="125" height="33"/>
         <image name="MainLogo" width="161" height="86"/>
+        <image name="Map1" width="735" height="413"/>
         <image name="SecondLogo" width="105" height="28"/>
         <image name="SignInBg" width="250" height="445"/>
         <image name="SignUpButton" width="125" height="33"/>
