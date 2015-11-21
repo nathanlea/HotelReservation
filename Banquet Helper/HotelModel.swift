@@ -16,6 +16,7 @@ class HotelModel : BaseModel {
     var State: String?
     var ZipCode: Int?
     var Descriptions: String?
+    var ImageString: String?
     
     
     init(jsonObject: NSDictionary) {

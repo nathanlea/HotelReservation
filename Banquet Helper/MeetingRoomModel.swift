@@ -17,6 +17,8 @@ class MeetingRoomModel : BaseModel {
     var ReceptionCapacity: Int?
     var ConferenceCapacity: Int?
     var ClassRoomCapacity: Int?
+    var ImageString: String?
+    var MaxCapacity: Int?
     var UShapeCapacity: Int?
     var TheaterCapacity: Int?
     var CostPerHour : Double?
@@ -24,12 +26,14 @@ class MeetingRoomModel : BaseModel {
     
     init(jsonObject: NSDictionary) {
         self.Id = jsonObject["Id"]?.integerValue
+        self.ImageString = jsonObject["ImageString"] as? String
         self.HotelId = jsonObject["HotelId"]?.integerValue
         self.RoomName = jsonObject["RoomName"] as? String
         self.BanquetCapacity = jsonObject["BanquetCapacity"]?.integerValue
         self.ReceptionCapacity = jsonObject["ReceptionCapacity"]?.integerValue
         self.ConferenceCapacity = jsonObject["ConferenceCapacity"]?.integerValue
         self.ClassRoomCapacity = jsonObject["ClassRoomCapacity"]?.integerValue
+        self.MaxCapacity = jsonObject["MaxCapacity"]?.integerValue
         self.UShapeCapacity = jsonObject["UShapeCapacity"]?.integerValue
         self.TheaterCapacity = jsonObject["TheaterCapacity"]?.integerValue
         self.CostPerHour = jsonObject["CostPerHour"]?.doubleValue
