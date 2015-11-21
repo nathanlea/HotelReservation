@@ -537,6 +537,23 @@
             </objects>
             <point key="canvasLocation" x="1716" y="2213.5"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Gb-jD-Nt1">
+            <objects>
+                <navigationController id="rAa-fa-ssR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MWs-Bw-eyx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GEM-PO-y5J" kind="relationship" relationship="rootViewController" id="Bai-Pb-jkJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLO-Q8-cXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="-830"/>
+        </scene>
         <!--Hotel Name-->
         <scene sceneID="1Vm-iM-yPt">
             <objects>
@@ -618,7 +635,7 @@
                                     <color key="titleShadowColor" red="0.9137254901960784" green="0.83921568627450982" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GEM-PO-y5J" kind="show" id="Tzv-WQ-Bsn"/>
+                                    <segue destination="rAa-fa-ssR" kind="show" id="dY4-wp-qU9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7i-1D-Ic2">
@@ -790,6 +807,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Nym-ty-kIH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="ddMenu" destination="LKS-BC-yUI" id="o2E-Y5-EAm"/>
@@ -801,7 +819,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7T1-QP-coL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="611" y="558"/>
+            <point key="canvasLocation" x="758" y="338"/>
         </scene>
         <!--Reserve Equipment-->
         <scene sceneID="Jnk-v9-Arg">
@@ -934,7 +952,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxB-oY-dP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829" y="558"/>
+            <point key="canvasLocation" x="1592" y="338"/>
         </scene>
         <!--Home-->
         <scene sceneID="r6u-Ta-0NA">
