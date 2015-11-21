@@ -76,9 +76,10 @@ class RoomListTableViewController: UITableViewController {
         
         if(meetingRoomModels.count > 0){
             
+            let pricePerHour = meetingRoomModels[indexPath.row].CostPerHour!.formatToMoneyPrecision()
             cell.MeetingRoomLabel.text = meetingRoomModels[indexPath.row].RoomName
-            cell.MaxOccupancyLabel.text = meetingRoomModels[indexPath.row].MaxCapacity?.description
-            cell.PriceLabel.text = meetingRoomModels[indexPath.row].CostPerHour?.description
+            cell.MaxOccupancyLabel.text = "Max Occupancy: "+String(meetingRoomModels[indexPath.row].MaxCapacity!)
+            cell.PriceLabel.text = "$ \(pricePerHour)"
             cell.MaxOccupancyLabel.textColor = UIColor.whiteColor()
             cell.MeetingRoomLabel.textColor = UIColor.whiteColor()
             cell.backgroundView = UIImageView.init(image: UIImage(named: (meetingRoomModels[indexPath.row].ImageString)!))
