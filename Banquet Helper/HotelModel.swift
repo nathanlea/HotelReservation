@@ -21,6 +21,7 @@ class HotelModel : BaseModel {
     
     init(jsonObject: NSDictionary) {
         self.Id = jsonObject["Id"]?.integerValue
+        self.ImageString = jsonObject["ImageString"] as? String
         self.HotelName = jsonObject["HotelName"] as? String
         self.StreetAddress = jsonObject["StreetAddress"] as? String
         self.City = jsonObject["City"] as? String

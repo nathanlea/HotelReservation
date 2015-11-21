@@ -71,22 +71,8 @@ class HotelListTableViewController: UITableViewController {
             cell.HotelAddress.text = hotelModels[indexPath.row].StreetAddress
             cell.HotelNameLabel.textColor = UIColor.whiteColor()
             cell.HotelAddress.textColor = UIColor.whiteColor()
+            cell.backgroundView = UIImageView.init(image: UIImage(named: hotelModels[indexPath.row].ImageString!))
             
-            switch (hotelModels[indexPath.row].Id!)
-            {
-            case 1:
-                cell.backgroundView = UIImageView.init(image: UIImage(named: "RitzCarlton"))
-                break
-            case 2:
-                cell.backgroundView = UIImageView.init(image: UIImage(named: "DallasMarriot"))
-                break
-            case 3:
-                cell.backgroundView = UIImageView.init(image: UIImage(named: "Renaissance"))
-                break
-            default:
-                cell.backgroundView = UIImageView.init(image: UIImage(named: "RitzCarlton"))
-                break
-            }
         }
         
         
