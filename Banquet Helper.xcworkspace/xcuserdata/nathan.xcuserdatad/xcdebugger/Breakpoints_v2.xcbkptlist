@@ -230,7 +230,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Banquet Helper/PageItemController.swift"
@@ -243,14 +243,14 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Banquet_Helper.PageItemController.nameLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "Banquet Helper"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nathan/HotelReservation/Banquet%20Helper/Banquet%20Helper/PageItemController.swift"
-                  timestampString = "469824474.663148"
+                  timestampString = "469825154.535505"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -258,14 +258,14 @@
                   offsetFromSymbolStart = "18">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Banquet_Helper.PageItemController.nameLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "Banquet Helper"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nathan/HotelReservation/Banquet%20Helper/Banquet%20Helper/PageItemController.swift"
-                  timestampString = "469824474.663443"
+                  timestampString = "469825154.535993"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -273,14 +273,14 @@
                   offsetFromSymbolStart = "24">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Banquet_Helper.PageItemController.nameLabel.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "Banquet Helper"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nathan/HotelReservation/Banquet%20Helper/Banquet%20Helper/PageItemController.swift"
-                  timestampString = "469824474.663703"
+                  timestampString = "469825154.536303"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -288,14 +288,14 @@
                   offsetFromSymbolStart = "29">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Banquet_Helper.PageItemController.init (Banquet_Helper.PageItemController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Banquet_Helper.PageItemController"
                   moduleName = "Banquet Helper"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nathan/HotelReservation/Banquet%20Helper/Banquet%20Helper/PageItemController.swift"
-                  timestampString = "469824474.663964"
+                  timestampString = "469825154.536602"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "60"

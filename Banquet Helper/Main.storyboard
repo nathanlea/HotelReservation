@@ -728,10 +728,10 @@
             </objects>
             <point key="canvasLocation" x="-1447" y="-699"/>
         </scene>
-        <!--Reserve Food-->
+        <!--Catering Options-->
         <scene sceneID="zZu-jU-JhL">
             <objects>
-                <viewController title="Reserve Food" modalPresentationStyle="formSheet" id="GEM-PO-y5J" customClass="ViewController1" customModule="Banquet_Helper" sceneMemberID="viewController">
+                <viewController title="Catering Options" modalPresentationStyle="formSheet" id="GEM-PO-y5J" customClass="ViewController1" customModule="Banquet_Helper" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H2Y-Zb-thu"/>
                         <viewControllerLayoutGuide type="bottom" id="0WG-EA-XEo"/>
@@ -808,7 +808,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Nym-ty-kIH"/>
+                    <navigationItem key="navigationItem" title="Catering Options" id="Nym-ty-kIH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="textview1" destination="8Cd-9i-j2Q" id="2BP-OS-inb"/>
@@ -819,10 +819,10 @@
             </objects>
             <point key="canvasLocation" x="758" y="338"/>
         </scene>
-        <!--Reserve Equipment-->
+        <!--Equipment Options-->
         <scene sceneID="Jnk-v9-Arg">
             <objects>
-                <viewController title="Reserve Equipment" id="qS1-Bp-NMT" customClass="ViewController2" customModule="Banquet_Helper" sceneMemberID="viewController">
+                <viewController title="Equipment Options" id="qS1-Bp-NMT" customClass="ViewController2" customModule="Banquet_Helper" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZXl-xK-1Ba"/>
                         <viewControllerLayoutGuide type="bottom" id="cSS-7l-GPM"/>
@@ -847,6 +847,9 @@
                                     <color key="titleColor" red="0.33725490200000002" green="0.34509803919999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.91372549020000005" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vzc-Ox-Xat" kind="show" id="hRk-7Y-wuF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-9H-tte">
                                 <rect key="frame" x="687" y="67" width="61" height="30"/>
@@ -938,7 +941,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oep-CG-8eD">
-                                        <rect key="frame" x="0.0" y="671" width="240" height="128"/>
+                                        <rect key="frame" x="0.0" y="673" width="240" height="128"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1534,9 +1537,10 @@
         <image name="SignUpButton" width="125" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="hRk-7Y-wuF"/>
+        <segue reference="xTN-sC-wgd"/>
         <segue reference="21u-gU-4ZB"/>
         <segue reference="h9n-85-Ngh"/>
         <segue reference="35F-op-qIW"/>
-        <segue reference="xTN-sC-wgd"/>
     </inferredMetricsTieBreakers>
 </document>
