@@ -16,6 +16,8 @@
 		1C02547C1BFADB1500F7039E /* PagedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254741BFADB1500F7039E /* PagedViewController.swift */; };
 		1C02547D1BFADB1500F7039E /* ReservedTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254751BFADB1500F7039E /* ReservedTimeModel.swift */; };
 		1C02547E1BFADB1500F7039E /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254761BFADB1500F7039E /* Table.swift */; };
+		1C3F2E6F1C00113F00973295 /* Banquet Helper in Resources */ = {isa = PBXBuildFile; fileRef = 1C3F2E6E1C00113F00973295 /* Banquet Helper */; };
+		1C3F2E711C00118500973295 /* MeetingRoomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F2E701C00118500973295 /* MeetingRoomListCell.swift */; };
 		1C73C3CE1BFC52550091042B /* HotelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C73C3CC1BFC52550091042B /* HotelListCell.swift */; };
 		1C73C3CF1BFC52550091042B /* HotelListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C73C3CD1BFC52550091042B /* HotelListTableViewController.swift */; };
 		1C73C3D11BFC536F0091042B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C73C3D01BFC536F0091042B /* Main.storyboard */; };
@@ -91,6 +93,8 @@
 		1C0254741BFADB1500F7039E /* PagedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedViewController.swift; sourceTree = "<group>"; };
 		1C0254751BFADB1500F7039E /* ReservedTimeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservedTimeModel.swift; sourceTree = "<group>"; };
 		1C0254761BFADB1500F7039E /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		1C3F2E6E1C00113F00973295 /* Banquet Helper */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Banquet Helper"; sourceTree = "<group>"; };
+		1C3F2E701C00118500973295 /* MeetingRoomListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingRoomListCell.swift; sourceTree = "<group>"; };
 		1C73C3CC1BFC52550091042B /* HotelListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelListCell.swift; sourceTree = "<group>"; };
 		1C73C3CD1BFC52550091042B /* HotelListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelListTableViewController.swift; sourceTree = "<group>"; };
 		1C73C3D01BFC536F0091042B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 		D8244FD81BF2F3BE00F7053A /* Banquet Helper */ = {
 			isa = PBXGroup;
 			children = (
+				1C3F2E6E1C00113F00973295 /* Banquet Helper */,
 				1C02546F1BFADB1500F7039E /* BaseModel.swift */,
 				1C73C3CC1BFC52550091042B /* HotelListCell.swift */,
 				1C73C3CD1BFC52550091042B /* HotelListTableViewController.swift */,
@@ -251,6 +256,7 @@
 				D8244FE81BF2F3BE00F7053A /* Info.plist */,
 				D8244FE01BF2F3BE00F7053A /* Banquet_Helper.xcdatamodeld */,
 				D82653F31BF97CC10053748D /* SummaryViewController.swift */,
+				1C3F2E701C00118500973295 /* MeetingRoomListCell.swift */,
 			);
 			path = "Banquet Helper";
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 				D87094261BF7D5260074C27C /* Lato-BoldItalic.ttf in Resources */,
 				D87094311BF7D5260074C27C /* Lato-Semibold.ttf in Resources */,
 				D870942E1BF7D5260074C27C /* Lato-Medium.ttf in Resources */,
+				1C3F2E6F1C00113F00973295 /* Banquet Helper in Resources */,
 				D87094271BF7D5260074C27C /* Lato-Hairline.ttf in Resources */,
 				D870942B1BF7D5260074C27C /* Lato-Italic.ttf in Resources */,
 				D87094331BF7D5260074C27C /* Lato-Thin.ttf in Resources */,
@@ -523,6 +530,7 @@
 				0E73A1301BFFE88400793C4E /* RoomListTableTableViewController.swift in Sources */,
 				D82450211BF2F55D00F7053A /* PageViewController.swift in Sources */,
 				1C02547E1BFADB1500F7039E /* Table.swift in Sources */,
+				1C3F2E711C00118500973295 /* MeetingRoomListCell.swift in Sources */,
 				D824501B1BF2F55D00F7053A /* CVCalendarViewController.swift in Sources */,
 				1C0254781BFADB1500F7039E /* CustomerModel.swift in Sources */,
 				1C02547B1BFADB1500F7039E /* MeetingRoomModel.swift in Sources */,

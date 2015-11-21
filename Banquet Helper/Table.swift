@@ -13,7 +13,9 @@ class Table{
         case Customers
         case Hotels
         case MeetingRooms
-        case ReservedTimes
+        case RoomReservation
+        case CateringForReservation
+        case EquipmentForReservation
     }
     
     

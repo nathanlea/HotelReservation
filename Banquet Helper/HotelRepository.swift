@@ -29,10 +29,11 @@ class HotelRepository {
             case Table.Name.MeetingRooms:
                 models.append(MeetingRoomModel(jsonObject: item as! NSDictionary))
                 break
-            case Table.Name.ReservedTimes:
+            case Table.Name.RoomReservation:
                 models.append(ReservedTimeModel(jsonObject: item as! NSDictionary))
                 break
-                
+            default:
+                break
             }
         }
         return models
@@ -95,7 +96,7 @@ class HotelRepository {
     func SetReservation(meetingRoomId : Int, customerId : Int, dateTime : String)
     {
         
-        let setUrl = "https://cs.okstate.edu/~kevinda/reserve.php/apps15blue/LBGam/apps15blue/"+Table.Name.ReservedTimes.rawValue
+        let setUrl = "https://cs.okstate.edu/~kevinda/reserve.php/apps15blue/LBGam/apps15blue/"+Table.Name.RoomReservation.rawValue
         guard let url = NSURL(string: setUrl) else
             
         {print("Error: cannot create URL")

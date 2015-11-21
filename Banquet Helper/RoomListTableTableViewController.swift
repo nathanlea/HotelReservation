@@ -12,18 +12,18 @@ class RoomListTableViewController: UITableViewController {
     
     let repository = HotelRepository()
     var genericArray = [Any]()
-    var hotelModels = [HotelModel]()
+    var meetingRoomModels = [MeetingRoomModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
-        repository.Get(Table.Name.Hotels) {
+        
+        repository.Get(Table.Name.MeetingRooms) {
             //I am going to leave this for you to change Kevin
             //@TODO Kevin
             (jsonObjectArray: NSArray) in
-            self.genericArray = self.repository.ConvertToModels(jsonObjectArray, TableName: Table.Name.Hotels)
+            self.genericArray = self.repository.ConvertToModels(jsonObjectArray, TableName: Table.Name.MeetingRooms)
             for genericType in self.genericArray{
-                self.hotelModels.append(genericType as! HotelModel)
+                self.meetingRoomModels.append(genericType as! MeetingRoomModel)
             }
             
             let seconds = 0.1
@@ -35,7 +35,7 @@ class RoomListTableViewController: UITableViewController {
             })
             
             
-        }*/
+        }
         
         
         
@@ -68,34 +68,16 @@ class RoomListTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("HotelCell", forIndexPath: indexPath) as! HotelListCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("MeetingRoomCell", forIndexPath: indexPath) as! MeetingRoomListCell
         
-        if(true){//hotelModels.count > 0){
-            /*cell.HotelNameLabel.text = hotelModels[indexPath.row].HotelName
-            cell.HotelAddress.text = hotelModels[indexPath.row].StreetAddress*/
-            cell.HotelNameLabel.text = "Main Ballrom"
-            cell.HotelAddress.text = "Max Occupancy: 950"
-            cell.HotelNameLabel.textColor = UIColor.whiteColor()
-            cell.HotelAddress.textColor = UIColor.whiteColor()
+        if(meetingRoomModels.count > 0){
             
-            switch ((indexPath.item+1))//hotelModels[indexPath.row].Id!)
-            {
-            case 1:
-                cell.backgroundView = UIImageView.init(image: UIImage(named: "MainBallroomSmall"))
-                break
-            case 2:
-                cell.backgroundView = UIImageView.init(image: UIImage(named: "CypressRoom"))
-                break
-            case 3:
-                cell.backgroundView = UIImageView.init(image: UIImage(named: "SalonA"))
-                break
-            case 4:
-                cell.backgroundView = UIImageView.init(image: UIImage(named: "SalonAB"))
-                break
-            default:
-                cell.backgroundView = UIImageView.init(image: UIImage(named: "MainBallroomSmall"))
-                break
-            }
+            cell.MeetingRoomLabel.text = meetingRoomModels[indexPath.row].RoomName
+            cell.MaxOccupancyLabel.text = meetingRoomModels[indexPath.row].MaxCapacity?.description
+            cell.PriceLabel.text = meetingRoomModels[indexPath.row].CostPerHour?.description
+            cell.MaxOccupancyLabel.textColor = UIColor.whiteColor()
+            cell.MeetingRoomLabel.textColor = UIColor.whiteColor()
+            cell.backgroundView = UIImageView.init(image: UIImage(named: (meetingRoomModels[indexPath.row].ImageString)!))
         }
         
         
