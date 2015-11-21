@@ -51,6 +51,11 @@
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
         </mutableArray>
         <mutableArray key="Lato-Semibold.ttf">
             <string>Lato-Semibold</string>
@@ -60,8 +65,12 @@
             <string>Lato-Semibold</string>
             <string>Lato-Semibold</string>
             <string>Lato-Semibold</string>
+            <string>Lato-Semibold</string>
+            <string>Lato-Semibold</string>
         </mutableArray>
         <mutableArray key="Lato-Thin.ttf">
+            <string>Lato-Thin</string>
+            <string>Lato-Thin</string>
             <string>Lato-Thin</string>
         </mutableArray>
     </customFonts>
@@ -554,6 +563,25 @@
             </objects>
             <point key="canvasLocation" x="389" y="-830"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="5fK-9f-g60">
+            <objects>
+                <viewController id="5Cj-dX-pQe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qDv-A1-YV5"/>
+                        <viewControllerLayoutGuide type="bottom" id="U2G-Ib-4UN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kTv-JJ-LXg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v74-FF-sy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="-862"/>
+        </scene>
         <!--Hotel Name-->
         <scene sceneID="1Vm-iM-yPt">
             <objects>
@@ -687,7 +715,7 @@
         <!--Reserve Food-->
         <scene sceneID="zZu-jU-JhL">
             <objects>
-                <viewController title="Reserve Food" id="GEM-PO-y5J" customClass="ViewController1" customModule="Banquet_Helper" sceneMemberID="viewController">
+                <viewController title="Reserve Food" modalPresentationStyle="formSheet" id="GEM-PO-y5J" customClass="ViewController1" customModule="Banquet_Helper" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H2Y-Zb-thu"/>
                         <viewControllerLayoutGuide type="bottom" id="0WG-EA-XEo"/>
@@ -697,112 +725,66 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food/Beverages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5a-SW-EIh">
-                                <rect key="frame" x="20" y="51" width="125" height="21"/>
+                                <rect key="frame" x="20" y="71" width="216" height="36"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additional Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMA-0L-Mrx">
-                                <rect key="frame" x="19" y="275" width="126" height="21"/>
+                                <rect key="frame" x="25" y="169" width="185" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alcohol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLb-lj-L7A">
-                                <rect key="frame" x="20" y="457" width="57" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additional Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9i-tq-2hD">
-                                <rect key="frame" x="19" y="521" width="126" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Cd-9i-j2Q">
-                                <rect key="frame" x="14" y="304" width="240" height="128"/>
+                                <rect key="frame" x="20" y="200" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gps-to-nRg">
-                                <rect key="frame" x="14" y="550" width="240" height="128"/>
+                                <rect key="frame" x="25" y="476" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbb-0c-zqg">
-                                <rect key="frame" x="183" y="686" width="32" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alcohol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLb-lj-L7A">
+                                <rect key="frame" x="25" y="336" width="100" height="36"/>
                                 <animations/>
-                                <state key="normal" title="click"/>
-                                <connections>
-                                    <action selector="click2:" destination="GEM-PO-y5J" eventType="touchUpInside" id="5E7-4k-5vp"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="choose the type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvV-7W-3Dq">
-                                <rect key="frame" x="21" y="80" width="124" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LKS-BC-yUI">
-                                <rect key="frame" x="20" y="109" width="172" height="81"/>
-                                <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96I-hF-Wqc">
-                                        <rect key="frame" x="-8" y="-8" width="188" height="30"/>
-                                        <animations/>
-                                        <state key="normal" title="Buffet"/>
-                                        <connections>
-                                            <action selector="selectionmade:" destination="GEM-PO-y5J" eventType="touchUpInside" id="Ndb-aS-v86"/>
-                                            <action selector="showlist:" destination="GEM-PO-y5J" eventType="touchUpInside" id="lRb-AM-vW6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5M-eH-w7w">
-                                        <rect key="frame" x="-8" y="21" width="188" height="30"/>
-                                        <animations/>
-                                        <state key="normal" title="Ala-Carte"/>
-                                        <connections>
-                                            <action selector="selectionmade:" destination="GEM-PO-y5J" eventType="touchUpInside" id="1Bk-z7-JC6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abN-gg-fbK">
-                                        <rect key="frame" x="-8" y="51" width="188" height="30"/>
-                                        <animations/>
-                                        <state key="normal" title="No food"/>
-                                        <connections>
-                                            <action selector="selectionmade:" destination="GEM-PO-y5J" eventType="touchUpInside" id="1Gd-fV-Osi"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LF-W1-rEV">
+                                <rect key="frame" x="0.0" y="981" width="768" height="43"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbv-co-Mu8">
-                                <rect key="frame" x="153" y="76" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.33725490200000002" green="0.34509803919999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.91372549020000005" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="showlist:" destination="GEM-PO-y5J" eventType="touchUpInside" id="mbc-Vg-Yby"/>
+                                    <segue destination="qS1-Bp-NMT" kind="show" id="xTN-sC-wgd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6z-1v-BT2">
-                                <rect key="frame" x="561" y="785" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZT-FI-PVc">
+                                <rect key="frame" x="686" y="66" width="61" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Continue"/>
-                                <connections>
-                                    <segue destination="qS1-Bp-NMT" kind="show" id="NCD-W9-omU"/>
-                                </connections>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="15"/>
+                                <state key="normal" title="skip &gt;&gt;&gt;"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additional Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9i-tq-2hD">
+                                <rect key="frame" x="25" y="434" width="185" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -810,9 +792,6 @@
                     <navigationItem key="navigationItem" id="Nym-ty-kIH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="ddMenu" destination="LKS-BC-yUI" id="o2E-Y5-EAm"/>
-                        <outlet property="ddshow" destination="zbv-co-Mu8" id="hH2-8S-CJ7"/>
-                        <outlet property="ddtext" destination="FvV-7W-3Dq" id="14o-Kv-NPk"/>
                         <outlet property="textview1" destination="8Cd-9i-j2Q" id="2BP-OS-inb"/>
                         <outlet property="textview2" destination="Gps-to-nRg" id="ejO-jk-YBH"/>
                     </connections>
@@ -941,6 +920,22 @@
                                 <rect key="frame" x="251" y="252" width="94" height="29"/>
                                 <animations/>
                             </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96r-1L-kyr">
+                                <rect key="frame" x="0.0" y="981" width="768" height="43"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.33725490200000002" green="0.34509803919999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.91372549020000005" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-9H-tte">
+                                <rect key="frame" x="687" y="52" width="61" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="15"/>
+                                <state key="normal" title="skip &gt;&gt;&gt;"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

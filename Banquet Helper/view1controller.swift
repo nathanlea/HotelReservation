@@ -72,6 +72,7 @@ class ViewController1: UIViewController, IGLDropDownMenuDelegate {
     
     
     var dropDownMenu = IGLDropDownMenu()
+    var dropDownMenu2 = IGLDropDownMenu()
     
     var dataImage:NSArray = ["sun.png",
         "clouds.png",
@@ -79,14 +80,8 @@ class ViewController1: UIViewController, IGLDropDownMenuDelegate {
     var dataTitle:NSArray = ["Buffet",
         "À la carte",
         "None" ]
-    
-    
-    
-    
-    
-    
-    
-    
+    var AlcholTitle:NSArray = ["Yes",
+        "No" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,7 +100,7 @@ class ViewController1: UIViewController, IGLDropDownMenuDelegate {
         for i in 0...(dataTitle.count-1) {
             
             let item = IGLDropDownItem()
-            item.iconImage = UIImage(named: "\(dataImage[i])")
+            //item.iconImage = UIImage(named: "\(dataImage[i])")
             item.text = "\(dataTitle[i])"
             dropdownItems.addObject(item)
         }
@@ -113,31 +108,44 @@ class ViewController1: UIViewController, IGLDropDownMenuDelegate {
         dropDownMenu.menuText = "Choose Food"
         dropDownMenu.dropDownItems = dropdownItems as [AnyObject]
         dropDownMenu.paddingLeft = 15
-        dropDownMenu.frame = CGRectMake((self.view.frame.size.width/2) - 100, 150, 200, 45)
+        dropDownMenu.frame = CGRectMake(20, 115, 200, 45)
         dropDownMenu.delegate = self
         dropDownMenu.type = IGLDropDownMenuType.Stack
         dropDownMenu.gutterY = 5
         dropDownMenu.itemAnimationDelay = 0.1
-        //dropDownMenu.backgroundColor = UIColor(red: 238, green: 221, blue: 203, alpha: 1)
         //dropDownMenu.rotate = IGLDropDownMenuRotate.Random //add rotate value for tilting the
         dropDownMenu.reloadView()
         
-        let myLabel = UILabel()
-        myLabel.text = "SwiftyOS Blog"
-        myLabel.textColor = UIColor.whiteColor()
-        myLabel.font = UIFont(name: "Helvetica-Neue", size: 17.0)
-        myLabel.textAlignment = NSTextAlignment.Center
-        myLabel.frame = CGRectMake((self.view.frame.size.width/2) - 100, 75, 200, 25)
+        let dropdown2Items:NSMutableArray = NSMutableArray()
         
-        self.view.addSubview(myLabel)
+        for i in 0...(AlcholTitle.count-1) {
+            
+            let item = IGLDropDownItem()
+            //item.iconImage = UIImage(named: "\(dataImage[i])")
+            item.text = "\(AlcholTitle[i])"
+            dropdown2Items.addObject(item)
+        }
+        
+        dropDownMenu2.menuText = "Alchol Present"
+        dropDownMenu2.dropDownItems = dropdown2Items as [AnyObject]
+        dropDownMenu2.paddingLeft = 15
+        dropDownMenu2.frame = CGRectMake(20, 375, 200, 45)
+        dropDownMenu2.delegate = self
+        dropDownMenu2.type = IGLDropDownMenuType.Stack
+        dropDownMenu2.gutterY = 5
+        dropDownMenu2.itemAnimationDelay = 0.1
+        //dropDownMenu.rotate = IGLDropDownMenuRotate.Random //add rotate value for tilting the
+        dropDownMenu2.reloadView()
+        
         self.view.addSubview(self.dropDownMenu)
+        self.view.addSubview(self.dropDownMenu2)
         
     }
     
     func dropDownMenu(dropDownMenu: IGLDropDownMenu!, selectedItemAtIndex index: Int) {
         
         let item:IGLDropDownItem = dropDownMenu.dropDownItems[index] as! IGLDropDownItem
-        print("Selected weather \(item.text)")
+        print("Selected: \(item.text)")
         
         
     }
