@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C47a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49t-N1-ZDH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49t-N1-ZDH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -60,6 +60,9 @@
             <string>Lato-Semibold</string>
             <string>Lato-Semibold</string>
             <string>Lato-Semibold</string>
+        </mutableArray>
+        <mutableArray key="Lato-Thin.ttf">
+            <string>Lato-Thin</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -564,11 +567,11 @@
                                     <action selector="endTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="n7m-7n-8ob"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time End" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9B4-JS-P2E">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9B4-JS-P2E">
                                 <rect key="frame" x="103" y="263" width="335" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <connections>
                                     <action selector="endTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="Lzd-7B-GCl"/>
                                 </connections>
@@ -586,7 +589,7 @@
                                 <rect key="frame" x="103" y="301" width="335" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="endTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="SJg-LV-F1g"/>
                                 </connections>
@@ -618,6 +621,17 @@
                                     <segue destination="GEM-PO-y5J" kind="show" id="Tzv-WQ-Bsn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7i-1D-Ic2">
+                                <rect key="frame" x="12" y="8" width="48" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.33725490196078434" green="0.34509803921568627" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bTa-Uf-QkG" kind="unwind" unwindAction="unwindToRoom:" id="CX4-Lv-HeL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -631,6 +645,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMp-zd-2aO" sceneMemberID="firstResponder"/>
+                <exit id="bTa-Uf-QkG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-85" y="338"/>
         </scene>
