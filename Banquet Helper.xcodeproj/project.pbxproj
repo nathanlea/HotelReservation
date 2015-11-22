@@ -44,7 +44,7 @@
 		D82450241BF2F55D00F7053A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450151BF2F55D00F7053A /* TableViewController.swift */; };
 		D82450251BF2F55D00F7053A /* userAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450161BF2F55D00F7053A /* userAccount.swift */; };
 		D82450261BF2F55D00F7053A /* view1controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450171BF2F55D00F7053A /* view1controller.swift */; };
-		D82450271BF2F55D00F7053A /* view2controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450181BF2F55D00F7053A /* view2controller.swift */; };
+		D82450271BF2F55D00F7053A /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450181BF2F55D00F7053A /* EquipmentViewController.swift */; };
 		D82450281BF2F55D00F7053A /* ViewControllerDeepthi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82450191BF2F55D00F7053A /* ViewControllerDeepthi.swift */; };
 		D82450291BF2F55D00F7053A /* ViewControllerDerrian.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824501A1BF2F55D00F7053A /* ViewControllerDerrian.swift */; };
 		D82653F41BF97CC10053748D /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82653F31BF97CC10053748D /* SummaryViewController.swift */; };
@@ -132,7 +132,7 @@
 		D82450151BF2F55D00F7053A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D82450161BF2F55D00F7053A /* userAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userAccount.swift; sourceTree = "<group>"; };
 		D82450171BF2F55D00F7053A /* view1controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = view1controller.swift; sourceTree = "<group>"; };
-		D82450181BF2F55D00F7053A /* view2controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = view2controller.swift; sourceTree = "<group>"; };
+		D82450181BF2F55D00F7053A /* EquipmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentViewController.swift; sourceTree = "<group>"; };
 		D82450191BF2F55D00F7053A /* ViewControllerDeepthi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDeepthi.swift; sourceTree = "<group>"; };
 		D824501A1BF2F55D00F7053A /* ViewControllerDerrian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDerrian.swift; sourceTree = "<group>"; };
 		D82653F31BF97CC10053748D /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 				D82450151BF2F55D00F7053A /* TableViewController.swift */,
 				D82450161BF2F55D00F7053A /* userAccount.swift */,
 				D82450171BF2F55D00F7053A /* view1controller.swift */,
-				D82450181BF2F55D00F7053A /* view2controller.swift */,
+				D82450181BF2F55D00F7053A /* EquipmentViewController.swift */,
 				D82450191BF2F55D00F7053A /* ViewControllerDeepthi.swift */,
 				D824501A1BF2F55D00F7053A /* ViewControllerDerrian.swift */,
 				D8244FE31BF2F3BE00F7053A /* Assets.xcassets */,
@@ -563,7 +563,7 @@
 				D824501B1BF2F55D00F7053A /* CVCalendarViewController.swift in Sources */,
 				1C0254781BFADB1500F7039E /* CustomerModel.swift in Sources */,
 				1C02547B1BFADB1500F7039E /* MeetingRoomModel.swift in Sources */,
-				D82450271BF2F55D00F7053A /* view2controller.swift in Sources */,
+				D82450271BF2F55D00F7053A /* EquipmentViewController.swift in Sources */,
 				D82450291BF2F55D00F7053A /* ViewControllerDerrian.swift in Sources */,
 				4E6856741C02449700199B1E /* MenuViewController.swift in Sources */,
 				D824501D1BF2F55D00F7053A /* Hotel_Reservation.xcdatamodeld in Sources */,
