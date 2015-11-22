@@ -679,7 +679,7 @@
                         <viewControllerLayoutGuide type="bottom" id="H8j-Oj-xqO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fd6-x7-HnK">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oyu-H3-H1i">
@@ -1869,7 +1869,6 @@
         <image name="MainLogo" width="161" height="86"/>
         <image name="Map1" width="735" height="413"/>
         <image name="SecondLogo" width="105" height="28"/>
-        <image name="SignInBg" width="250" height="445"/>
         <image name="SignUpButton" width="125" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
