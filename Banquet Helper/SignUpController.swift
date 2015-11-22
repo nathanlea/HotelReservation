@@ -123,13 +123,29 @@ class signUpController: UIViewController, UITextFieldDelegate
             
         else
         {
+            let customer = CustomerModel(
+                firstname: nameField.text!,
+                lastName: nameField.text!,
+                loginId: emailField.text!,
+                loginPassword: passField.text!,
+                streetAddress: "123 Fake Dr",
+                city: "Dallas",
+                state: "TX",
+                zipCode: 75207)
             //nameLabel.text = nameField.text!
             //emailLabel.text = emailField.text!
             //phoneLabel.text = phoneField.text!
             //passLabel.text = passField.text!
             //reTypeLabel.text = reTypeField.text!
+            print(customer.setNewCustomerUrlString())
+            print(customer.setNewCustomerJsonString())
+            let repository = HotelRepository()
+            repository.addToDataBase(customer.setNewCustomerJsonString(), urlString: customer.setNewCustomerUrlString()){
+                (completion : String) in
+                print(completion)
+                self.performSegueWithIdentifier("signedUp", sender: nil)
+            }
             
-            self.performSegueWithIdentifier("signedUp", sender: nil)
             
             
         }

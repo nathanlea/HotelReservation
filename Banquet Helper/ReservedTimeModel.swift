@@ -32,4 +32,26 @@ class ReservedTimeModel : BaseModel{
         self.CustomerId = jsonObject["CustomerId"]?.integerValue
     }
     
+    init(id: Int, roomId: Int, reservationTime: String, customerId : Int)
+    {
+        self.Id = id
+        self.RoomId = roomId
+        self.ReservedTime = reservationTime
+        self.CustomerId = customerId
+    }
+    
+    func getJsonString()->String{
+        return "{\"RoomId\" : \"\(self.RoomId!)\", \"CustomerId\" : \"\(self.CustomerId!)\", \"ReservationStatus\" : \"\(3)\", \"ReservedTime\" : \"\(self.ReservedTime!)\"}"
+    }
+    
+    func getReservationUrlString()->String{
+        return "https://cs.okstate.edu/~kevinda/getCustomerInfo.php/apps15blue/LBGam/apps15blue/"+Table.Name.RoomReservation.rawValue
+    }
+    func setReservationUrlString()->String{
+        return "https://cs.okstate.edu/~kevinda/reserve.php/apps15blue/LBGam/apps15blue/"
+    }
+    func getTableName()->Table.Name{
+        return Table.Name.RoomReservation
+    }
+    
 }
