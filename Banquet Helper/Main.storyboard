@@ -1872,7 +1872,6 @@
         <image name="SignUpButton" width="125" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
         <segue reference="5Q1-xC-vtf"/>
         <segue reference="tlP-aV-mbo"/>
         <segue reference="8LN-zc-rJG"/>
@@ -1880,12 +1879,5 @@
         <segue reference="h9n-85-Ngh"/>
         <segue reference="6Ho-4o-Itr"/>
         <segue reference="xTN-sC-wgd"/>
-=======
-        <segue reference="hRk-7Y-wuF"/>
-        <segue reference="xTN-sC-wgd"/>
-        <segue reference="Z17-Oe-mtg"/>
-        <segue reference="35F-op-qIW"/>
-        <segue reference="3bg-ly-44h"/>
->>>>>>> 05755bf... Finalized the Equipment Page, the model is done too, just need to add where the data should go after the page is submitted
     </inferredMetricsTieBreakers>
 </document>
