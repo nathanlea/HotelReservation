@@ -87,6 +87,9 @@ class ViewControllerDerrian: UIViewController, UITextFieldDelegate, UINavigation
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
    /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         var DestViewController : SignUpViewController = segue.destinationViewController as! SignUpViewController

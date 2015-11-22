@@ -111,9 +111,9 @@ class signInController: UIViewController, UITextFieldDelegate
         
         if(segue.identifier == "signedIn")
         {
-            /*let secondVC: SignInTestController = segue.destinationViewController as! SignInTestController
+            let secondVC: MenuViewController = segue.destinationViewController as! MenuViewController
             secondVC.email = emailField.text!
-            secondVC.password = passField.text!*/
+            secondVC.password = passField.text!
         }
         if(segue.identifier == "ToSignUp")
         {

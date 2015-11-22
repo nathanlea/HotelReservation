@@ -42,13 +42,13 @@ class PageItemController: UIViewController {
             case 2 :
                 //Event Planner 3
                 if let _ = nameLabel {
-                    nameLabel.text = "Derrian"
-                    aboutLabel.text = "About Derrian"
-                    bioTextView.text = "Just testing to see if you actually look completely at what the app does :)"
+                    nameLabel.text = "Fredrick Phineas"
+                    aboutLabel.text = "About Fredrick Phineas"
+                    bioTextView.text = "Frederick Phineas: Frederick Phineas is a dedicated Meeting and Event Planner with 15 years experience in planning corporate meetings. He is a detail-oriented professional with strengths in event creation, planning, and execution."
                 } else  {
-                    nameTitle = "Derrian"
-                    bioText = "Just testing to see if you actually look completely at what the app does :)"
-                    about = "About Derrian"
+                    nameTitle = "Fredrick Phineas"
+                    bioText = "J1. Frederick Phineas: Frederick Phineas is a dedicated Meeting and Event Planner with 15 years experience in planning corporate meetings. He is a detail-oriented professional with strengths in event creation, planning, and execution."
+                    about = "About Fredrick Phineas"
                     imageName = "FrederickProfile"
                 }
                 break

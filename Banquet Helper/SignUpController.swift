@@ -159,11 +159,11 @@ class signUpController: UIViewController, UITextFieldDelegate
         
         if(segue.identifier == "signedUp")
         {
-            /*let secondVC: signUpTestController = segue.destinationViewController as! signUpTestController
+            let secondVC: MenuViewController = segue.destinationViewController as! MenuViewController
             secondVC.email = emailField.text!
             secondVC.name = nameField.text!
             secondVC.phone = phoneField.text!
-            secondVC.password = passField.text!*/
+            secondVC.password = passField.text!
         }
         if(segue.identifier == "ToSignIn")
         {
