@@ -76,7 +76,7 @@ class RoomListTableViewController: UITableViewController {
         
         if(meetingRoomModels.count > 0){
             tableView.rowHeight = 450
-            let pricePerHour = meetingRoomModels[indexPath.row].CostPerHour!.formatToMoneyPrecision()
+            let pricePerHour = "$"+(meetingRoomModels[indexPath.row].CostPerHour!).description+"/hr"
             cell.TitleLabel.text = meetingRoomModels[indexPath.row].RoomName
             cell.DetailLabel.text = "Max Occupancy: "+String(meetingRoomModels[indexPath.row].MaxCapacity!)
             cell.MoreDetailsIfNeeded.text = "$ \(pricePerHour)"
