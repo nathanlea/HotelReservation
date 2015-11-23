@@ -40,4 +40,10 @@ class MeetingRoomModel : BaseModel {
         self.RoomDescription = jsonObject["RoomDescription"] as? String
         
     }
+    
+    func getSingleMeetingRoomJsonString()->String{
+        
+        return "{\"Table\" : \"MeetingRooms\",  \"Id\" : \"\(self.Id!)\"}"
+    }
+    
 }

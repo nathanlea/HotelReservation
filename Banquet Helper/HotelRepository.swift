@@ -77,6 +77,64 @@ class HotelRepository {
             catch
             {
                 print("Error trying to convert returned data to JSON")
+                completion(jsonArray: jsonObjects)
+                return
+            }
+            //print("The returned data for Table "+TableName.rawValue+": \(jsonObjects.description)")
+            
+            
+            
+            
+        }
+        
+        
+        
+        task.resume()
+        
+    }
+    func GetSpecific(table: Table.Name, parameters: String , completion: (jsonArray : NSDictionary) -> Void)
+    {
+        
+        var jsonObjects = NSDictionary()
+        let setUrl = "https://cs.okstate.edu/~kevinda/getwhere.php/apps15blue/LBGam/apps15blue"
+        guard let url = NSURL(string: setUrl) else
+            
+        {print("Error: cannot create URL")
+            return}
+        let urlRequest = NSMutableURLRequest(URL: url)
+        let jsonString = "{\"Table\" : \"\(table.rawValue)\",  \"Parameters\" : \"\(parameters)\"}"
+        print(jsonString)
+        urlRequest.HTTPBody = jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
+        urlRequest.HTTPMethod = "POST"
+        urlRequest.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: config)
+        let task = session.dataTaskWithRequest(urlRequest){(data, response, error) in
+            guard let resultData = data
+                else
+            {
+                print("Error: Did not receive data")
+                return}
+            guard error == nil else
+            {
+                print("Error making call")
+                print(error)
+                return
+            }
+            
+            do
+            {
+                jsonObjects =
+                    try (NSJSONSerialization.JSONObjectWithData(resultData, options: []) as? NSDictionary)!
+                
+                completion(jsonArray: jsonObjects)
+                
+                
+            }
+            catch
+            {
+                
+                print("Error trying to convert returned data to JSON")
                 return
             }
             //print("The returned data for Table "+TableName.rawValue+": \(jsonObjects.description)")
@@ -93,17 +151,15 @@ class HotelRepository {
     }
     
     
-    func SetReservation(meetingRoomId : Int, customerId : Int, dateTime : String)
+    func addToDataBase(jsonString : String, urlString: String, completion: (successMessage: String) -> Void )
     {
-        
-        let setUrl = "https://cs.okstate.edu/~kevinda/reserve.php/apps15blue/LBGam/apps15blue/"+Table.Name.RoomReservation.rawValue
-        guard let url = NSURL(string: setUrl) else
+        guard let url = NSURL(string: urlString) else
             
         {print("Error: cannot create URL")
             return}
         let urlRequest = NSMutableURLRequest(URL: url)
         
-        let jsonString = "{\"RoomId\":\" \(meetingRoomId)\",\"CustomerId\":\" \(customerId) \",\"ReservedTime\":\" \(dateTime) \"}"
+        
         urlRequest.HTTPBody = jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
         urlRequest.HTTPMethod = "POST"
         urlRequest.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
@@ -125,9 +181,8 @@ class HotelRepository {
             do
             {
                 
-                var jsonObjects =
-                try (NSJSONSerialization.JSONObjectWithData(resultData, options: []) as? NSArray)!
-                print(jsonObjects.description)
+                completion(successMessage: "Completed")
+                
                 
             }
             catch
@@ -135,11 +190,14 @@ class HotelRepository {
                 print("Error trying to convert returned data to JSON")
                 return
             }
-            print("The returned data is \(response)")
+            let encodedData = String(data: data!, encoding: NSUTF8StringEncoding)
+            print("The returned data is \(encodedData)")
+            //print("The returned data is \(response)")
             
         }
         task.resume()
     }
+    
     
     
     

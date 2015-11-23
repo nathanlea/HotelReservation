@@ -16,6 +16,7 @@ class signInController: UIViewController, UITextFieldDelegate
     var email:String = ""
     var phone:String = ""
     var password:String = ""
+    var customerModel = CustomerModel()
     
     
     @IBOutlet weak var emailField: UITextField!
@@ -81,8 +82,28 @@ class signInController: UIViewController, UITextFieldDelegate
             
         else
         {
-            
-            self.performSegueWithIdentifier("signedIn", sender: nil)
+            let repository = HotelRepository()
+            repository.GetSpecific(Table.Name.Customers, parameters: self.customerModel.getExistingCustomerJsonParameters(emailField.text!, password: passField.text!)){
+                (json: NSDictionary) in
+                
+                if(json.description != ""){
+                    self.customerModel = CustomerModel(jsonObject: json)
+                    print("Hello "+self.customerModel.FirstName!)
+                    if(self.customerModel.Id != nil){
+                    dispatch_async( dispatch_get_main_queue(), {
+                        self.performSegueWithIdentifier("signedIn", sender: nil)
+                    })
+                    }
+                    else{
+                        let alert = UIAlertView()
+                        alert.title = "Record Not Found"
+                        alert.message = "Username or Password is incorrect, please try again or Sign Up if you don't have an account."
+                        alert.addButtonWithTitle("Ok")
+                        alert.show()
+                    }
+                }
+                
+            }
         }
     }
     
