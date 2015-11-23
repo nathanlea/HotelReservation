@@ -10,7 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
     
-    var name:String = "Jeff Winger"
+    var name:String = "User"
     var email:String = ""
     var phone:String = ""
     var password:String = ""

@@ -1472,7 +1472,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Za7-y4-ObF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2573" y="346"/>
+            <point key="canvasLocation" x="2574" y="338"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="1gA-ep-pAf">
@@ -1871,12 +1871,12 @@
         <image name="SignUpButton" width="125" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lik-L4-DhN"/>
-        <segue reference="h9n-85-Ngh"/>
-        <segue reference="AiN-sm-Ble"/>
-        <segue reference="6Ho-4o-Itr"/>
-        <segue reference="arE-NR-2W7"/>
-        <segue reference="xTN-sC-wgd"/>
+        <segue reference="5Q1-xC-vtf"/>
         <segue reference="hRk-7Y-wuF"/>
+        <segue reference="xTN-sC-wgd"/>
+        <segue reference="arE-NR-2W7"/>
+        <segue reference="AiN-sm-Ble"/>
+        <segue reference="h9n-85-Ngh"/>
+        <segue reference="6Ho-4o-Itr"/>
     </inferredMetricsTieBreakers>
 </document>
