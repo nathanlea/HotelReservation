@@ -355,7 +355,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="347" id="uHt-ta-kIU">
-                                <rect key="frame" x="0.0" y="66" width="768" height="347"/>
+                                <rect key="frame" x="0.0" y="22" width="768" height="347"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="uHt-ta-kIU" id="XuN-VT-Ey7">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="346"/>
@@ -506,7 +506,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenericHotelListCell" rowHeight="321" id="z9c-YC-tis" customClass="GenericHotelListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="92" width="768" height="321"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="321"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z9c-YC-tis" id="a0y-fQ-faO">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="320"/>
@@ -560,7 +560,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jsb-0f-kjc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="a7w-2U-oa2">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -590,7 +590,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VhD-AU-X6D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LDC-ab-RO7">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuo-i3-d3J">
@@ -719,7 +719,7 @@
                         <viewControllerLayoutGuide type="bottom" id="H8j-Oj-xqO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fd6-x7-HnK">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oyu-H3-H1i">
@@ -765,7 +765,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Note: If reserving for more than one day, please call 1-88-236-2427" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR2-T2-6Ms">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Note: If reserving for more than one day, please call 1-888-236-2427" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR2-T2-6Ms">
                                 <rect key="frame" x="125" y="383" width="291" height="60"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97647058823529409" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
@@ -1338,7 +1338,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MeetingRoomCell" rowHeight="240" id="yyU-b9-wiI" customClass="GenericHotelListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="92" width="768" height="240"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yyU-b9-wiI" id="voi-MJ-ZEb">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="239"/>
@@ -2502,7 +2502,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.91372549020000005" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="bottom" id="aq1-bM-HiO">
-                            <rect key="frame" x="0.0" y="933" width="768" height="44"/>
+                            <rect key="frame" x="0.0" y="869" width="768" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <animations/>
                             <color key="backgroundColor" red="0.91372549020000005" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -2520,7 +2520,7 @@
                         </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PictureCell" id="O43-Gu-5bB" userLabel="PictureCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="768" height="45"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="249" tableViewCell="O43-Gu-5bB" id="5g4-QQ-ZHW">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
@@ -2555,7 +2555,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RoomDescriptionCell" rowHeight="449" id="RSj-rb-QHm" userLabel="RoomDescriptionCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="137" width="768" height="449"/>
+                                <rect key="frame" x="0.0" y="73" width="768" height="449"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" layoutMarginsFollowReadableWidth="YES" tableViewCell="RSj-rb-QHm" id="0K8-Zv-EHw">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="448"/>
@@ -2586,7 +2586,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OccupancyCell" id="pTS-C0-lpg" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="586" width="768" height="45"/>
+                                <rect key="frame" x="0.0" y="522" width="768" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pTS-C0-lpg" id="RmQ-sz-5VQ">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
@@ -2618,7 +2618,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EquipmentAvailableCell" rowHeight="302" id="beQ-DY-bYX" userLabel="EquipmentAvailableCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="631" width="768" height="302"/>
+                                <rect key="frame" x="0.0" y="567" width="768" height="302"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="beQ-DY-bYX" id="5gp-W8-HYO">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="301"/>
