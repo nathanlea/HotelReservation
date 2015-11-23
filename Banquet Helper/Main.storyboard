@@ -691,15 +691,6 @@
                                     <action selector="dateTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="2rR-YE-I7y"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time End" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bP0-zk-gfx">
-                                <rect key="frame" x="103" y="225" width="335" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="endTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="n7m-7n-8ob"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9B4-JS-P2E">
                                 <rect key="frame" x="103" y="263" width="335" height="30"/>
                                 <animations/>
@@ -765,6 +756,15 @@
                                     <segue destination="bTa-Uf-QkG" kind="unwind" unwindAction="unwindToRoom:" id="CX4-Lv-HeL"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time End" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bP0-zk-gfx">
+                                <rect key="frame" x="103" y="225" width="335" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="endTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="n7m-7n-8ob"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1606,7 +1606,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AsI-eT-KJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2626" y="315"/>
+            <point key="canvasLocation" x="-2380" y="255"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="Yhc-m4-Mfh">
@@ -1871,10 +1871,10 @@
         <image name="SignUpButton" width="125" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UgT-Kb-HMZ"/>
-        <segue reference="6Ho-4o-Itr"/>
-        <segue reference="AiN-sm-Ble"/>
+        <segue reference="Lik-L4-DhN"/>
         <segue reference="h9n-85-Ngh"/>
+        <segue reference="8LN-zc-rJG"/>
+        <segue reference="35F-op-qIW"/>
         <segue reference="xTN-sC-wgd"/>
         <segue reference="hRk-7Y-wuF"/>
         <segue reference="arE-NR-2W7"/>

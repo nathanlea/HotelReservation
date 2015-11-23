@@ -28,6 +28,7 @@ class signUpController: UIViewController, UITextFieldDelegate
     var email:String = ""
     var phone:String = ""
     var password:String = ""
+    var passName:String = "Testing"
     
     
     @IBOutlet weak var nameField: UITextField!
