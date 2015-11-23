@@ -10,6 +10,8 @@ import UIKit
 
 class ReservationValidationViewController: UIViewController, IGLDropDownMenuDelegate {
     
+    var reservationSegueInformation = ReservationPackage()
+    
     let MaxDaysReservationForsight = 14
     let MaxHoursReservationForsight = 4
     let TimePickerMinuteResolution = 15
@@ -165,6 +167,7 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
         
         dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
         dateTextField.text = dateFormatter.stringFromDate(sender.date)
+        reservationSegueInformation.dateOfEvent = sender.date
     }
     
     // Handles formatting of startTimeTextField text
@@ -173,6 +176,7 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
         
         dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
         startTimeTextField.text = dateFormatter.stringFromDate(sender.date)
+        reservationSegueInformation.startTime = sender.date
     }
     
     // Handles formatting of endTimeTextField text
@@ -181,6 +185,7 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
         
         dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
         endTimeTextField.text = dateFormatter.stringFromDate(sender.date)
+        reservationSegueInformation.endTime = sender.date
     }
     
     // Returns a date exactly n days from now

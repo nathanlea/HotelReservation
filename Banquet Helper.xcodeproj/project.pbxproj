@@ -26,6 +26,7 @@
 		4ED96D911BFB93A0002E75C9 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D901BFB93A0002E75C9 /* SignUpController.swift */; };
 		4ED96D931BFB93D1002E75C9 /* signInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D921BFB93D1002E75C9 /* signInController.swift */; };
 		4ED96D951BFB93F8002E75C9 /* SignInTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */; };
+		6FBC74C31C02B61B007ECB3E /* ReservationPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBC74C21C02B61B007ECB3E /* ReservationPackage.swift */; settings = {ASSET_TAGS = (); }; };
 		7E1A1E1575C9FD2F817BE742 /* Pods_Banquet_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D23D7D5E5C6179EEEA705D /* Pods_Banquet_Helper.framework */; };
 		D8244FDA1BF2F3BE00F7053A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */; };
 		D8244FDC1BF2F3BE00F7053A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8244FDB1BF2F3BE00F7053A /* ViewController.swift */; };
@@ -108,6 +109,7 @@
 		4ED96D901BFB93A0002E75C9 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		4ED96D921BFB93D1002E75C9 /* signInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInController.swift; sourceTree = "<group>"; };
 		4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTestController.swift; sourceTree = "<group>"; };
+		6FBC74C21C02B61B007ECB3E /* ReservationPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationPackage.swift; sourceTree = "<group>"; };
 		86A5768EF80B2C5D451135B6 /* Pods-Banquet Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banquet Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Banquet Helper/Pods-Banquet Helper.release.xcconfig"; sourceTree = "<group>"; };
 		D8244FD61BF2F3BE00F7053A /* Banquet Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banquet Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				1C0254741BFADB1500F7039E /* PagedViewController.swift */,
 				1C0254751BFADB1500F7039E /* ReservedTimeModel.swift */,
 				1C73C3D01BFC536F0091042B /* Main.storyboard */,
+				6FBC74C21C02B61B007ECB3E /* ReservationPackage.swift */,
 				1C0254761BFADB1500F7039E /* Table.swift */,
 				D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */,
 				D8244FDB1BF2F3BE00F7053A /* ViewController.swift */,
@@ -545,6 +548,7 @@
 				1CE689791C00C9AC008BFABD /* DataTypeExtensions.swift in Sources */,
 				4ED96D931BFB93D1002E75C9 /* signInController.swift in Sources */,
 				D8244FDA1BF2F3BE00F7053A /* AppDelegate.swift in Sources */,
+				6FBC74C31C02B61B007ECB3E /* ReservationPackage.swift in Sources */,
 				D82450221BF2F55D00F7053A /* ReservationVallidationViewController.swift in Sources */,
 				D82653F41BF97CC10053748D /* SummaryViewController.swift in Sources */,
 				D85594A31C00E887002DB9C8 /* IGLDropDownMenu.m in Sources */,
