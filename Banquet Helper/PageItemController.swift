@@ -15,13 +15,13 @@ class PageItemController: UIViewController {
             case 0 :
                 //Event Planner 1
                 if let _ = nameLabel {
-                    nameLabel.text = "David Davis"
-                    bioTextView.text = "David has been an event coordinator with our team for the past 14 years. David was second baseman for the Cincinnati Reds until he decided to follow his true passion for event planning. He specializes in corporate events, but also enjoys planning events for the community, including our annual Yom Kippur food drive."
-                    aboutLabel.text = "About David Davis"
+                    nameLabel.text = "Davis David"
+                    bioTextView.text = "Davis has been an event coordinator with our team for the past 14 years. Davis was second baseman for the Cincinnati Reds until he decided to follow his true passion for event planning. He specializes in corporate events, but also enjoys planning events for the community, including our annual Yom Kippur food drive."
+                    aboutLabel.text = "About Davis David"
                 } else  {
-                    nameTitle = "David Davis"
-                    bioText = "David has been an event coordinator with our team for the past 14 years. David was second baseman for the Cincinnati Reds until he decided to follow his true passion for event planning. He specializes in corporate events, but also enjoys planning events for the community, including our annual Yom Kippur food drive."
-                    about = "About David Davis"
+                    nameTitle = "Davis David"
+                    bioText = "Davis has been an event coordinator with our team for the past 14 years. Davis was second baseman for the Cincinnati Reds until he decided to follow his true passion for event planning. He specializes in corporate events, but also enjoys planning events for the community, including our annual Yom Kippur food drive."
+                    about = "About Davis David"
                     imageName = "ddavis"
                 }
                 
@@ -29,13 +29,13 @@ class PageItemController: UIViewController {
             case 1 :
                 //Event Planner 2
                 if let _ = nameLabel {
-                    nameLabel.text = "Blayne Mayfield"
-                    aboutLabel.text = "About Blayne Mayfield"
-                    bioTextView.text = "Blayne has been an event coordinator with our team for the past 5 years. Blayne was a professional ukulele player until he decided to follow his true calling for event planning. He specializes in family reuions, nonprofit fundraisers, and rap battles."
+                    nameLabel.text = "Mays Blazfield"
+                    aboutLabel.text = "About Mays Blazfield"
+                    bioTextView.text = "Mays has been an event coordinator with our team for the past 5 years. Mays was a professional ukulele player until he decided to follow his true calling for event planning. He specializes in family reuions, nonprofit fundraisers, and rap battles."
                 } else  {
-                    nameTitle = "Blayne Mayfield"
-                    bioText = "Blayne has been an event coordinator with our team for the past 5 years. Blayne was a professional ukulele player until he decided to follow his true calling for event planning. He specializes in family reuions, nonprofit fundraisers, and rap battles."
-                    about = "About Blayne Mayfield"
+                    nameTitle = "Mays Blazfield"
+                    bioText = "Mays has been an event coordinator with our team for the past 5 years. Mays was a professional ukulele player until he decided to follow his true calling for event planning. He specializes in family reuions, nonprofit fundraisers, and rap battles."
+                    about = "About Mays Blazfield"
                     imageName = "mayfield"
                 }
                 break
@@ -47,7 +47,7 @@ class PageItemController: UIViewController {
                     bioTextView.text = "Frederick Phineas: Frederick Phineas is a dedicated Meeting and Event Planner with 15 years experience in planning corporate meetings. He is a detail-oriented professional with strengths in event creation, planning, and execution."
                 } else  {
                     nameTitle = "Fredrick Phineas"
-                    bioText = "J1. Frederick Phineas: Frederick Phineas is a dedicated Meeting and Event Planner with 15 years experience in planning corporate meetings. He is a detail-oriented professional with strengths in event creation, planning, and execution."
+                    bioText = "Frederick Phineas: Frederick Phineas is a dedicated Meeting and Event Planner with 15 years experience in planning corporate meetings. He is a detail-oriented professional with strengths in event creation, planning, and execution."
                     about = "About Fredrick Phineas"
                     imageName = "FrederickProfile"
                 }
