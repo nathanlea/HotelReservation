@@ -86,7 +86,7 @@ class signInController: UIViewController, UITextFieldDelegate
             repository.GetSpecific(Table.Name.Customers, parameters: self.customerModel.getExistingCustomerJsonParameters(emailField.text!, password: passField.text!)){
                 (json: NSDictionary) in
                 
-                if(json.description != ""){
+                if(json.count != 0){
                     self.customerModel = CustomerModel(jsonObject: json)
                     print("Hello "+self.customerModel.FirstName!)
                     if(self.customerModel.Id != nil){
@@ -94,15 +94,17 @@ class signInController: UIViewController, UITextFieldDelegate
                         self.performSegueWithIdentifier("signedIn", sender: nil)
                     })
                     }
-                    else{
+                    
+                }
+                else{
+                    dispatch_async( dispatch_get_main_queue(), {
                         let alert = UIAlertView()
                         alert.title = "Record Not Found"
                         alert.message = "Username or Password is incorrect, please try again or Sign Up if you don't have an account."
                         alert.addButtonWithTitle("Ok")
                         alert.show()
-                    }
+                    })
                 }
-                
             }
         }
     }
