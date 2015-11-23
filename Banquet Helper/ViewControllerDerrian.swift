@@ -89,6 +89,8 @@ class ViewControllerDerrian: UIViewController, UITextFieldDelegate, UINavigation
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
+        
+        self.navigationController?.toolbarHidden = true
     }
    /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
