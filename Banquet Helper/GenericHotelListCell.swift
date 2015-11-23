@@ -8,10 +8,11 @@
 
 import UIKit
 
-class HotelListCell: UITableViewCell {
+class GenericHotelListCell: UITableViewCell {
     
-    @IBOutlet weak var HotelNameLabel: UILabel!
-    @IBOutlet weak var HotelAddress: UILabel!
+    @IBOutlet weak var TitleLabel: UILabel!
+    @IBOutlet weak var DetailLabel: UILabel!
+    @IBOutlet weak var MoreDetailsIfNeeded: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

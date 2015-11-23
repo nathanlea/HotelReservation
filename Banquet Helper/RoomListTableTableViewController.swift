@@ -72,16 +72,16 @@ class RoomListTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MeetingRoomCell", forIndexPath: indexPath) as! MeetingRoomListCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("MeetingRoomCell", forIndexPath: indexPath) as! GenericHotelListCell
         
         if(meetingRoomModels.count > 0){
             
             let pricePerHour = meetingRoomModels[indexPath.row].CostPerHour!.formatToMoneyPrecision()
-            cell.MeetingRoomLabel.text = meetingRoomModels[indexPath.row].RoomName
-            cell.MaxOccupancyLabel.text = "Max Occupancy: "+String(meetingRoomModels[indexPath.row].MaxCapacity!)
-            cell.PriceLabel.text = "$ \(pricePerHour)"
-            cell.MaxOccupancyLabel.textColor = UIColor.whiteColor()
-            cell.MeetingRoomLabel.textColor = UIColor.whiteColor()
+            cell.TitleLabel.text = meetingRoomModels[indexPath.row].RoomName
+            cell.DetailLabel.text = "Max Occupancy: "+String(meetingRoomModels[indexPath.row].MaxCapacity!)
+            cell.MoreDetailsIfNeeded.text = "$ \(pricePerHour)"
+            cell.TitleLabel.textColor = UIColor.whiteColor()
+            cell.DetailLabel.textColor = UIColor.whiteColor()
             cell.backgroundView = UIImageView.init(image: UIImage(named: (meetingRoomModels[indexPath.row].ImageString)!))
         }
         

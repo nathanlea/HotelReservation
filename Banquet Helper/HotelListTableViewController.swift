@@ -64,13 +64,13 @@ class HotelListTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("HotelCell", forIndexPath: indexPath) as! HotelListCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("GenericHotelListCell", forIndexPath: indexPath) as! GenericHotelListCell
         
         if(hotelModels.count > 0){
-            cell.HotelNameLabel.text = hotelModels[indexPath.row].HotelName
-            cell.HotelAddress.text = hotelModels[indexPath.row].StreetAddress
-            cell.HotelNameLabel.textColor = UIColor.whiteColor()
-            cell.HotelAddress.textColor = UIColor.whiteColor()
+            cell.TitleLabel.text = hotelModels[indexPath.row].HotelName
+            cell.DetailLabel.text = hotelModels[indexPath.row].StreetAddress
+            cell.TitleLabel.textColor = UIColor.whiteColor()
+            cell.DetailLabel.textColor = UIColor.whiteColor()
             cell.backgroundView = UIImageView.init(image: UIImage(named: hotelModels[indexPath.row].ImageString!))
             
         }
