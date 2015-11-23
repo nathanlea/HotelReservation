@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="Room" syncable="YES">
+        <attribute name="roomNum" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="reservedTimeSlot" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TimeSlot" inverseName="inRoom" inverseEntity="TimeSlot" syncable="YES"/>
+    </entity>
+    <entity name="TimeSlot" syncable="YES">
+        <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="inRoom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Room" inverseName="reservedTimeSlot" inverseEntity="Room" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TimeSlot" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Room" positionX="115" positionY="-18" width="128" height="73"/>
+    </elements>
+</model>
