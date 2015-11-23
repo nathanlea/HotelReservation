@@ -313,7 +313,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="347" id="uHt-ta-kIU">
-                                <rect key="frame" x="0.0" y="22" width="768" height="347"/>
+                                <rect key="frame" x="0.0" y="86" width="768" height="347"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="uHt-ta-kIU" id="XuN-VT-Ey7">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="346"/>
@@ -464,7 +464,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotelCell" rowHeight="321" id="z9c-YC-tis" customClass="HotelListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="28" width="768" height="321"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="321"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z9c-YC-tis" id="a0y-fQ-faO">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="320"/>
@@ -518,7 +518,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jsb-0f-kjc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="a7w-2U-oa2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -548,7 +548,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VhD-AU-X6D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LDC-ab-RO7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuo-i3-d3J">
@@ -679,7 +679,7 @@
                         <viewControllerLayoutGuide type="bottom" id="H8j-Oj-xqO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fd6-x7-HnK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oyu-H3-H1i">
@@ -1228,9 +1228,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenBg" translatesAutoresizingMaskIntoConstraints="NO" id="lPp-8i-5oW">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <animations/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenBg" translatesAutoresizingMaskIntoConstraints="NO" id="FoV-wN-58p">
+                                <rect key="frame" x="-172" y="-354" width="940" height="1378"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenButton" translatesAutoresizingMaskIntoConstraints="NO" id="JnZ-fg-WxG">
                                 <rect key="frame" x="387" y="820" width="346" height="128"/>
@@ -1262,9 +1261,8 @@
                                     <segue destination="NUp-zG-Ifc" kind="presentation" id="6Ho-4o-Itr"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="mS6-YO-gg5">
-                                <rect key="frame" x="219" y="332" width="316" height="178"/>
-                                <animations/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainLogoHiRes" translatesAutoresizingMaskIntoConstraints="NO" id="BXU-pv-5er">
+                                <rect key="frame" x="37" y="329" width="695" height="365"/>
                             </imageView>
                         </subviews>
                         <animations/>
@@ -1558,7 +1556,7 @@
                                 <animations/>
                                 <accessibility key="accessibilityConfiguration" label=""/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SecondLogo" translatesAutoresizingMaskIntoConstraints="NO" id="qbb-wa-2sF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SecondLogoHiRes.png" translatesAutoresizingMaskIntoConstraints="NO" id="qbb-wa-2sF">
                                 <rect key="frame" x="245" y="73" width="279" height="85"/>
                                 <animations/>
                             </imageView>
@@ -1652,7 +1650,7 @@
                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SecondLogo" translatesAutoresizingMaskIntoConstraints="NO" id="QSl-3T-7Om">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SecondLogoHiRes.png" translatesAutoresizingMaskIntoConstraints="NO" id="QSl-3T-7Om">
                                 <rect key="frame" x="239" y="76" width="279" height="85"/>
                                 <animations/>
                             </imageView>
@@ -1713,7 +1711,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MeetingRoomCell" rowHeight="240" id="yyU-b9-wiI" customClass="MeetingRoomListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="28" width="768" height="240"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yyU-b9-wiI" id="voi-MJ-ZEb">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="239"/>
@@ -1866,19 +1864,19 @@
         <image name="FrederickProfile" width="46" height="47"/>
         <image name="LaunchScreenBg" width="250" height="445"/>
         <image name="LaunchScreenButton" width="125" height="33"/>
-        <image name="MainLogo" width="161" height="86"/>
+        <image name="MainLogoHiRes" width="955" height="508"/>
         <image name="Map1" width="735" height="413"/>
-        <image name="SecondLogo" width="105" height="28"/>
+        <image name="SecondLogoHiRes.png" width="959" height="255"/>
         <image name="SignInBg" width="250" height="445"/>
         <image name="SignUpButton" width="125" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5Q1-xC-vtf"/>
-        <segue reference="hRk-7Y-wuF"/>
-        <segue reference="xTN-sC-wgd"/>
-        <segue reference="8LN-zc-rJG"/>
+        <segue reference="UgT-Kb-HMZ"/>
         <segue reference="6Ho-4o-Itr"/>
+        <segue reference="AiN-sm-Ble"/>
         <segue reference="h9n-85-Ngh"/>
+        <segue reference="xTN-sC-wgd"/>
+        <segue reference="hRk-7Y-wuF"/>
         <segue reference="arE-NR-2W7"/>
     </inferredMetricsTieBreakers>
 </document>
