@@ -92,7 +92,7 @@ class HotelRepository {
         task.resume()
         
     }
-    func GetSpecific(table: Table.Name, parameters: String , completion: (jsonArray : NSDictionary) -> Void)
+    func GetSpecific(table: Table.Name, parameters: String , completion: (jsonArray : NSDictionary, ok: Bool) -> Void)
     {
         
         var jsonObjects = NSDictionary()
@@ -127,7 +127,7 @@ class HotelRepository {
                 jsonObjects =
                     try (NSJSONSerialization.JSONObjectWithData(resultData, options: []) as? NSDictionary)!
                 
-                completion(jsonArray: jsonObjects)
+                completion(jsonArray: jsonObjects, ok:true)
                 
                 
             }
@@ -135,7 +135,7 @@ class HotelRepository {
             {
                 
                 print("Error trying to convert returned data to JSON")
-                completion(jsonArray: jsonObjects)
+                completion(jsonArray: jsonObjects, ok: false)
             }
             //print("The returned data for Table "+TableName.rawValue+": \(jsonObjects.description)")
             
