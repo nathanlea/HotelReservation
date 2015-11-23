@@ -121,6 +121,8 @@
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
         </mutableArray>
         <mutableArray key="Lato-Semibold.ttf">
             <string>Lato-Semibold</string>
@@ -141,8 +143,6 @@
             <string>Lato-Semibold</string>
         </mutableArray>
         <mutableArray key="Lato-Thin.ttf">
-            <string>Lato-Thin</string>
-            <string>Lato-Thin</string>
             <string>Lato-Thin</string>
             <string>Lato-Thin</string>
             <string>Lato-Thin</string>
@@ -1501,10 +1501,10 @@
             </objects>
             <point key="canvasLocation" x="-2231" y="-3449"/>
         </scene>
-        <!--Summary View Controller-->
+        <!--SUMMARY-->
         <scene sceneID="peb-LZ-90p">
             <objects>
-                <viewController id="QJW-U6-XGM" customClass="SummaryViewController" customModule="Banquet_Helper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SUMMARY" id="QJW-U6-XGM" customClass="SummaryViewController" customModule="Banquet_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dln-Zb-Uos"/>
                         <viewControllerLayoutGuide type="bottom" id="dew-tw-WfS"/>
@@ -2301,9 +2301,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfr-tR-cAn">
-                                <rect key="frame" x="665" y="61" width="83" height="44"/>
+                                <rect key="frame" x="635" y="61" width="113" height="44"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
                                 <state key="normal" title="Skip &gt;&gt;"/>
                                 <connections>
                                     <action selector="SkipClick:" destination="pMa-NN-5OY" eventType="touchUpInside" id="zwp-ig-eIQ"/>
@@ -2377,9 +2377,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQA-LI-1gS">
-                                <rect key="frame" x="665" y="63" width="83" height="44"/>
+                                <rect key="frame" x="638" y="63" width="110" height="44"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
                                 <state key="normal" title="Skip &gt;&gt;"/>
                                 <connections>
                                     <action selector="Skipbutton:" destination="kOD-GU-qVN" eventType="touchUpInside" id="9LU-NI-fN7"/>
@@ -2408,7 +2408,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-Ze-3RJ">
-                                <rect key="frame" x="20" y="633" width="728" height="137"/>
+                                <rect key="frame" x="20" y="657" width="728" height="71"/>
                                 <animations/>
                             </pickerView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxq-vr-NW5">
@@ -2445,7 +2445,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-sR-ZcT">
-                                <rect key="frame" x="20" y="154" width="728" height="194"/>
+                                <rect key="frame" x="20" y="194" width="728" height="95"/>
                                 <animations/>
                             </pickerView>
                         </subviews>

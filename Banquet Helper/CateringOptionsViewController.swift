@@ -94,6 +94,11 @@ class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIP
         AdditionalNotes2.layer.borderColor = skipColor.CGColor
         //AdditionalNotes2.layer.borderColor = UIColor.grayColor().CGColor
         
+       Cateringpicker.layer.borderColor = skipColor.CGColor
+       Cateringpicker.layer.borderWidth = 1.0
+        
+       Alcoholpicker.layer.borderColor = skipColor.CGColor
+       Alcoholpicker.layer.borderWidth = 1.0
         // Connect data:
         self.Cateringpicker.delegate = self
         self.Cateringpicker.dataSource = self
