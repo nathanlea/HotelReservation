@@ -724,7 +724,7 @@
                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
-                                    <action selector="endTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="SJg-LV-F1g"/>
+                                    <action selector="headCountTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="N2T-gC-lbS"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Ritz-Carlton" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6r-cC-hg4">

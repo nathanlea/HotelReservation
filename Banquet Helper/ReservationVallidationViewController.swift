@@ -115,14 +115,17 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
     }
     
     @IBOutlet weak var headCountTextField: UITextField!
+    @IBAction func headCountTextFieldEditing(sender: AnyObject) {
+        headCountTextField.keyboardType = UIKeyboardType.NumberPad
+        reservationSegueInformation.headCount = Int(headCountTextField.text!)!
+    }
+  
     
     // === UIViewController overrides
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
         
         eventTypesDropDown.layer.borderColor = newColor
         eventTypesDropDown.layer.borderWidth = 1.0
