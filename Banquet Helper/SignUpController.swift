@@ -141,26 +141,46 @@ class signUpController: UIViewController, UITextFieldDelegate
             print(customer.setNewCustomerUrlString())
             print(customer.setNewCustomerJsonString())
             let repository = HotelRepository()
-            repository.addToDataBase(customer.setNewCustomerJsonString(), urlString: customer.setNewCustomerUrlString()){
-                (complete : Bool) in
-                if(complete){
-                    dispatch_async( dispatch_get_main_queue(), {
-                        self.performSegueWithIdentifier("signedUp", sender: nil)
-                    })
-                }
+            repository.GetSpecific(Table.Name.Customers, parameters: customer.checkExistingCustomerLoginIdJsonParameters(customer.LoginId!)){
+                (json: NSDictionary ,exists: Bool) in
                 
+                if(!exists){
+                    
+                    repository.addToDataBase(customer.setNewCustomerJsonString(), urlString: customer.setNewCustomerUrlString()){
+                        (complete : Bool) in
+                        if(complete){
+                            dispatch_async( dispatch_get_main_queue(), {
+                                self.performSegueWithIdentifier("signedUp", sender: nil)
+                            })
+                        }
+                            
+                        else{
+                            dispatch_async( dispatch_get_main_queue(), {
+                                let alert = UIAlertView()
+                                alert.title = "Connection Failed"
+                                alert.message = "Could not connect at this time, please try again later."
+                                alert.addButtonWithTitle("Ok")
+                                alert.show()
+                                
+                            })
+                        }
+                        
+                    }
+                    
+                }
                 else{
                     dispatch_async( dispatch_get_main_queue(), {
                         let alert = UIAlertView()
-                        alert.title = "Connection Failed"
-                        alert.message = "Could not connect at this time, please try again later."
+                        alert.title = "Unable to Add at this Time"
+                        alert.message = "Login Id already exists, please try to sign in."
                         alert.addButtonWithTitle("Ok")
                         alert.show()
                         
                     })
+                    
                 }
-                
             }
+            
             
             
             

@@ -53,6 +53,10 @@ class CustomerModel : BaseModel {
         return "LoginId = '\(login)' AND Password ='\(password)'"
     }
     
+    func checkExistingCustomerLoginIdJsonParameters(login:String)->String{
+        return "LoginId = '\(login)'"
+    }
+    
     func setNewCustomerUrlString()->String{
         return "https://cs.okstate.edu/~kevinda/addcustomer.php/apps15blue/LBGam/apps15blue/"+Table.Name.Customers.rawValue
     }

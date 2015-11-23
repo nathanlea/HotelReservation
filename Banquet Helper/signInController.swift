@@ -85,9 +85,9 @@ class signInController: UIViewController, UITextFieldDelegate
         {
             let repository = HotelRepository()
             repository.GetSpecific(Table.Name.Customers, parameters: self.customerModel.getExistingCustomerJsonParameters(emailField.text!, password: passField.text!)){
-                (json: NSDictionary) in
+                (json: NSDictionary, ok: Bool) in
                 
-                if(json.count != 0){
+                if(ok){
                     self.customerModel = CustomerModel(jsonObject: json)
                     print("Hello "+self.customerModel.FirstName!)
                     self.passName = self.customerModel.FirstName!
