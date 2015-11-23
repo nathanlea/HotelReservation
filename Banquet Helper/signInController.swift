@@ -17,6 +17,7 @@ class signInController: UIViewController, UITextFieldDelegate
     var phone:String = ""
     var password:String = ""
     var customerModel = CustomerModel()
+    var passName:String = "Testing"
     
     
     @IBOutlet weak var emailField: UITextField!
@@ -89,6 +90,7 @@ class signInController: UIViewController, UITextFieldDelegate
                 if(json.count != 0){
                     self.customerModel = CustomerModel(jsonObject: json)
                     print("Hello "+self.customerModel.FirstName!)
+                    self.passName = self.customerModel.FirstName!
                     if(self.customerModel.Id != nil){
                     dispatch_async( dispatch_get_main_queue(), {
                         self.performSegueWithIdentifier("signedIn", sender: nil)
@@ -114,7 +116,7 @@ class signInController: UIViewController, UITextFieldDelegate
         if(segue.identifier == "signedIn")
         {
             let secondVC: MenuViewController = segue.destinationViewController as! MenuViewController
-            secondVC.email = emailField.text!
+            secondVC.name = passName
             secondVC.password = passField.text!
         }
         if(segue.identifier == "ToSignUp")
