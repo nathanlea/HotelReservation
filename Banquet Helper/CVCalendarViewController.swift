@@ -12,19 +12,7 @@ import CVCalendar
 class CVCalendarViewController: UIViewController {
     // MARK: - Properties
     
-    var eventPlannerIndex = 0 {
-        didSet {
-            //print("Updating Schedule: ", terminator:"")
-            //print(eventPlannerIndex)
-            //print("Current Date: ", terminator:"")
-            //print(currentDate)
-            if secondTimeCallingFunc { updateScheduleButtons(currentDate) }
-            else { secondTimeCallingFunc = true }
-        }
-    }
-    
-    var secondTimeCallingFunc = false;
-    
+    var eventPlannerIndex = 0
     var currentDate = 0
     
     
@@ -46,107 +34,12 @@ class CVCalendarViewController: UIViewController {
     @IBOutlet weak var noAfternoonTimes: UILabel!
     @IBOutlet weak var noEveningTimes: UILabel!
     
+    var selectedTime = -1
 
     //@IBOutlet weak var daysOutSwitch: UISwitch!
     
     // Date,      [8, 9:30, 11, 2, 3:30, 5:00, 7:30]
     //              Morning    Afternoon   Evening
-    let scheduleA: [(date:Int, scheduleArr:[Bool])] = [
-        (date: 1, scheduleArr:[true, true, true, true, false, true, true]),
-        (date: 2, scheduleArr:[false, true, true, false, true, true, true]),
-        (date: 3, scheduleArr:[true, true, true, true, true, true, false]),
-        (date: 4, scheduleArr:[true, false, false, true, false, false, true]),
-        (date: 5, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 6, scheduleArr:[false, true, true, false, true, true, false]),
-        (date: 7, scheduleArr:[true, true, false, true, true, true, true]),
-        (date: 8, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 9, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 10, scheduleArr:[true, true, true, true, false, true, true]),
-        (date: 11, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 12, scheduleArr:[true, false, false, true, false, true, true]),
-        (date: 13, scheduleArr:[false, false, false, false, false, false, false]),
-        (date: 14, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 15, scheduleArr:[false, false, true, false, true, false, false]),
-        (date: 16, scheduleArr:[true, true, true, true, true, true, false]),
-        (date: 17, scheduleArr:[true, false, false, true, false, false, true]),
-        (date: 18, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 19, scheduleArr:[false, true, true, false, true, true, false]),
-        (date: 20, scheduleArr:[true, true, false, true, true, true, true]),
-        (date: 21, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 22, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 23, scheduleArr:[true, true, true, true, false, true, true]),
-        (date: 24, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 25, scheduleArr:[true, false, false, true, false, true, true]),
-        (date: 26, scheduleArr:[false, true, false, true, true, true, false]),
-        (date: 27, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 28, scheduleArr:[false, false, false, false, false, false, true]),
-        (date: 29, scheduleArr:[true, false, true, true, false, false, true]),
-        (date: 30, scheduleArr:[false, true, false, true, true, true, true])]
-    
-    let scheduleB: [(date:Int, scheduleArr:[Bool])] = [
-        (date: 1, scheduleArr:[true, true, true, true, false, true, true]),
-        (date: 2, scheduleArr:[false, true, true, false, true, true, true]),
-        (date: 3, scheduleArr:[true, true, true, true, true, true, false]),
-        (date: 4, scheduleArr:[true, false, false, true, false, false, true]),
-        (date: 5, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 6, scheduleArr:[false, true, true, false, true, true, false]),
-        (date: 7, scheduleArr:[true, true, false, true, true, true, true]),
-        (date: 8, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 9, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 10, scheduleArr:[true, true, true, true, false, true, true]),
-        (date: 11, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 12, scheduleArr:[true, false, false, true, false, true, true]),
-        (date: 13, scheduleArr:[false, false, false, false, false, false, false]),
-        (date: 14, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 15, scheduleArr:[false, false, false, false, false, false, true]),
-        (date: 16, scheduleArr:[true, true, true, true, true, true, false]),
-        (date: 17, scheduleArr:[true, false, false, true, false, false, true]),
-        (date: 18, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 19, scheduleArr:[false, true, true, false, true, true, false]),
-        (date: 20, scheduleArr:[true, true, false, true, true, true, true]),
-        (date: 21, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 22, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 23, scheduleArr:[true, true, true, true, false, true, true]),
-        (date: 24, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 25, scheduleArr:[true, false, false, true, false, true, true]),
-        (date: 26, scheduleArr:[false, true, false, true, true, true, false]),
-        (date: 27, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 28, scheduleArr:[false, false, false, false, false, false, true]),
-        (date: 29, scheduleArr:[true, false, true, true, false, false, true]),
-        (date: 30, scheduleArr:[false, true, false, true, true, true, true])]
-    
-    let scheduleC: [(date:Int, scheduleArr:[Bool])] = [
-        (date: 1, scheduleArr:[true, true, true, true, false, true, true]),
-        (date: 2, scheduleArr:[false, true, true, false, true, true, true]),
-        (date: 3, scheduleArr:[true, true, true, true, true, true, false]),
-        (date: 4, scheduleArr:[true, false, false, true, false, false, true]),
-        (date: 5, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 6, scheduleArr:[false, true, true, false, true, true, false]),
-        (date: 7, scheduleArr:[true, true, false, true, true, true, true]),
-        (date: 8, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 9, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 10, scheduleArr:[true, true, true, true, false, true, true]),
-        (date: 11, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 12, scheduleArr:[true, false, false, true, false, true, true]),
-        (date: 13, scheduleArr:[false, false, false, false, false, false, false]),
-        (date: 14, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 15, scheduleArr:[false, true, true, false, true, true, true]),
-        (date: 16, scheduleArr:[true, true, true, true, true, true, false]),
-        (date: 17, scheduleArr:[true, false, false, true, false, false, true]),
-        (date: 18, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 19, scheduleArr:[false, true, true, false, true, true, false]),
-        (date: 20, scheduleArr:[true, true, false, true, true, true, true]),
-        (date: 21, scheduleArr:[true, false, true, false, true, true, true]),
-        (date: 22, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 23, scheduleArr:[true, true, true, true, false, true, true]),
-        (date: 24, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 25, scheduleArr:[true, false, false, true, false, true, true]),
-        (date: 26, scheduleArr:[false, true, false, true, true, true, false]),
-        (date: 27, scheduleArr:[true, true, true, true, true, true, true]),
-        (date: 28, scheduleArr:[false, false, false, false, false, false, true]),
-        (date: 29, scheduleArr:[true, false, true, true, false, false, true]),
-        (date: 30, scheduleArr:[false, true, false, true, true, true, true])]
-    
     //Don't use this it will crash, be sure to set to something before getting stuff
     var schedule: [(date:Int, scheduleArr:[Bool])] = [
         (date: 1, scheduleArr:[true, true, true, true, false, true, true]),
@@ -182,11 +75,13 @@ class CVCalendarViewController: UIViewController {
 
     var shouldShowDaysOut = true
     var animationFinished = true
+    var lockDotMarker = false
     
     // MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        clearButtonSelection()
         
         monthLabel.text = CVDate(date: NSDate()).globalDescription
         updateScheduleButtonWithCurrentDay()
@@ -206,18 +101,50 @@ class CVCalendarViewController: UIViewController {
     
     //Button Action Targets
     @IBAction func mornButton1(sender: AnyObject) {
+        clearButtonSelection()
+        mornButton1.tintColor = UIColor.redColor()
+        selectedTime = 0
     }
     @IBAction func mornButton2(sender: AnyObject) {
+        clearButtonSelection()
+        mornButton2.tintColor = UIColor.redColor()
+        selectedTime = 1
     }
     @IBAction func mornButton3(sender: AnyObject) {
+        clearButtonSelection()
+        mornButton3.tintColor = UIColor.redColor()
+        selectedTime = 2
     }
     @IBAction func aftButton1(sender: AnyObject) {
+        clearButtonSelection()
+        aftButton1.tintColor = UIColor.redColor()
+        selectedTime = 3
     }
     @IBAction func aftButton2(sender: AnyObject) {
+        clearButtonSelection()
+        aftButton2.tintColor = UIColor.redColor()
+        selectedTime = 4
     }
     @IBAction func eveButton1(sender: AnyObject) {
+        clearButtonSelection()
+        eveButton1.tintColor = UIColor.redColor()
+        selectedTime = 5
     }
     @IBAction func eveButton2(sender: AnyObject) {
+        clearButtonSelection()
+        eveButton2.tintColor = UIColor.redColor()
+        selectedTime = 6
+    }
+    
+    func clearButtonSelection() {
+        selectedTime = -1
+        mornButton1.tintColor = UIColor(red: 109/255, green: 110/256, blue: 113/255, alpha: 1)
+        mornButton2.tintColor = UIColor(red: 109/255, green: 110/256, blue: 113/255, alpha: 1)
+        mornButton3.tintColor = UIColor(red: 109/255, green: 110/256, blue: 113/255, alpha: 1)
+        aftButton1.tintColor = UIColor(red: 109/255, green: 110/256, blue: 113/255, alpha: 1)
+        aftButton2.tintColor = UIColor(red: 109/255, green: 110/256, blue: 113/255, alpha: 1)
+        eveButton1.tintColor = UIColor(red: 109/255, green: 110/256, blue: 113/255, alpha: 1)
+        eveButton2.tintColor = UIColor(red: 109/255, green: 110/256, blue: 113/255, alpha: 1)
     }
     
     func updateScheduleButtonWithCurrentDay() {
@@ -228,19 +155,6 @@ class CVCalendarViewController: UIViewController {
         let day = dayView-1//(dayView.date.day)-1
         currentDate = day+1
         noMorningTimes.hidden = true
-        
-        switch eventPlannerIndex {
-        case 0 :
-            schedule = scheduleA
-            break
-        case 1 :
-            schedule = scheduleB
-            break
-        case 2 :
-            schedule = scheduleC
-            break
-        default: return
-        }
 
         if(schedule[day].scheduleArr[0] || schedule[day].scheduleArr[1] || schedule[day].scheduleArr[2]) {
             //Morning
@@ -366,6 +280,20 @@ class CVCalendarViewController: UIViewController {
         }
 
     }
+    
+    func noEventTimes() {
+        mornButton1.hidden = true
+        mornButton2.hidden = true
+        mornButton3.hidden = true
+        noMorningTimes.hidden = false
+        aftButton1.hidden = true
+        aftButton2.hidden = true
+        noAfternoonTimes.hidden = false
+        eveButton1.hidden = true
+        eveButton2.hidden = true
+        noEveningTimes.hidden = false
+        selectedTime = -1
+    }
 }
 
 // MARK: - CVCalendarViewDelegate & CVCalendarMenuViewDelegate
@@ -396,7 +324,21 @@ extension CVCalendarViewController: CVCalendarViewDelegate, CVCalendarMenuViewDe
         currentDate = dayView.date.day
         print("\(calendarView.presentedDate.commonDescription) is selected!")
         
-        updateScheduleButtons(dayView.date.day)
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components([.Month, .Day], fromDate: NSDate())
+        let currMnth = components.month
+        let currDay = components.day
+        
+        if (dayView.date.month == 11 || dayView.date.month == 12) && dayView.date.day < 31 {
+            if((dayView.date.month == currMnth && dayView.date.day >= currDay) || dayView.date.month == 12) {
+                updateScheduleButtons(dayView.date.day)
+                dotMarker(colorOnDayView: dayView)
+            } else {
+                noEventTimes()
+            }
+        } else {
+            noEventTimes()
+        }
     }
     
     func presentedDateUpdated(date: CVDate) {
@@ -445,34 +387,46 @@ extension CVCalendarViewController: CVCalendarViewDelegate, CVCalendarMenuViewDe
     func dotMarker(shouldShowOnDayView dayView: CVCalendarDayView) -> Bool {
         let day = dayView.date.day
         let mnth = dayView.date.month
-        if mnth == 11 {
+        
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components([.Month, .Day], fromDate: NSDate())
+        let currMnth = components.month
+        let currDay = components.day
+        
+        if mnth == 11 || mnth == 12 && day < 31{
             if day == schedule[day-1].date {
-                return true
+                if (mnth == currMnth && day >= currDay) || dayView.date.month == 12 {
+                    return true
+                }
+                return false
             }
         }
         return false
     }
     
+    func dotMarkerColor() -> UIColor {
+        return UIColor.blueColor()
+    }
+    
     func dotMarker(colorOnDayView dayView: CVCalendarDayView) -> [UIColor] {
-        var day = dayView.date.day
-        day-=1;
+        let day = dayView.date.day - 1
         
-        let red = UIColor(red: 255, green: 0, blue: 0, alpha: 1)
-        let green = UIColor(red: 0, green: 255, blue: 0, alpha: 1)
+        //let red = UIColor(red: 255, green: 0, blue: 0, alpha: 1)
+        //let green = UIColor(red: 0, green: 255, blue: 0, alpha: 1)
         let blue = UIColor(red: 0, green: 0, blue: 255, alpha: 1)
         
         var color: [UIColor] = []
         
         //let numberOfDots = 0//Int(arc4random_uniform(3) + 1)
-        if(schedule[day].scheduleArr[0] && schedule[day].scheduleArr[1] && schedule[day].scheduleArr[2]) {
+        if(schedule[day].scheduleArr[0] || schedule[day].scheduleArr[1] || schedule[day].scheduleArr[2]) {
             //Morning
-            color.append(red)
+            color.append(blue)
         }
-        if(schedule[day].scheduleArr[3] && schedule[day].scheduleArr[4]) {
+        if(schedule[day].scheduleArr[3] || schedule[day].scheduleArr[4]) {
             //Afternoon
-            color.append(green)
+            color.append(blue)
         }
-        if(schedule[day].scheduleArr[5] && schedule[day].scheduleArr[6]) {
+        if(schedule[day].scheduleArr[5] || schedule[day].scheduleArr[6]) {
             //Evening
             color.append(blue)
         }
