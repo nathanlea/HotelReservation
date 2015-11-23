@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X9h-6n-ri4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -353,7 +353,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="347" id="uHt-ta-kIU">
-                                <rect key="frame" x="0.0" y="86" width="768" height="347"/>
+                                <rect key="frame" x="0.0" y="22" width="768" height="347"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="uHt-ta-kIU" id="XuN-VT-Ey7">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="346"/>
@@ -504,7 +504,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenericHotelListCell" rowHeight="321" id="z9c-YC-tis" customClass="GenericHotelListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="92" width="768" height="321"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="321"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z9c-YC-tis" id="a0y-fQ-faO">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="320"/>
@@ -558,7 +558,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jsb-0f-kjc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="a7w-2U-oa2">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -569,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWV-Sq-f0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="-5293.5"/>
+            <point key="canvasLocation" x="2708" y="1370"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="Y0l-Hy-IoT">
@@ -577,7 +577,7 @@
                 <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PjW-TX-bfx" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuN-BN-TAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4343" y="1553"/>
+            <point key="canvasLocation" x="3551" y="1401"/>
         </scene>
         <!--Page Item Controller-->
         <scene sceneID="9fy-v9-Gsw">
@@ -588,7 +588,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VhD-AU-X6D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LDC-ab-RO7">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuo-i3-d3J">
@@ -640,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3n-6y-dkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2212" y="-5317.5"/>
+            <point key="canvasLocation" x="2676" y="2226"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Gb-jD-Nt1">
@@ -651,13 +651,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="GEM-PO-y5J" kind="relationship" relationship="rootViewController" id="Bai-Pb-jkJ"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLO-Q8-cXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2725" y="-1219"/>
+            <point key="canvasLocation" x="3237" y="-2443"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5fK-9f-g60">
@@ -720,7 +717,7 @@
                         <viewControllerLayoutGuide type="bottom" id="H8j-Oj-xqO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fd6-x7-HnK">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oyu-H3-H1i">
@@ -834,7 +831,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Hf7-Bg-5Tq">
-                            <rect key="frame" x="0.0" y="619" width="768" height="44"/>
+                            <rect key="frame" x="0.0" y="555" width="768" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <animations/>
                             <items>
@@ -849,7 +846,7 @@
                         </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PictureCell" rowHeight="118" id="VBg-Rc-dEg" userLabel="PictureCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="768" height="118"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="118"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VBg-Rc-dEg" id="iSf-L4-pC2">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="117"/>
@@ -880,7 +877,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomDescriptionCell" rowHeight="92" id="FD5-lJ-agX" userLabel="RoomDescriptionCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="210" width="768" height="92"/>
+                                <rect key="frame" x="0.0" y="146" width="768" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FD5-lJ-agX" id="chy-sa-IYU">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="91"/>
@@ -925,7 +922,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OccupancyCell" textLabel="G3F-nM-DqF" detailTextLabel="Okx-gr-CkI" rowHeight="55" style="IBUITableViewCellStyleValue1" id="5cs-l1-KqY">
-                                <rect key="frame" x="0.0" y="302" width="768" height="55"/>
+                                <rect key="frame" x="0.0" y="238" width="768" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5cs-l1-KqY" id="6TD-Fl-u47">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="54"/>
@@ -953,7 +950,7 @@
                                 <animations/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="262" id="fWP-3j-1oU" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="357" width="768" height="262"/>
+                                <rect key="frame" x="0.0" y="293" width="768" height="262"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fWP-3j-1oU" id="ZFQ-vu-ZcU">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="261"/>
@@ -1083,7 +1080,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6R-p5-cwa" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3726" y="-1201"/>
+            <point key="canvasLocation" x="-5067" y="-1897"/>
         </scene>
         <!--Calendar Appearance Delegate-->
         <scene sceneID="Ppp-0c-SLO">
@@ -1521,7 +1518,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MeetingRoomCell" rowHeight="240" id="yyU-b9-wiI" customClass="GenericHotelListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="92" width="768" height="240"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yyU-b9-wiI" id="voi-MJ-ZEb">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="239"/>
@@ -1680,8 +1677,6 @@
             </objects>
             <point key="canvasLocation" x="-2231" y="-3449"/>
         </scene>
-    </scenes>
-    <resources>
         <!--Summary View Controller-->
         <scene sceneID="peb-LZ-90p">
             <objects>
@@ -2034,7 +2029,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzl-dt-mQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2605" y="1765"/>
+            <point key="canvasLocation" x="5349" y="-1187"/>
         </scene>
         <!--EQUIPMENT OPTIONS-->
         <scene sceneID="w16-dO-hvM">
@@ -2437,7 +2432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szJ-dQ-OVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="1765"/>
+            <point key="canvasLocation" x="4469" y="-1187"/>
         </scene>
         <!--CATERING OPTIONS-->
         <scene sceneID="X2T-SL-T41">
@@ -2545,7 +2540,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDO-Fb-FIR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="1765"/>
+            <point key="canvasLocation" x="3640" y="-1187"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F48-yr-mnh">
@@ -2564,7 +2559,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHd-hK-Era" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="1765"/>
+            <point key="canvasLocation" x="2769" y="-1187"/>
         </scene>
     </scenes>
     <resources>
@@ -2584,7 +2579,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="5Q1-xC-vtf"/>
         <segue reference="4lp-9v-v6X"/>
-        <segue reference="e38-Xk-MYq"/>
+        <segue reference="KJT-Eh-gBp"/>
         <segue reference="G0b-Cv-j94"/>
         <segue reference="IgE-dg-ygI"/>
         <segue reference="8LN-zc-rJG"/>
