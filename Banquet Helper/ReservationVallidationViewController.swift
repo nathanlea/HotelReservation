@@ -5,59 +5,133 @@
 //  Created by Connor Eaves on 10/29/15.
 //  Copyright © 2015 Connor Eaves. All rights reserved.
 //
+// Using this : https://github.com/valfer/PopDatePickerApp
 
 import UIKit
 
-class ReservationValidationViewController: UIViewController, IGLDropDownMenuDelegate {
+class ReservationValidationViewController: UIViewController, UITextFieldDelegate, IGLDropDownMenuDelegate {
     
     var reservationSegueInformation = ReservationPackage()
+    var popDatePicker : PopDatePicker?
+    var popDatePickerStartTime : PopDatePicker?
+    var popDatePickerEndTime : PopDatePicker?
+    var dateStringSelected : String = ""
+    
+    //let initDate : NSDate? = formatter.dateFromString(dateTextField.text!)
     
     let MaxDaysReservationForsight = 14
     let MaxHoursReservationForsight = 4
     let TimePickerMinuteResolution = 15
     
-    // === Drop Down
     
-    @IBOutlet weak var ddtext: UILabel!
-    @IBOutlet weak var ddMenu: UIView!
-    @IBOutlet weak var ddshow: UIButton!
-    @IBAction func showlist(sender: UIButton) {
-        if(sender.tag == 0)
-        {
-            sender.tag == 1
-            self.ddMenu.hidden = false
-        }
-        else
-        {
-            sender.tag = 0;
-            self.ddMenu.hidden = true;
-        }
-    }
-    
-    @IBAction func selectionmade(sender: UIButton) {
-        self.ddtext.text = sender.titleLabel?.text;
-        self.ddshow.tag = 0;
-        self.ddMenu.hidden = false
-        switch(sender.tag)
-        {
-        case 1:
-            self.view.backgroundColor = UIColor.redColor()
-            break;
-        case 2:
-            self.view.backgroundColor = UIColor.blueColor()
-            break;
-        case 3:
-            self.view.backgroundColor = UIColor.greenColor()
-            break;
-            
-        default:
-            break;
-            
-        }
+    func resign() {
         
+        dateTextField.resignFirstResponder()
+        startTimeTextField.resignFirstResponder()
+        endTimeTextField.resignFirstResponder()
+        //nameTextField.resignFirstResponder()
     }
     
-    
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        
+        if (textField === dateTextField) {
+            resign()
+            
+            let currentDate = NSDate()
+            
+            let formatter = NSDateFormatter()
+            
+            formatter.dateStyle = .MediumStyle
+            formatter.timeStyle = .NoStyle
+            let initDate : NSDate? = currentDate//formatter.dateFromDate(currentDate)
+            
+            let dataChangedCallback : PopDatePicker.PopDatePickerCallback = { (newDate : NSDate, forTextField : UITextField) -> () in
+                
+                // here we don't use self (no retain cycle)
+                forTextField.text = (newDate.ToDateMediumString() ?? "?") as String
+                self.dateStringSelected = (newDate.ToDateMediumString() ?? "?") as String
+                
+            }
+            
+            popDatePicker!.pick(self, initDate: initDate, dataChanged: dataChangedCallback)
+            popDatePicker!.datePickerVC.datePicker.minimumDate = NSDate()
+            popDatePicker!.datePickerVC.datePicker.date = NSDate()
+            return false
+        }
+        else if (textField === startTimeTextField) {
+            resign()
+            
+            let currentDate = NSDate()
+            let initDate : NSDate?
+            let formatter = NSDateFormatter()
+            
+            formatter.dateStyle = .MediumStyle
+            formatter.timeStyle = .NoStyle
+            if dateStringSelected == "" {
+                 initDate = currentDate//formatter.dateFromDate(currentDate)
+            } else {
+                initDate = formatter.dateFromString(dateStringSelected)
+            }
+            
+            let dataChangedCallback : PopDatePicker.PopDatePickerCallback = { (newDate : NSDate, forTextField : UITextField) -> () in
+                
+                // here we don't use self (no retain cycle)
+                forTextField.text = (newDate.ToTimeString() ?? "?") as String
+                
+            }
+            
+            popDatePickerStartTime!.pick(self, initDate: initDate, dataChanged: dataChangedCallback)
+            
+            popDatePickerStartTime!.datePickerVC.datePicker.datePickerMode = UIDatePickerMode.Time
+            popDatePickerStartTime!.datePickerVC.datePicker.minuteInterval = 30
+            if dateStringSelected == "" {
+                popDatePickerStartTime!.datePickerVC.datePicker.date = NSDate()
+            } else {
+                popDatePickerStartTime!.datePickerVC.datePicker.date = formatter.dateFromString(dateStringSelected)!
+            }
+            popDatePickerStartTime!.datePickerVC.datePicker.minimumDate = NSDate()
+            //popDatePickerStartTime!.datePickerVC.datePicker.date = NSDate()
+            return false
+        }
+        else if(textField === endTimeTextField) {
+            resign()
+            
+            let currentDate = NSDate()
+            let initDate : NSDate?
+            let formatter = NSDateFormatter()
+            
+            formatter.dateStyle = .MediumStyle
+            formatter.timeStyle = .NoStyle
+            
+            if dateStringSelected == "" {
+                initDate = currentDate
+            } else {
+                initDate = formatter.dateFromString(dateStringSelected)
+            }
+            
+            let dataChangedCallback : PopDatePicker.PopDatePickerCallback = { (newDate : NSDate, forTextField : UITextField) -> () in
+                
+                // here we don't use self (no retain cycle)
+                forTextField.text = (newDate.ToTimeString() ?? "?") as String
+                
+            }
+            popDatePickerEndTime!.pick(self, initDate: initDate, dataChanged: dataChangedCallback)
+            
+            popDatePickerEndTime!.datePickerVC.datePicker.datePickerMode = UIDatePickerMode.Time
+            popDatePickerEndTime!.datePickerVC.datePicker.minuteInterval = 30
+            if dateStringSelected == "" {
+                popDatePickerEndTime!.datePickerVC.datePicker.date = NSDate()
+            } else {
+                popDatePickerEndTime!.datePickerVC.datePicker.date = formatter.dateFromString(dateStringSelected)!
+            }
+            popDatePickerEndTime!.datePickerVC.datePicker.minimumDate = NSDate()
+            //popDatePickerEndTime!.datePickerVC.datePicker.date = NSDate()
+            return false
+        }
+        else {
+            return true
+        }
+    }
     
     //Outlets to access the View's Title and to display the Map image in the Image View
     @IBAction func click2(sender: AnyObject) {
@@ -76,42 +150,16 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
     // Date text field outlet and action
     @IBOutlet weak var dateTextField: UITextField!
     @IBAction func dateTextFieldEditing(sender: UITextField) {
-        let datePicker = UIDatePicker()
-        datePicker.datePickerMode = UIDatePickerMode.Date
-        
-        datePicker.minimumDate = NSDate()
-        datePicker.maximumDate = daysFromNow(MaxDaysReservationForsight)
-        
-        sender.inputView = datePicker
-        datePicker.addTarget(self, action: "datePickerValueChanged:", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     // Start time text field outlet and action
     @IBOutlet weak var startTimeTextField: UITextField!
     @IBAction func startTimeTextFieldEditing(sender: UITextField) {
-        let startTimePicker = UIDatePicker()
-        startTimePicker.datePickerMode = UIDatePickerMode.Time
-        
-        startTimePicker.minuteInterval = TimePickerMinuteResolution
-        // startTimePicker.minimumDate = NSDate()
-        // startTimePicker.maximumDate = hoursFromNow(MaxHoursReservationForsight)
-        
-        sender.inputView = startTimePicker
-        startTimePicker.addTarget(self, action: "startTimePickerChanged:", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     // End tim text field outlet and action
     @IBOutlet weak var endTimeTextField: UITextField!
     @IBAction func endTimeTextFieldEditing(sender: UITextField) {
-        let endTimePicker = UIDatePicker()
-        endTimePicker.datePickerMode = UIDatePickerMode.Time
-        
-        endTimePicker.minuteInterval = TimePickerMinuteResolution
-        // startTimePicker.minimumDate = NSDate()
-        // startTimePicker.maximumDate = hoursFromNow(MaxHoursReservationForsight)
-        
-        sender.inputView = endTimePicker
-        endTimePicker.addTarget(self, action: "endTimePickerChanged:", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     @IBOutlet weak var headCountTextField: UITextField!
@@ -122,16 +170,21 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        popDatePicker = PopDatePicker(forTextField: dateTextField)
+        dateTextField.delegate = self
+        
+        popDatePickerStartTime = PopDatePicker(forTextField: startTimeTextField)
+        startTimeTextField.delegate = self
+        
+        popDatePickerEndTime = PopDatePicker(forTextField: endTimeTextField)
+        endTimeTextField.delegate = self
+        
         // Do any additional setup after loading the view.
         
-        eventTypesDropDown.layer.borderColor = newColor
-        eventTypesDropDown.layer.borderWidth = 1.0
+        //eventTypesDropDown.layer.borderColor = newColor
+        //eventTypesDropDown.layer.borderWidth = 1.0
         
         setupInit()
-        
-        // Detect tap on background of view
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        view.addGestureRecognizer(tap)
     }
     
     override func didReceiveMemoryWarning() {
@@ -139,55 +192,21 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
         // Dispose of any resources that can be recreated.
     }
     
-    internal var imageFileName = ""
-    internal var stateName = ""
     var newColor = UIColor.lightGrayColor().CGColor
     
     
     var eventTypesDropDown = IGLDropDownMenu()
     
     var eventTypes:NSArray = ["Wedding ceremony",
-        "wedding reception",
-        "conference",
-        "single meeting",
-        "luncheon",
-        "other"]
+        "Wedding Reception",
+        "Conference",
+        "Single Meeting",
+        "Luncheon",
+        "Other"]
     
     
     // === Memeber functions
     
-    
-    // Hides keyboard
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
-    
-    // Handles formatting of dateTextField text
-    func datePickerValueChanged(sender: UIDatePicker) {
-        let dateFormatter = NSDateFormatter()
-        
-        dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
-        dateTextField.text = dateFormatter.stringFromDate(sender.date)
-        reservationSegueInformation.dateOfEvent = sender.date
-    }
-    
-    // Handles formatting of startTimeTextField text
-    func startTimePickerChanged(sender: UIDatePicker) {
-        let dateFormatter = NSDateFormatter()
-        
-        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
-        startTimeTextField.text = dateFormatter.stringFromDate(sender.date)
-        reservationSegueInformation.startTime = sender.date
-    }
-    
-    // Handles formatting of endTimeTextField text
-    func endTimePickerChanged(sender: UIDatePicker) {
-        let dateFormatter = NSDateFormatter()
-        
-        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
-        endTimeTextField.text = dateFormatter.stringFromDate(sender.date)
-        reservationSegueInformation.endTime = sender.date
-    }
     
     // Returns a date exactly n days from now
     func daysFromNow(daysInFuture: Int) -> NSDate {
@@ -224,7 +243,7 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
         eventTypesDropDown.menuText = "Event Type"
         eventTypesDropDown.dropDownItems = dropdownItems as [AnyObject]
         eventTypesDropDown.paddingLeft = 15
-        eventTypesDropDown.frame = CGRectMake(20, 115, 200, 45)
+        eventTypesDropDown.frame = CGRectMake(103, 260, 335, 30)
         eventTypesDropDown.delegate = self
         eventTypesDropDown.type = IGLDropDownMenuType.Stack
         eventTypesDropDown.gutterY = 5
@@ -243,7 +262,6 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
         
         
     }
-
     
     /*
     // MARK: - Navigation
@@ -255,4 +273,22 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
     }
     */
     
+}
+
+extension NSDate {
+    
+    // -> Date System Formatted Medium
+    func ToDateMediumString() -> NSString? {
+        
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = .MediumStyle;
+        formatter.timeStyle = .NoStyle;
+        return formatter.stringFromDate(self)
+    }
+    func ToTimeString() -> NSString? {
+        
+        let formatter = NSDateFormatter()
+        formatter.timeStyle = .ShortStyle
+        return formatter.stringFromDate(self)
+    }
 }

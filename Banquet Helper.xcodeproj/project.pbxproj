@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E73A1301BFFE88400793C4E /* RoomListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73A12F1BFFE88400793C4E /* RoomListTableTableViewController.swift */; };
+		0E8274991C03CA9900B06390 /* PopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8274981C03CA9900B06390 /* PopDatePicker.swift */; };
+		0E82749B1C03CA9E00B06390 /* PopDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82749A1C03CA9E00B06390 /* PopDateViewController.swift */; };
+		0E82749D1C03CAA200B06390 /* PopDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E82749C1C03CAA200B06390 /* PopDateViewController.xib */; };
 		1C0254771BFADB1500F7039E /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02546F1BFADB1500F7039E /* BaseModel.swift */; };
 		1C0254781BFADB1500F7039E /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254701BFADB1500F7039E /* CustomerModel.swift */; };
 		1C0254791BFADB1500F7039E /* HotelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0254711BFADB1500F7039E /* HotelModel.swift */; };
@@ -94,6 +97,9 @@
 
 /* Begin PBXFileReference section */
 		0E73A12F1BFFE88400793C4E /* RoomListTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListTableTableViewController.swift; sourceTree = "<group>"; };
+		0E8274981C03CA9900B06390 /* PopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDatePicker.swift; sourceTree = "<group>"; };
+		0E82749A1C03CA9E00B06390 /* PopDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDateViewController.swift; sourceTree = "<group>"; };
+		0E82749C1C03CAA200B06390 /* PopDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopDateViewController.xib; sourceTree = "<group>"; };
 		1C02546F1BFADB1500F7039E /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		1C0254701BFADB1500F7039E /* CustomerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
 		1C0254711BFADB1500F7039E /* HotelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelModel.swift; sourceTree = "<group>"; };
@@ -198,6 +204,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E82749E1C03CAA800B06390 /* PopDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				0E82749A1C03CA9E00B06390 /* PopDateViewController.swift */,
+				0E8274981C03CA9900B06390 /* PopDatePicker.swift */,
+				0E82749C1C03CAA200B06390 /* PopDateViewController.xib */,
+			);
+			name = PopDatePicker;
+			sourceTree = "<group>";
+		};
 		4C0B3D7D2D0A1A7267816225 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +258,7 @@
 		D8244FD81BF2F3BE00F7053A /* Banquet Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0E82749E1C03CAA800B06390 /* PopDatePicker */,
 				1C3F2E6E1C00113F00973295 /* Banquet Helper */,
 				1C02546F1BFADB1500F7039E /* BaseModel.swift */,
 				1C2E817B1C02C9F8009D31B4 /* SingleRoomTableViewController.swift */,
@@ -456,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D87094291BF7D5260074C27C /* Lato-Heavy.ttf in Resources */,
+				0E82749D1C03CAA200B06390 /* PopDateViewController.xib in Resources */,
 				D87094341BF7D5260074C27C /* Lato-ThinItalic.ttf in Resources */,
 				D870942C1BF7D5260074C27C /* Lato-Light.ttf in Resources */,
 				D87094231BF7D5260074C27C /* Lato-Black.ttf in Resources */,
@@ -553,6 +571,7 @@
 				1C0254771BFADB1500F7039E /* BaseModel.swift in Sources */,
 				1C73C3CF1BFC52550091042B /* HotelListTableViewController.swift in Sources */,
 				5B9B6CB41C02BE17006061B5 /* CateringOptionsViewController.swift in Sources */,
+				0E82749B1C03CA9E00B06390 /* PopDateViewController.swift in Sources */,
 				D82450231BF2F55D00F7053A /* SignUpViewController.swift in Sources */,
 				1C2E817C1C02C9F8009D31B4 /* SingleRoomTableViewController.swift in Sources */,
 				D8244FDC1BF2F3BE00F7053A /* ViewController.swift in Sources */,
@@ -576,6 +595,7 @@
 				1C9832C61C03B6E60083AB8B /* EquipmentModel.swift in Sources */,
 				0E73A1301BFFE88400793C4E /* RoomListTableTableViewController.swift in Sources */,
 				D82450211BF2F55D00F7053A /* PageViewController.swift in Sources */,
+				0E8274991C03CA9900B06390 /* PopDatePicker.swift in Sources */,
 				5B9B6CB51C02BE17006061B5 /* EquipmentOptionsViewController.swift in Sources */,
 				D85594A21C00E887002DB9C8 /* IGLDropDownItem.m in Sources */,
 				1C02547E1BFADB1500F7039E /* Table.swift in Sources */,
