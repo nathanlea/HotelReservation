@@ -284,7 +284,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0a-Ee-Hbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3481" y="338"/>
+            <point key="canvasLocation" x="317" y="-3758"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IVi-Aa-Evh">
@@ -301,7 +301,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obE-WL-40i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2563" y="-1014"/>
+            <point key="canvasLocation" x="-597" y="-5054"/>
         </scene>
         <!--Itinerary-->
         <scene sceneID="g2r-rt-X4f">
@@ -314,7 +314,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="347" id="uHt-ta-kIU">
-                                <rect key="frame" x="0.0" y="22" width="768" height="347"/>
+                                <rect key="frame" x="0.0" y="86" width="768" height="347"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="uHt-ta-kIU" id="XuN-VT-Ey7">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="346"/>
@@ -428,7 +428,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="slc-B7-Rx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4490" y="346"/>
+            <point key="canvasLocation" x="2050" y="-2534"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wwh-vk-EbY">
@@ -465,7 +465,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenericHotelListCell" rowHeight="321" id="z9c-YC-tis" customClass="GenericHotelListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="28" width="768" height="321"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="321"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z9c-YC-tis" id="a0y-fQ-faO">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="320"/>
@@ -519,7 +519,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jsb-0f-kjc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="a7w-2U-oa2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -530,7 +530,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWV-Sq-f0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="1550.5"/>
+            <point key="canvasLocation" x="1268" y="-5293.5"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="Y0l-Hy-IoT">
@@ -538,7 +538,7 @@
                 <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PjW-TX-bfx" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuN-BN-TAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3249" y="1594"/>
+            <point key="canvasLocation" x="-559" y="-2982"/>
         </scene>
         <!--Page Item Controller-->
         <scene sceneID="9fy-v9-Gsw">
@@ -549,7 +549,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VhD-AU-X6D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LDC-ab-RO7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuo-i3-d3J">
@@ -601,7 +601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3n-6y-dkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="2221.5"/>
+            <point key="canvasLocation" x="2212" y="-5317.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Gb-jD-Nt1">
@@ -618,7 +618,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLO-Q8-cXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2437" y="-3291"/>
+            <point key="canvasLocation" x="2725" y="-1219"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5fK-9f-g60">
@@ -653,7 +653,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v74-FF-sy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="-1518"/>
+            <point key="canvasLocation" x="-1483" y="-2366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c0s-wW-5O6">
@@ -670,7 +670,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUy-Sw-JKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4457" y="-828"/>
+            <point key="canvasLocation" x="345" y="-2524"/>
         </scene>
         <!--Hotel Name-->
         <scene sceneID="1Vm-iM-yPt">
@@ -681,7 +681,7 @@
                         <viewControllerLayoutGuide type="bottom" id="H8j-Oj-xqO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fd6-x7-HnK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oyu-H3-H1i">
@@ -782,7 +782,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMp-zd-2aO" sceneMemberID="firstResponder"/>
                 <exit id="bTa-Uf-QkG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="678" y="-263"/>
+            <point key="canvasLocation" x="1750" y="-1209"/>
         </scene>
         <!--SingleRoomViewController-->
         <scene sceneID="9xK-J5-tcd">
@@ -794,14 +794,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Hf7-Bg-5Tq">
-                            <rect key="frame" x="0.0" y="555" width="768" height="44"/>
+                            <rect key="frame" x="0.0" y="619" width="768" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <animations/>
                             <items>
                                 <barButtonItem style="plain" systemItem="flexibleSpace" id="T2e-Rs-9af"/>
                                 <barButtonItem title="Item" id="RcQ-YJ-4vn">
                                     <connections>
-                                        <segue destination="Eh5-LH-DY5" kind="presentation" id="fCo-In-bO0"/>
+                                        <segue destination="Eh5-LH-DY5" kind="presentation" modalPresentationStyle="formSheet" id="5rJ-pv-Hov"/>
                                     </connections>
                                 </barButtonItem>
                                 <barButtonItem style="plain" systemItem="flexibleSpace" id="Bjn-T6-aPY"/>
@@ -809,7 +809,7 @@
                         </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PictureCell" rowHeight="118" id="VBg-Rc-dEg" userLabel="PictureCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="768" height="118"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="118"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VBg-Rc-dEg" id="iSf-L4-pC2">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="117"/>
@@ -840,7 +840,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomDescriptionCell" rowHeight="92" id="FD5-lJ-agX" userLabel="RoomDescriptionCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="146" width="768" height="92"/>
+                                <rect key="frame" x="0.0" y="210" width="768" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FD5-lJ-agX" id="chy-sa-IYU">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="91"/>
@@ -885,7 +885,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OccupancyCell" textLabel="G3F-nM-DqF" detailTextLabel="Okx-gr-CkI" rowHeight="55" style="IBUITableViewCellStyleValue1" id="5cs-l1-KqY">
-                                <rect key="frame" x="0.0" y="238" width="768" height="55"/>
+                                <rect key="frame" x="0.0" y="302" width="768" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5cs-l1-KqY" id="6TD-Fl-u47">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="54"/>
@@ -913,7 +913,7 @@
                                 <animations/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="262" id="fWP-3j-1oU" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="293" width="768" height="262"/>
+                                <rect key="frame" x="0.0" y="357" width="768" height="262"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fWP-3j-1oU" id="ZFQ-vu-ZcU">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="261"/>
@@ -1075,7 +1075,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7T1-QP-coL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3342" y="-3291"/>
+            <point key="canvasLocation" x="3726" y="-1201"/>
         </scene>
         <!--Equipment Options-->
         <scene sceneID="Jnk-v9-Arg">
@@ -1433,7 +1433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxB-oY-dP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4914" y="-3286"/>
+            <point key="canvasLocation" x="3642" y="-3654"/>
         </scene>
         <!--Home-->
         <scene sceneID="r6u-Ta-0NA">
@@ -1693,7 +1693,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Za7-y4-ObF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2573" y="346"/>
+            <point key="canvasLocation" x="317" y="-5054"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="1gA-ep-pAf">
@@ -1932,7 +1932,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MeetingRoomCell" rowHeight="240" id="yyU-b9-wiI" customClass="GenericHotelListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="28" width="768" height="240"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yyU-b9-wiI" id="voi-MJ-ZEb">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="239"/>
@@ -2103,11 +2103,11 @@
         <image name="SignUpButton" width="125" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lik-L4-DhN"/>
-        <segue reference="3bg-ly-44h"/>
         <segue reference="35F-op-qIW"/>
-        <segue reference="8LN-zc-rJG"/>
+        <segue reference="3bg-ly-44h"/>
         <segue reference="arE-NR-2W7"/>
+        <segue reference="SWN-wN-OPd"/>
+        <segue reference="8LN-zc-rJG"/>
         <segue reference="xTN-sC-wgd"/>
         <segue reference="hRk-7Y-wuF"/>
     </inferredMetricsTieBreakers>
