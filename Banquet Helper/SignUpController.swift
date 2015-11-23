@@ -142,9 +142,24 @@ class signUpController: UIViewController, UITextFieldDelegate
             print(customer.setNewCustomerJsonString())
             let repository = HotelRepository()
             repository.addToDataBase(customer.setNewCustomerJsonString(), urlString: customer.setNewCustomerUrlString()){
-                (completion : String) in
-                print(completion)
-                self.performSegueWithIdentifier("signedUp", sender: nil)
+                (complete : Bool) in
+                if(complete){
+                    dispatch_async( dispatch_get_main_queue(), {
+                        self.performSegueWithIdentifier("signedUp", sender: nil)
+                    })
+                }
+                
+                else{
+                    dispatch_async( dispatch_get_main_queue(), {
+                        let alert = UIAlertView()
+                        alert.title = "Connection Failed"
+                        alert.message = "Could not connect at this time, please try again later."
+                        alert.addButtonWithTitle("Ok")
+                        alert.show()
+                        
+                    })
+                }
+                
             }
             
             

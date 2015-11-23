@@ -135,7 +135,7 @@ class HotelRepository {
             {
                 
                 print("Error trying to convert returned data to JSON")
-                return
+                completion(jsonArray: jsonObjects)
             }
             //print("The returned data for Table "+TableName.rawValue+": \(jsonObjects.description)")
             
@@ -151,7 +151,7 @@ class HotelRepository {
     }
     
     
-    func addToDataBase(jsonString : String, urlString: String, completion: (successMessage: String) -> Void )
+    func addToDataBase(jsonString : String, urlString: String, completion: (successMessage: Bool) -> Void )
     {
         guard let url = NSURL(string: urlString) else
             
@@ -181,14 +181,14 @@ class HotelRepository {
             do
             {
                 
-                completion(successMessage: "Completed")
+                completion(successMessage: true)
                 
                 
             }
             catch
             {
                 print("Error trying to convert returned data to JSON")
-                return
+                completion(successMessage: false)
             }
             let encodedData = String(data: data!, encoding: NSUTF8StringEncoding)
             print("The returned data is \(encodedData)")
