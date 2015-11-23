@@ -75,7 +75,7 @@ class RoomListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("MeetingRoomCell", forIndexPath: indexPath) as! GenericHotelListCell
         
         if(meetingRoomModels.count > 0){
-            
+            tableView.rowHeight = 450
             let pricePerHour = meetingRoomModels[indexPath.row].CostPerHour!.formatToMoneyPrecision()
             cell.TitleLabel.text = meetingRoomModels[indexPath.row].RoomName
             cell.DetailLabel.text = "Max Occupancy: "+String(meetingRoomModels[indexPath.row].MaxCapacity!)
@@ -91,8 +91,14 @@ class RoomListTableViewController: UITableViewController {
         return cell
     }
     
-    
-    /*
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController as! SingleRoomTableViewController
+        let indexPath = self.tableView.indexPathForCell((sender as? UITableViewCell)!)
+        
+        controller.meetingRoomModel = meetingRoomModels[indexPath!.row]
+        
+        
+    }    /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
     // Return false if you do not want the specified item to be editable.

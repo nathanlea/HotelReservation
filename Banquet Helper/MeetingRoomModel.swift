@@ -10,6 +10,7 @@ import Foundation
 
 class MeetingRoomModel : BaseModel {
     var delegate : BaseModel?
+    var Area: Int?
     var Id: Int?
     var HotelId: Int?
     var RoomName: String?
@@ -25,6 +26,7 @@ class MeetingRoomModel : BaseModel {
     var RoomDescription: String?
     
     init(jsonObject: NSDictionary) {
+        self.Area = jsonObject["Area"]?.integerValue
         self.Id = jsonObject["Id"]?.integerValue
         self.ImageString = jsonObject["ImageString"] as? String
         self.HotelId = jsonObject["HotelId"]?.integerValue
