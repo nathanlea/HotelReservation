@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C47a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X9h-6n-ri4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X9h-6n-ri4">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -1536,7 +1535,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECj-1e-2qG">
-                                <rect key="frame" x="647" y="188" width="101" height="31"/>
+                                <rect key="frame" x="647" y="182" width="101" height="37"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1578,7 +1577,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_____________________________________________________________________________________________________________" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1l-5K-zHX">
-                                <rect key="frame" x="0.0" y="337" width="787" height="21"/>
+                                <rect key="frame" x="64" y="336" width="723" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1627,7 +1626,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_____________________________________________________________________________________________________________" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgi-2I-Z0Z">
-                                <rect key="frame" x="0.0" y="525" width="787" height="21"/>
+                                <rect key="frame" x="64" y="525" width="723" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1641,7 +1640,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNX-Z8-bMM">
-                                <rect key="frame" x="647" y="561" width="101" height="35"/>
+                                <rect key="frame" x="647" y="554" width="101" height="42"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1814,7 +1813,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avR-ma-V67">
-                                <rect key="frame" x="625" y="92" width="123" height="41"/>
+                                <rect key="frame" x="560" y="80" width="188" height="53"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="50"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1898,6 +1897,9 @@
                         <outletCollection property="EquipmentCollection" destination="YAh-b3-ZCA" collectionClass="NSMutableArray" id="OVI-Da-muK"/>
                         <outletCollection property="EquipmentCollection" destination="Mof-g3-Ce8" collectionClass="NSMutableArray" id="IjI-NB-b3B"/>
                         <outletCollection property="EquipmentCollection" destination="Kw9-GK-d6p" collectionClass="NSMutableArray" id="gwo-xw-RPH"/>
+                        <outletCollection property="Separators" destination="f6J-b9-ToV" collectionClass="NSMutableArray" id="0pe-ce-eYu"/>
+                        <outletCollection property="Separators" destination="Q1l-5K-zHX" collectionClass="NSMutableArray" id="LPZ-xx-CZL"/>
+                        <outletCollection property="Separators" destination="xgi-2I-Z0Z" collectionClass="NSMutableArray" id="8Y3-h3-5s6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzl-dt-mQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
