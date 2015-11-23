@@ -27,9 +27,9 @@
 		4ED96D911BFB93A0002E75C9 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D901BFB93A0002E75C9 /* SignUpController.swift */; };
 		4ED96D931BFB93D1002E75C9 /* signInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D921BFB93D1002E75C9 /* signInController.swift */; };
 		4ED96D951BFB93F8002E75C9 /* SignInTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */; };
-		6FBC74C31C02B61B007ECB3E /* ReservationPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBC74C21C02B61B007ECB3E /* ReservationPackage.swift */; settings = {ASSET_TAGS = (); }; };
 		5B9B6CB41C02BE17006061B5 /* CateringOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B6CB21C02BE17006061B5 /* CateringOptionsViewController.swift */; };
 		5B9B6CB51C02BE17006061B5 /* EquipmentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B6CB31C02BE17006061B5 /* EquipmentOptionsViewController.swift */; };
+		6FBC74C31C02B61B007ECB3E /* ReservationPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBC74C21C02B61B007ECB3E /* ReservationPackage.swift */; };
 		7E1A1E1575C9FD2F817BE742 /* Pods_Banquet_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D23D7D5E5C6179EEEA705D /* Pods_Banquet_Helper.framework */; };
 		D8244FDA1BF2F3BE00F7053A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */; };
 		D8244FDC1BF2F3BE00F7053A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8244FDB1BF2F3BE00F7053A /* ViewController.swift */; };
@@ -113,9 +113,9 @@
 		4ED96D901BFB93A0002E75C9 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		4ED96D921BFB93D1002E75C9 /* signInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInController.swift; sourceTree = "<group>"; };
 		4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTestController.swift; sourceTree = "<group>"; };
-		6FBC74C21C02B61B007ECB3E /* ReservationPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationPackage.swift; sourceTree = "<group>"; };
 		5B9B6CB21C02BE17006061B5 /* CateringOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CateringOptionsViewController.swift; sourceTree = "<group>"; };
 		5B9B6CB31C02BE17006061B5 /* EquipmentOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentOptionsViewController.swift; sourceTree = "<group>"; };
+		6FBC74C21C02B61B007ECB3E /* ReservationPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationPackage.swift; sourceTree = "<group>"; };
 		86A5768EF80B2C5D451135B6 /* Pods-Banquet Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banquet Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Banquet Helper/Pods-Banquet Helper.release.xcconfig"; sourceTree = "<group>"; };
 		D8244FD61BF2F3BE00F7053A /* Banquet Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banquet Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -724,7 +724,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Banquet Helper/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS4153AppDev.Banquet-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -740,7 +740,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Banquet Helper/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS4153AppDev.Banquet-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";

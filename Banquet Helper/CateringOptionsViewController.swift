@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
+class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var Alcoholpicker: UIPickerView!
     @IBOutlet weak var Cateringpicker: UIPickerView!
@@ -128,6 +128,26 @@ class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIP
         {
             return cateringpickerData.count
         }
+    }
+    
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView
+    {
+        let pickerLabel = UILabel()
+        pickerLabel.textColor = UIColor.blackColor()
+        //pickerLabel.text = "PickerView Cell Title"
+        if(pickerView.tag == 1)
+        {
+            pickerLabel.text = alcoholData[row]
+            
+        }
+        else
+        {
+            pickerLabel.text = cateringpickerData[row]
+        }
+        // pickerLabel.font = UIFont(name: pickerLabel.font.fontName, size: 15)
+        pickerLabel.font = UIFont(name: "Lato-Regular", size: 30) // In this use your custom font
+        pickerLabel.textAlignment = NSTextAlignment.Center
+        return pickerLabel
     }
     
     // The data to return for the row and component (column) that's being passed in

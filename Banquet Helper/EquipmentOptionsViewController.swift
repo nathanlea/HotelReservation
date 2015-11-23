@@ -11,6 +11,7 @@ import UIKit
 //Main View Controller Class
 class EquipmentOptionsViewController: UIViewController {
 //Outlets to access the View's Title and to display
+    //These are not all max of 10, someone should fix this
     var maxValue = 10
     @IBOutlet weak var Notes: UITextView!
     @IBOutlet var Countlabels: [UILabel]!
