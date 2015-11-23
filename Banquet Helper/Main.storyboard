@@ -507,7 +507,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULS-iG-hZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1723" y="558"/>
+            <point key="canvasLocation" x="-1821" y="558"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="Kxn-iJ-Hnt">
@@ -1229,7 +1229,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenBg" translatesAutoresizingMaskIntoConstraints="NO" id="FoV-wN-58p">
-                                <rect key="frame" x="-172" y="-354" width="940" height="1378"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenButton" translatesAutoresizingMaskIntoConstraints="NO" id="JnZ-fg-WxG">
                                 <rect key="frame" x="387" y="820" width="346" height="128"/>
@@ -1262,7 +1262,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainLogoHiRes" translatesAutoresizingMaskIntoConstraints="NO" id="BXU-pv-5er">
-                                <rect key="frame" x="37" y="329" width="695" height="365"/>
+                                <rect key="frame" x="37" y="142" width="695" height="365"/>
                             </imageView>
                         </subviews>
                         <animations/>
@@ -1873,10 +1873,10 @@
     <inferredMetricsTieBreakers>
         <segue reference="Lik-L4-DhN"/>
         <segue reference="h9n-85-Ngh"/>
-        <segue reference="8LN-zc-rJG"/>
-        <segue reference="35F-op-qIW"/>
+        <segue reference="AiN-sm-Ble"/>
+        <segue reference="6Ho-4o-Itr"/>
+        <segue reference="arE-NR-2W7"/>
         <segue reference="xTN-sC-wgd"/>
         <segue reference="hRk-7Y-wuF"/>
-        <segue reference="arE-NR-2W7"/>
     </inferredMetricsTieBreakers>
 </document>

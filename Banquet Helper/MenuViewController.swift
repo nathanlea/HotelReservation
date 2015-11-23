@@ -27,10 +27,12 @@ class MenuViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    /*override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = false
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
         
-    }*/
+        self.navigationController?.toolbarHidden = true
+        
+    }
 
     /*
     // MARK: - Navigation
