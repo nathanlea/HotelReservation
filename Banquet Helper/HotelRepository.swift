@@ -20,7 +20,10 @@ class HotelRepository {
         for item in jsonObjects{
             
             switch(TableName){
-            case Table.Name.Customers :
+            case Table.Name.AvailableEquipment:
+                models.append(EquipmentModel(jsonObject: item as! NSDictionary))
+                break
+            case Table.Name.Customers:
                 models.append(CustomerModel(jsonObject: item as! NSDictionary))
                 break
             case Table.Name.Hotels:

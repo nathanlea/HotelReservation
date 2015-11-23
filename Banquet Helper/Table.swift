@@ -10,6 +10,8 @@ import Foundation
 class Table{
     
     enum Name : String{
+        
+        case AvailableEquipment
         case Customers
         case Hotels
         case MeetingRooms
