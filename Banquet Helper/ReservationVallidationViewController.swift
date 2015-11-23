@@ -114,6 +114,7 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
         endTimePicker.addTarget(self, action: "endTimePickerChanged:", forControlEvents: UIControlEvents.ValueChanged)
     }
     
+    @IBOutlet weak var headCountTextField: UITextField!
     
     // === UIViewController overrides
     
