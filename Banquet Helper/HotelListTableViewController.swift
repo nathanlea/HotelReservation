@@ -32,7 +32,7 @@ class HotelListTableViewController: UITableViewController {
                 self.tableView.reloadData()
             })
             
-            print(self.customerModel?.LastName)
+            
         }
         
         // Uncomment the following line to preserve selection between presentations

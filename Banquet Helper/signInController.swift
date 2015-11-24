@@ -89,11 +89,10 @@ class signInController: UIViewController, UITextFieldDelegate
                 
                 if(ok){
                     self.customerModel = CustomerModel(jsonObject: json)
-                    print("Hello "+self.customerModel.FirstName!)
                     self.passName = self.customerModel.FirstName!
                     if(self.customerModel.Id != nil){
                     dispatch_async( dispatch_get_main_queue(), {
-                        print(self.customerModel.Id)
+                        
                         self.performSegueWithIdentifier("signedIn", sender: nil)
                     })
                     }

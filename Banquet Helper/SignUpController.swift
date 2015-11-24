@@ -138,8 +138,7 @@ class signUpController: UIViewController, UITextFieldDelegate
             //phoneLabel.text = phoneField.text!
             //passLabel.text = passField.text!
             //reTypeLabel.text = reTypeField.text!
-            print(customer.setNewCustomerUrlString())
-            print(customer.setNewCustomerJsonString())
+            
             let repository = HotelRepository()
             repository.GetSpecific(Table.Name.Customers, parameters: customer.checkExistingCustomerLoginIdJsonParameters(customer.LoginId!)){
                 (json: NSDictionary ,exists: Bool) in
