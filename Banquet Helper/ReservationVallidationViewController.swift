@@ -173,6 +173,10 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(customerModel?.FirstName, customerModel?.LastName, hotelModel?.HotelName, meetingRoomModel?.RoomName)
+        for equipmentModel in equipmentModels!{
+            print(equipmentModel.Name)
+        }
         popDatePicker = PopDatePicker(forTextField: dateTextField)
         dateTextField.delegate = self
         

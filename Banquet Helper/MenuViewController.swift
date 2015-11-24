@@ -18,9 +18,9 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var helloLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(customerModel?.StreetAddress)
+        
 
-    helloLabel.text = "Hello, " + name
+    helloLabel.text = "Hello, " + (customerModel?.FirstName)!
         // Do any additional setup after loading the view.
     }
 
