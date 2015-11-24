@@ -839,6 +839,7 @@
         <!--Navigation Controller-->
         <scene sceneID="9G5-24-iUn">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8tA-eF-4zR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="tBo-fk-kpn" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vuC-Ir-x9R">
@@ -850,7 +851,6 @@
                         <segue destination="WD8-a3-hNB" kind="relationship" relationship="rootViewController" id="aFm-UP-rIa"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8tA-eF-4zR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2171" y="-1209"/>
         </scene>
@@ -1449,7 +1449,7 @@
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tBo-fk-kpn" kind="show" id="iVx-8j-BDJ"/>
+                                    <segue destination="tBo-fk-kpn" kind="show" identifier="reserveRoomSegue" id="iVx-8j-BDJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTv-En-vRM">
@@ -2703,12 +2703,10 @@
         <image name="StepperPlus.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6Ho-4o-Itr"/>
-        <segue reference="8LN-zc-rJG"/>
-        <segue reference="UgT-Kb-HMZ"/>
-        <segue reference="G0b-Cv-j94"/>
-        <segue reference="KJT-Eh-gBp"/>
         <segue reference="4lp-9v-v6X"/>
+        <segue reference="KJT-Eh-gBp"/>
+        <segue reference="G0b-Cv-j94"/>
+        <segue reference="SWN-wN-OPd"/>
         <segue reference="IgE-dg-ygI"/>
         <segue reference="3bg-ly-44h"/>
     </inferredMetricsTieBreakers>

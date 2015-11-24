@@ -93,6 +93,7 @@ class signInController: UIViewController, UITextFieldDelegate
                     self.passName = self.customerModel.FirstName!
                     if(self.customerModel.Id != nil){
                     dispatch_async( dispatch_get_main_queue(), {
+                        print(self.customerModel.Id)
                         self.performSegueWithIdentifier("signedIn", sender: nil)
                     })
                     }
@@ -118,6 +119,8 @@ class signInController: UIViewController, UITextFieldDelegate
             let secondVC: MenuViewController = segue.destinationViewController as! MenuViewController
             secondVC.name = passName
             secondVC.password = passField.text!
+            secondVC.customerModel = self.customerModel
+            
         }
         if(segue.identifier == "ToSignUp")
         {

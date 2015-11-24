@@ -9,7 +9,7 @@
 import UIKit
 
 class HotelListTableViewController: UITableViewController {
-    
+    internal var customerModel : CustomerModel?
     let repository = HotelRepository()
     var genericArray = [Any]()
     var hotelModels = [HotelModel]()
@@ -32,7 +32,7 @@ class HotelListTableViewController: UITableViewController {
                 self.tableView.reloadData()
             })
             
-            
+            print(self.customerModel?.LastName)
         }
         
         // Uncomment the following line to preserve selection between presentations
@@ -81,6 +81,15 @@ class HotelListTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let controller = segue.destinationViewController as! RoomListTableViewController
+        let indexPath = self.tableView.indexPathForCell((sender as? UITableViewCell)!)
+        
+        controller.customerModel = customerModel
+        controller.hotelModel = hotelModels[indexPath!.row]
+        
+    }
     
     /*
     // Override to support conditional editing of the table view.

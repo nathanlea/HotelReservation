@@ -9,7 +9,8 @@
 import UIKit
 
 class RoomListTableViewController: UITableViewController {
-    
+    internal var customerModel : CustomerModel?
+    internal var hotelModel : HotelModel?
     let repository = HotelRepository()
     var genericArray = [Any]()
     var meetingRoomModels = [MeetingRoomModel]()
@@ -95,7 +96,9 @@ class RoomListTableViewController: UITableViewController {
         let controller = segue.destinationViewController as! SingleRoomTableViewController
         let indexPath = self.tableView.indexPathForCell((sender as? UITableViewCell)!)
         
+        controller.customerModel = customerModel
         controller.meetingRoomModel = meetingRoomModels[indexPath!.row]
+        controller.hotelModel = hotelModel
         
         
     }    /*

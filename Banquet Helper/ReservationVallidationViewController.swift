@@ -9,8 +9,11 @@
 
 import UIKit
 
-class ReservationValidationViewController: UIViewController, UITextFieldDelegate, IGLDropDownMenuDelegate {
-    
+class ReservationValidationViewController: UIViewController, IGLDropDownMenuDelegate {
+    internal var customerModel : CustomerModel?
+    internal var hotelModel : HotelModel?
+    internal var meetingRoomModel :MeetingRoomModel?
+    internal var equipmentModels : [EquipmentModel]?
     var reservationSegueInformation = ReservationPackage()
     var popDatePicker : PopDatePicker?
     var popDatePickerStartTime : PopDatePicker?

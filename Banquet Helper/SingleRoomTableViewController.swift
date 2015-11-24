@@ -9,7 +9,8 @@
 import UIKit
 
 class SingleRoomTableViewController: UITableViewController {
-    
+    internal var customerModel : CustomerModel?
+    internal var hotelModel : HotelModel?
     internal var meetingRoomModel :MeetingRoomModel?
     var equipmentModels = [EquipmentModel]()
     var genericArray = [Any]()
@@ -107,7 +108,15 @@ class SingleRoomTableViewController: UITableViewController {
         return cell!
         
     }
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destVC = segue.destinationViewController as! ReservationValidationViewController
+        destVC.customerModel = customerModel
+        destVC.hotelModel = hotelModel
+        destVC.meetingRoomModel = meetingRoomModel
+        destVC.equipmentModels = equipmentModels
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
     
     /*
     // Override to support conditional editing of the table view.
@@ -147,11 +156,8 @@ class SingleRoomTableViewController: UITableViewController {
     /*
     // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
+    
     */
+    
     
 }

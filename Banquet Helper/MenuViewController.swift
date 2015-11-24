@@ -9,7 +9,7 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-    
+    internal var customerModel : CustomerModel?
     var name:String = "User"
     var email:String = ""
     var phone:String = ""
@@ -18,6 +18,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var helloLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(customerModel?.StreetAddress)
 
     helloLabel.text = "Hello, " + name
         // Do any additional setup after loading the view.
@@ -43,5 +44,13 @@ class MenuViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if(segue.identifier == "reserveRoomSegue"){
+            let navc = segue.destinationViewController as! UINavigationController
+            let hotelListVC = navc.viewControllers.first as! HotelListTableViewController
+            hotelListVC.customerModel = customerModel!
+        }
+    }
 
 }
