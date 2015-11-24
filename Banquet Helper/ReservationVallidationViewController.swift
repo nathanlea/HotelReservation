@@ -61,13 +61,29 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
     
     //Outlets to access the View's Title and to display the Map image in the Image View
     @IBAction func click2(sender: AnyObject) {
-        self.performSegueWithIdentifier("mysegue2", sender: self)
+        
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let _ = segue.destinationViewController as? ViewController1 {
+        self.performSegueWithIdentifier("endReservationEditing", sender: self)
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        let shouldSegue = reservationSegueInformation.containsRequiredFields()
+        
+        if shouldSegue {
+            return true
+        } else {
+            //let missingDataAlert = UIAlertController(title: "Banquet Helper", message: "Missing some information about reservation", preferredStyle: .Alert)
+            let missingDataAlert = UIAlertView()
+            missingDataAlert.title = "Missing Reservation Information"
+            missingDataAlert.message = "Please fill out all fields in the form"
+            missingDataAlert.addButtonWithTitle("Ok")
             
+            missingDataAlert.show()
+            return false
         }
+        
     }
     
     // === Outlets and actions
@@ -117,7 +133,9 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
     @IBOutlet weak var headCountTextField: UITextField!
     @IBAction func headCountTextFieldEditing(sender: AnyObject) {
         headCountTextField.keyboardType = UIKeyboardType.NumberPad
-        reservationSegueInformation.headCount = Int(headCountTextField.text!)!
+        if let count = headCountTextField.text {
+            reservationSegueInformation.headCount = Int(count)
+        }
     }
   
     
@@ -133,8 +151,8 @@ class ReservationValidationViewController: UIViewController, IGLDropDownMenuDele
         setupInit()
         
         // Detect tap on background of view
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        view.addGestureRecognizer(tap)
+        // let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        // view.addGestureRecognizer(tap)
     }
     
     override func didReceiveMemoryWarning() {

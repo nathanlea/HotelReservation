@@ -751,7 +751,7 @@
                                     <color key="titleShadowColor" red="0.9137254901960784" green="0.83921568627450982" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rAa-fa-ssR" kind="show" id="dY4-wp-qU9"/>
+                                    <segue destination="rAa-fa-ssR" kind="show" identifier="endReservationEditing" id="dY4-wp-qU9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7i-1D-Ic2">
@@ -890,7 +890,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7T1-QP-coL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="338"/>
+            <point key="canvasLocation" x="802" y="398"/>
         </scene>
         <!--Equipment Options-->
         <scene sceneID="Jnk-v9-Arg">
