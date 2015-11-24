@@ -10,8 +10,8 @@
 		0E0F2EC81C0410C000248510 /* CateringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F2EC71C0410C000248510 /* CateringModel.swift */; };
 		0E0F2ECC1C04220700248510 /* EquipmentForReservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F2ECB1C04220700248510 /* EquipmentForReservation.swift */; };
 		0E0F2ECE1C0445DF00248510 /* EventPlannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F2ECD1C0445DF00248510 /* EventPlannerModel.swift */; };
-		0E0F2ED01C0446F000248510 /* ReservationFullModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F2ECF1C0446F000248510 /* ReservationFullModel.swift */; };
 		0E0F2ED41C04502C00248510 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F2ED31C04502C00248510 /* CustomTableViewCell.swift */; };
+		0E4D39401C0459E100B4CA3D /* ReservationFullModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D393F1C0459E100B4CA3D /* ReservationFullModel.swift */; };
 		0E73A1301BFFE88400793C4E /* RoomListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73A12F1BFFE88400793C4E /* RoomListTableTableViewController.swift */; };
 		0E8274991C03CA9900B06390 /* PopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8274981C03CA9900B06390 /* PopDatePicker.swift */; };
 		0E82749B1C03CA9E00B06390 /* PopDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82749A1C03CA9E00B06390 /* PopDateViewController.swift */; };
@@ -104,8 +104,8 @@
 		0E0F2EC71C0410C000248510 /* CateringModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CateringModel.swift; sourceTree = "<group>"; };
 		0E0F2ECB1C04220700248510 /* EquipmentForReservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentForReservation.swift; sourceTree = "<group>"; };
 		0E0F2ECD1C0445DF00248510 /* EventPlannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPlannerModel.swift; sourceTree = "<group>"; };
-		0E0F2ECF1C0446F000248510 /* ReservationFullModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationFullModel.swift; sourceTree = "<group>"; };
 		0E0F2ED31C04502C00248510 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		0E4D393F1C0459E100B4CA3D /* ReservationFullModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationFullModel.swift; sourceTree = "<group>"; };
 		0E73A12F1BFFE88400793C4E /* RoomListTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListTableTableViewController.swift; sourceTree = "<group>"; };
 		0E8274981C03CA9900B06390 /* PopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDatePicker.swift; sourceTree = "<group>"; };
 		0E82749A1C03CA9E00B06390 /* PopDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDateViewController.swift; sourceTree = "<group>"; };
@@ -284,7 +284,7 @@
 				4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */,
 				1C0254701BFADB1500F7039E /* CustomerModel.swift */,
 				1C0254711BFADB1500F7039E /* HotelModel.swift */,
-				0E0F2ECF1C0446F000248510 /* ReservationFullModel.swift */,
+				0E4D393F1C0459E100B4CA3D /* ReservationFullModel.swift */,
 				0E0F2EC71C0410C000248510 /* CateringModel.swift */,
 				0E0F2ECD1C0445DF00248510 /* EventPlannerModel.swift */,
 				1C0254721BFADB1500F7039E /* HotelRepository.swift */,
@@ -584,7 +584,6 @@
 			files = (
 				1C0254791BFADB1500F7039E /* HotelModel.swift in Sources */,
 				0E0F2ECE1C0445DF00248510 /* EventPlannerModel.swift in Sources */,
-				0E0F2ED01C0446F000248510 /* ReservationFullModel.swift in Sources */,
 				1C0254771BFADB1500F7039E /* BaseModel.swift in Sources */,
 				1C73C3CF1BFC52550091042B /* HotelListTableViewController.swift in Sources */,
 				5B9B6CB41C02BE17006061B5 /* CateringOptionsViewController.swift in Sources */,
@@ -610,6 +609,7 @@
 				D824501E1BF2F55D00F7053A /* HotelReservation.xcdatamodeld in Sources */,
 				1C02547C1BFADB1500F7039E /* PagedViewController.swift in Sources */,
 				4ED96D951BFB93F8002E75C9 /* SignInTestController.swift in Sources */,
+				0E4D39401C0459E100B4CA3D /* ReservationFullModel.swift in Sources */,
 				1C9832C61C03B6E60083AB8B /* EquipmentModel.swift in Sources */,
 				0E73A1301BFFE88400793C4E /* RoomListTableTableViewController.swift in Sources */,
 				D82450211BF2F55D00F7053A /* PageViewController.swift in Sources */,

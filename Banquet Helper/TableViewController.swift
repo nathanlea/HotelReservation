@@ -18,13 +18,6 @@ class TableViewController: UITableViewController {
     internal var equipmentForReservation : [EquipmentForReservation]?
     
     
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +38,7 @@ class TableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let vc = segue.destinationViewController as? MenuViewController {
             vc.customerModel = customerModel
+            vc.reservationFullModel = reservationFullModel!
             
         }
     }
@@ -58,29 +52,37 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1//(reservationFullModel?.hotelModel?.count)!
+        if((reservationFullModel?.hotelModel.count)! == 1) {
+            return 0
+        } else {
+            return (reservationFullModel?.hotelModel.count)! - 1
+        }
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("IternaryCard", forIndexPath: indexPath) as! CustomTableViewCell
+
         
-        cell.NameLabel.text = ((reservationFullModel?.hotelModel)! as [HotelModel])[indexPath.item].HotelName
+        let item = indexPath.item + 1
+        
+        cell.NameLabel.text = ((reservationFullModel?.hotelModel)! as [HotelModel])[item].HotelName
         
         let formatter = NSDateFormatter()
         
         formatter.dateStyle = .NoStyle
         formatter.timeStyle = .ShortStyle
         
-        cell.TimeLabel.text = formatter.stringFromDate(((reservationFullModel?.reservationModel)! as [ReservationPackage])[indexPath.item].startTime)
-        cell.LocationLabel.text = ((reservationFullModel?.hotelModel)! as [HotelModel])[indexPath.item].StreetAddress!
+        cell.TimeLabel.text = formatter.stringFromDate(((reservationFullModel?.reservationModel)! as [ReservationPackage])[item].startTime)
+        cell.LocationLabel.text = ((reservationFullModel?.hotelModel)! as [HotelModel])[item].StreetAddress!
         
-        var day = ((reservationFullModel?.reservationModel)! as [ReservationPackage])[indexPath.item].dateOfEvent
+        var day = ((reservationFullModel?.reservationModel)! as [ReservationPackage])[item].dateOfEvent
         
         let calendar = NSCalendar.currentCalendar()
-       var cal = calendar.component([.Month, .Day], fromDate: day)
+        let comp = calendar.components([.Month, .Day], fromDate: day)
         
-        
+        cell.DayLabel.text = String(comp.day)
+        cell.MonthLabel.text = String(comp.month)
 
         // Configure the cell...
         

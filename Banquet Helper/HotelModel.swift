@@ -29,6 +29,10 @@ class HotelModel : BaseModel {
         self.ZipCode = jsonObject["ZipCode"]?.integerValue
     }
     
+    init() {
+        
+    }
+    
     
     
 }

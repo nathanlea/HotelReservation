@@ -133,7 +133,13 @@ class CVCalendarViewController: UIViewController {
     }
     
     func saveEverythingAsIfUploading( ) {
-        reservationFullModel?.addReservation(hotelModel!, cM: cateringModel!, rM: reservationModel!, eR: equipmentForReservation!, ePM: eventPlannerModel)
+        reservationFullModel?.hotelModel.append(hotelModel!)
+        reservationFullModel?.cateringModel.append(cateringModel!)
+        reservationFullModel?.reservationModel.append(reservationModel!)
+        reservationFullModel?.equipmentForReservation.append(equipmentForReservation!)
+        reservationFullModel?.eventPlannerModel.append(eventPlannerModel)
+        
+        //reservationFullModel?.addReservation(hotelModel!, cM: cateringModel!, rM: reservationModel!, eR: equipmentForReservation!, ePM: eventPlannerModel)
     }
     
     //Button Action Targets
