@@ -11,15 +11,19 @@ import UIKit
 class TableViewController: UITableViewController {
     
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel : ReservationFullModel?
     internal var hotelModel : HotelModel?
     internal var cateringModel : CateringModel?
     internal var reservationModel : ReservationPackage?
     internal var equipmentForReservation : [EquipmentForReservation]?
     
-    @IBAction func ViewOrderSummary(sender: AnyObject) {
-        print("BUTTON TOUCHED")
-        
-    }
+    
+    
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +45,7 @@ class TableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let vc = segue.destinationViewController as? MenuViewController {
             vc.customerModel = customerModel
+            
         }
     }
 
@@ -53,14 +58,33 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return 1//(reservationFullModel?.hotelModel?.count)!
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("IternaryCard", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("IternaryCard", forIndexPath: indexPath) as! CustomTableViewCell
+        
+        cell.NameLabel.text = ((reservationFullModel?.hotelModel)! as [HotelModel])[indexPath.item].HotelName
+        
+        let formatter = NSDateFormatter()
+        
+        formatter.dateStyle = .NoStyle
+        formatter.timeStyle = .ShortStyle
+        
+        cell.TimeLabel.text = formatter.stringFromDate(((reservationFullModel?.reservationModel)! as [ReservationPackage])[indexPath.item].startTime)
+        cell.LocationLabel.text = ((reservationFullModel?.hotelModel)! as [HotelModel])[indexPath.item].StreetAddress!
+        
+        var day = ((reservationFullModel?.reservationModel)! as [ReservationPackage])[indexPath.item].dateOfEvent
+        
+        let calendar = NSCalendar.currentCalendar()
+       var cal = calendar.component([.Month, .Day], fromDate: day)
+        
+        
 
         // Configure the cell...
+        
+        //reservationFullModel
         
         //cell.contentView.layer.borderWidth = 1
         //cell.contentView.layer.borderColor = UIColor.blackColor().CGColor//UIColor(red: 227, green: 134, blue: 114, alpha: 1).CGColor

@@ -11,6 +11,7 @@ import UIKit
 class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel : ReservationFullModel?
     internal var hotelModel : HotelModel?
     internal var meetingRoomModel :MeetingRoomModel?
     internal var cateringModel = CateringModel()
@@ -85,6 +86,7 @@ class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIP
                 vc.customerModel = customerModel
                 vc.reservationModel = reservationModel
                 vc.meetingRoomModel = meetingRoomModel
+                vc.reservationFullModel = reservationFullModel!
             }
            if(segue.identifier == "Skipsegue")
             {
@@ -103,6 +105,7 @@ class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIP
                 vc.customerModel = customerModel
                 vc.reservationModel = reservationModel
                 vc.meetingRoomModel = meetingRoomModel
+                vc.reservationFullModel = reservationFullModel!
             }
         }
     }

@@ -14,6 +14,7 @@ class EquipmentOptionsViewController: UIViewController {
     //These are not all max of 10, someone should fix this
     
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel : ReservationFullModel?
     internal var hotelModel : HotelModel?
     internal var cateringModel : CateringModel?
     internal var meetingRoomModel :MeetingRoomModel?
@@ -108,6 +109,7 @@ class EquipmentOptionsViewController: UIViewController {
                 vc.reservationModel = reservationModel
                 vc.equipmentForReservation = equipmentForReservation
                 vc.meetingRoomModel = meetingRoomModel
+                vc.reservationFullModel = reservationFullModel!
                 
             }
             if(segue.identifier == "SkipsegueEq")
@@ -154,6 +156,7 @@ class EquipmentOptionsViewController: UIViewController {
                 vc.reservationModel = reservationModel
                 vc.equipmentForReservation = equipmentForReservation
                 vc.meetingRoomModel = meetingRoomModel
+                vc.reservationFullModel = reservationFullModel!
             }
         }
     }

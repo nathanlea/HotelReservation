@@ -376,7 +376,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="347" id="uHt-ta-kIU">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="347" id="uHt-ta-kIU" customClass="CustomTableViewCell" customModule="Banquet_Helper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="66" width="768" height="347"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="uHt-ta-kIU" id="XuN-VT-Ey7">
@@ -473,6 +473,14 @@
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="DayLabel" destination="YpC-eb-zwH" id="H9H-h7-fHm"/>
+                                    <outlet property="ImageViewLabel" destination="3YX-fw-cKC" id="Nkf-yj-pAR"/>
+                                    <outlet property="LocationLabel" destination="ZZ4-Vn-P1T" id="x2o-Sx-CyY"/>
+                                    <outlet property="MonthLabel" destination="WfQ-18-koK" id="X2Y-nc-X95"/>
+                                    <outlet property="NameLabel" destination="lnx-g8-NXQ" id="r1n-j8-dOg"/>
+                                    <outlet property="TimeLabel" destination="ImJ-ox-iKE" id="0ay-Xg-BRk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -2693,7 +2701,7 @@
         <segue reference="4lp-9v-v6X"/>
         <segue reference="KJT-Eh-gBp"/>
         <segue reference="ZKN-4C-Z26"/>
-        <segue reference="5Q1-xC-vtf"/>
+        <segue reference="SWN-wN-OPd"/>
         <segue reference="8LN-zc-rJG"/>
         <segue reference="6Ho-4o-Itr"/>
         <segue reference="3bg-ly-44h"/>

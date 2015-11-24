@@ -12,11 +12,13 @@ import UIKit
 class SummaryViewController: UIViewController {
     
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel : ReservationFullModel?
     internal var hotelModel : HotelModel?
     internal var cateringModel : CateringModel?
     internal var meetingRoomModel :MeetingRoomModel?
     internal var reservationModel : ReservationPackage?
     internal var equipmentForReservation : [EquipmentForReservation]?
+    
     
     
     internal var ProjectorCount = 0
@@ -75,6 +77,7 @@ class SummaryViewController: UIViewController {
             vc.cateringModel = cateringModel
             vc.reservationModel = reservationModel
             vc.equipmentForReservation = equipmentForReservation
+            vc.reservationFullModel = reservationFullModel!
         }
     }
     

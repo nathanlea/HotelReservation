@@ -11,6 +11,7 @@ import UIKit
 
 class ReservationValidationViewController: UIViewController, UITextFieldDelegate, IGLDropDownMenuDelegate {
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel: ReservationFullModel?
     internal var hotelModel : HotelModel?
     internal var meetingRoomModel :MeetingRoomModel?
     internal var equipmentModels : [EquipmentModel]?
@@ -306,6 +307,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
             vc!.hotelModel = hotelModel
             vc!.meetingRoomModel = meetingRoomModel
             vc!.reservationModel = reservationSegueInformation
+            vc!.reservationFullModel = reservationFullModel!
         }
         if let vc = segue.destinationViewController as? CateringOptionsViewController {
             let formatter = NSDateFormatter()
@@ -324,6 +326,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
             vc.hotelModel = hotelModel
             vc.meetingRoomModel = meetingRoomModel
             vc.reservationModel = reservationSegueInformation
+            vc.reservationFullModel = reservationFullModel!
         }
         
     }

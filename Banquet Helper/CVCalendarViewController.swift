@@ -14,12 +14,17 @@ class CVCalendarViewController: UIViewController {
     
     var eventPlannerIndex = 0
     var currentDate = 0
+    var currentData : CVDate?
+    var selectedTimeTime = ""
     
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel : ReservationFullModel?
     internal var hotelModel : HotelModel?
     internal var cateringModel : CateringModel?
     internal var reservationModel : ReservationPackage?
     internal var equipmentForReservation : [EquipmentForReservation]?
+    internal var eventPlannerModel = EventPlannerModel()
+
     
     
     @IBOutlet weak var calendarView: CVCalendarView!
@@ -107,10 +112,28 @@ class CVCalendarViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ToItinerary" {//let vc = segue.destinationViewController as? MenuViewController {
+            
+            eventPlannerModel.Time = String(selectedTimeTime);
+            if eventPlannerIndex == 0 {
+            eventPlannerModel.EventPlanner = "Davis David"
+            } else if  eventPlannerIndex == 1 {
+            eventPlannerModel.EventPlanner = "Mays Blazfield"
+            } else if eventPlannerIndex == 2 {
+            eventPlannerModel.EventPlanner = "Fredrick Phineas"
+            }
+            eventPlannerModel.Date = currentData;
+            
+            saveEverythingAsIfUploading()
+            
             let navc = segue.destinationViewController as! UINavigationController
             let hotelListVC = navc.viewControllers.first as! TableViewController
             hotelListVC.customerModel = customerModel!
+            hotelListVC.reservationFullModel = reservationFullModel!
         }
+    }
+    
+    func saveEverythingAsIfUploading( ) {
+        reservationFullModel?.addReservation(hotelModel!, cM: cateringModel!, rM: reservationModel!, eR: equipmentForReservation!, ePM: eventPlannerModel)
     }
     
     //Button Action Targets
@@ -118,36 +141,43 @@ class CVCalendarViewController: UIViewController {
         clearButtonSelection()
         mornButton1.tintColor = UIColor.redColor()
         selectedTime = 0
+        selectedTimeTime = (mornButton1.titleLabel?.text)!
     }
     @IBAction func mornButton2(sender: AnyObject) {
         clearButtonSelection()
         mornButton2.tintColor = UIColor.redColor()
         selectedTime = 1
+        selectedTimeTime = (mornButton1.titleLabel?.text)!
     }
     @IBAction func mornButton3(sender: AnyObject) {
         clearButtonSelection()
         mornButton3.tintColor = UIColor.redColor()
         selectedTime = 2
+        selectedTimeTime = (mornButton1.titleLabel?.text)!
     }
     @IBAction func aftButton1(sender: AnyObject) {
         clearButtonSelection()
         aftButton1.tintColor = UIColor.redColor()
         selectedTime = 3
+        selectedTimeTime = (mornButton1.titleLabel?.text)!
     }
     @IBAction func aftButton2(sender: AnyObject) {
         clearButtonSelection()
         aftButton2.tintColor = UIColor.redColor()
         selectedTime = 4
+        selectedTimeTime = (mornButton1.titleLabel?.text)!
     }
     @IBAction func eveButton1(sender: AnyObject) {
         clearButtonSelection()
         eveButton1.tintColor = UIColor.redColor()
         selectedTime = 5
+        selectedTimeTime = (mornButton1.titleLabel?.text)!
     }
     @IBAction func eveButton2(sender: AnyObject) {
         clearButtonSelection()
         eveButton2.tintColor = UIColor.redColor()
         selectedTime = 6
+        selectedTimeTime = (mornButton1.titleLabel?.text)!
     }
     
     func clearButtonSelection() {
@@ -335,6 +365,7 @@ extension CVCalendarViewController: CVCalendarViewDelegate, CVCalendarMenuViewDe
     }
     
     func didSelectDayView(dayView: DayView) {
+        currentData = dayView.date
         currentDate = dayView.date.day
         print("\(calendarView.presentedDate.commonDescription) is selected!")
         

@@ -10,6 +10,7 @@ import UIKit
 
 class SingleRoomTableViewController: UITableViewController {
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel : ReservationFullModel?
     internal var hotelModel : HotelModel?
     internal var meetingRoomModel :MeetingRoomModel?
     var equipmentModels = [EquipmentModel]()
@@ -116,6 +117,7 @@ class SingleRoomTableViewController: UITableViewController {
         destVC.hotelModel = hotelModel
         destVC.meetingRoomModel = meetingRoomModel
         destVC.equipmentModels = equipmentModels
+        destVC.reservationFullModel = reservationFullModel!
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
