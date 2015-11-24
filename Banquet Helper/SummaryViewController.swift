@@ -20,7 +20,7 @@ class SummaryViewController: UIViewController {
     internal var equipmentForReservation : [EquipmentForReservation]?
     
     
-    
+    internal var hideButton = false
     internal var ProjectorCount = 0
     internal var ProjectorScreenCount = 0
     internal var LaptopCount = 0
@@ -78,6 +78,7 @@ class SummaryViewController: UIViewController {
             vc.reservationModel = reservationModel
             vc.equipmentForReservation = equipmentForReservation
             vc.reservationFullModel = reservationFullModel!
+            vc.meetingRoomModel = meetingRoomModel
         }
     }
     
@@ -106,6 +107,7 @@ class SummaryViewController: UIViewController {
         Cateringcostlabel.textColor = skipColor
         Equipmentcostlabel.textColor = skipColor
         SubmitButton.setTitleColor(nextColor, forState: UIControlState.Normal)
+        SubmitButton.hidden = hideButton
         for a in LabelCollection {
             a.textColor = labelColor
         }

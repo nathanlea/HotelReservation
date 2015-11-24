@@ -16,6 +16,7 @@ class TableViewController: UITableViewController {
     internal var cateringModel : CateringModel?
     internal var reservationModel : ReservationPackage?
     internal var equipmentForReservation : [EquipmentForReservation]?
+    var selectedIndex = 0
     
     
     override func viewDidLoad() {
@@ -39,7 +40,16 @@ class TableViewController: UITableViewController {
         if let vc = segue.destinationViewController as? MenuViewController {
             vc.customerModel = customerModel
             vc.reservationFullModel = reservationFullModel!
-            
+        }
+        if let vc = segue.destinationViewController as? SummaryViewController {
+            vc.customerModel = customerModel
+            vc.hotelModel = ((reservationFullModel?.hotelModel)! as [HotelModel])[selectedIndex]
+            vc.cateringModel = ((reservationFullModel?.cateringModel)! as [CateringModel])[selectedIndex]
+            vc.reservationModel = ((reservationFullModel?.reservationModel)! as [ReservationPackage])[selectedIndex]
+            vc.equipmentForReservation = ((reservationFullModel?.equipmentForReservation)! as [[EquipmentForReservation]])[selectedIndex]
+            vc.meetingRoomModel = ((reservationFullModel?.meetingRoomModel)! as [MeetingRoomModel])[selectedIndex]
+            vc.reservationFullModel = reservationFullModel!
+            vc.hideButton = true
         }
     }
 
@@ -83,6 +93,21 @@ class TableViewController: UITableViewController {
         
         cell.DayLabel.text = String(comp.day)
         cell.MonthLabel.text = String(comp.month)
+        
+        /* This is just going to have to be a bug
+        if(cell.NameLabel.text == "The Ritz Carlton") {
+            //cell.imageView?.image = UIImage
+            //mugShotImageView.frame = CGRectMake(frame.origin.x, frame.origin.y, 50, 50)
+            cell.imageView?.image = UIImage(named: "Map1")
+            cell.imageView?.contentMode = .ScaleAspectFit
+        } else if (cell.NameLabel.text == "Dallas Marriot Citz Center"){
+            cell.imageView?.image = UIImage(named: "Map2")
+            cell.imageView?.contentMode = .ScaleAspectFit
+            
+        } else if (cell.NameLabel.text == "Renaissance Dallas Hotel"){
+            cell.imageView?.image = UIImage(named: "Map3")
+            cell.imageView?.contentMode = .ScaleAspectFit
+        } */
 
         // Configure the cell...
         
@@ -98,7 +123,8 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.dequeueReusableCellWithIdentifier("IternaryCard", forIndexPath: indexPath)
         
-        print("Touched Cell")
+        selectedIndex = indexPath.item + 1
+        performSegueWithIdentifier("ItineraryToSummary", sender: nil)
         
     }
 

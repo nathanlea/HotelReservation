@@ -48,4 +48,6 @@ class MeetingRoomModel : BaseModel {
         return "{\"Table\" : \"MeetingRooms\",  \"Id\" : \"\(self.Id!)\"}"
     }
     
+    init() {}
+    
 }

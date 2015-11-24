@@ -13,6 +13,7 @@ class ReservationFullModel : BaseModel {
     internal var hotelModel : [HotelModel] = [HotelModel()]
     internal var cateringModel : [CateringModel] = [CateringModel()]
     internal var reservationModel : [ReservationPackage] = [ReservationPackage()]
+    internal var meetingRoomModel : [MeetingRoomModel] = [MeetingRoomModel()]
     internal var equipmentForReservation : [[EquipmentForReservation]] = [[EquipmentForReservation()]]
     internal var eventPlannerModel : [EventPlannerModel] = [EventPlannerModel()]
     
