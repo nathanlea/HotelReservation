@@ -16,12 +16,14 @@ class CVCalendarViewController: UIViewController {
     var currentDate = 0
     var currentData : CVDate?
     var selectedTimeTime = ""
+    var commingFromMenu = false
     
     internal var customerModel : CustomerModel?
     internal var reservationFullModel : ReservationFullModel?
     internal var hotelModel : HotelModel?
     internal var cateringModel : CateringModel?
     internal var reservationModel : ReservationPackage?
+    internal var meetingRoomModel :MeetingRoomModel?
     internal var equipmentForReservation : [EquipmentForReservation]?
     internal var eventPlannerModel = EventPlannerModel()
 
@@ -123,21 +125,32 @@ class CVCalendarViewController: UIViewController {
             }
             eventPlannerModel.Date = currentData;
             
-            saveEverythingAsIfUploading()
+            if let vc = segue.sourceViewController as? MenuViewController {
+                commingFromMenu = true
+            } else {
+                saveEverythingAsIfUploading()
+            }
             
             let navc = segue.destinationViewController as! UINavigationController
             let hotelListVC = navc.viewControllers.first as! TableViewController
             hotelListVC.customerModel = customerModel!
             hotelListVC.reservationFullModel = reservationFullModel!
         }
+        if let vc = segue.destinationViewController as? MenuViewController {
+            vc.customerModel = customerModel
+            vc.reservationFullModel = reservationFullModel!
+        }
     }
     
     func saveEverythingAsIfUploading( ) {
-        reservationFullModel?.hotelModel.append(hotelModel!)
-        reservationFullModel?.cateringModel.append(cateringModel!)
-        reservationFullModel?.reservationModel.append(reservationModel!)
-        reservationFullModel?.equipmentForReservation.append(equipmentForReservation!)
-        reservationFullModel?.eventPlannerModel.append(eventPlannerModel)
+        if let _ = hotelModel as! HotelModel! {
+            reservationFullModel?.hotelModel.append(hotelModel!)
+            reservationFullModel?.cateringModel.append(cateringModel!)
+            reservationFullModel?.reservationModel.append(reservationModel!)
+            reservationFullModel?.equipmentForReservation.append(equipmentForReservation!)
+            reservationFullModel?.eventPlannerModel.append(eventPlannerModel)
+            reservationFullModel?.meetingRoomModel.append(meetingRoomModel!)
+        }
         
         //reservationFullModel?.addReservation(hotelModel!, cM: cateringModel!, rM: reservationModel!, eR: equipmentForReservation!, ePM: eventPlannerModel)
     }
