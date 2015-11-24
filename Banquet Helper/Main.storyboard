@@ -356,7 +356,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="347" id="uHt-ta-kIU">
-                                <rect key="frame" x="0.0" y="22" width="768" height="347"/>
+                                <rect key="frame" x="0.0" y="66" width="768" height="347"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="uHt-ta-kIU" id="XuN-VT-Ey7">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="346"/>
@@ -561,7 +561,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jsb-0f-kjc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="a7w-2U-oa2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -591,7 +591,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VhD-AU-X6D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LDC-ab-RO7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuo-i3-d3J">
@@ -720,7 +720,7 @@
                         <viewControllerLayoutGuide type="bottom" id="H8j-Oj-xqO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fd6-x7-HnK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oyu-H3-H1i">
@@ -827,6 +827,7 @@
         <!--Navigation Controller-->
         <scene sceneID="9G5-24-iUn">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8tA-eF-4zR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="tBo-fk-kpn" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vuC-Ir-x9R">
@@ -838,7 +839,6 @@
                         <segue destination="WD8-a3-hNB" kind="relationship" relationship="rootViewController" id="aFm-UP-rIa"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8tA-eF-4zR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2171" y="-1209"/>
         </scene>
@@ -1437,7 +1437,7 @@
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tBo-fk-kpn" kind="show" id="iVx-8j-BDJ"/>
+                                    <segue destination="tBo-fk-kpn" kind="show" identifier="reserveRoomSegue" id="iVx-8j-BDJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTv-En-vRM">
@@ -2688,10 +2688,10 @@
         <image name="StepperPlus.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5Q1-xC-vtf"/>
         <segue reference="4lp-9v-v6X"/>
         <segue reference="KJT-Eh-gBp"/>
         <segue reference="G0b-Cv-j94"/>
+        <segue reference="SWN-wN-OPd"/>
         <segue reference="IgE-dg-ygI"/>
         <segue reference="8LN-zc-rJG"/>
         <segue reference="6Ho-4o-Itr"/>

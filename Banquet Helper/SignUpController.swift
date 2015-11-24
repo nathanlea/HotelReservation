@@ -21,7 +21,7 @@ import UIKit
 
 class signUpController: UIViewController, UITextFieldDelegate
 {
-    
+    var customerModel = CustomerModel()
     var pass = 0
     
     var name:String = "Jeff Winger"
@@ -149,6 +149,7 @@ class signUpController: UIViewController, UITextFieldDelegate
                     repository.addToDataBase(customer.setNewCustomerJsonString(), urlString: customer.setNewCustomerUrlString()){
                         (complete : Bool) in
                         if(complete){
+                            self.customerModel = customer
                             dispatch_async( dispatch_get_main_queue(), {
                                 self.performSegueWithIdentifier("signedUp", sender: nil)
                             })
@@ -200,6 +201,7 @@ class signUpController: UIViewController, UITextFieldDelegate
             secondVC.name = nameField.text!
             secondVC.phone = phoneField.text!
             secondVC.password = passField.text!
+            secondVC.customerModel = self.customerModel
         }
         if(segue.identifier == "ToSignIn")
         {

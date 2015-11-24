@@ -9,7 +9,10 @@
 import UIKit
 
 class ReservationValidationViewController: UIViewController, IGLDropDownMenuDelegate {
-    
+    internal var customerModel : CustomerModel?
+    internal var hotelModel : HotelModel?
+    internal var meetingRoomModel :MeetingRoomModel?
+    internal var equipmentModels : [EquipmentModel]?
     var reservationSegueInformation = ReservationPackage()
     
     let MaxDaysReservationForsight = 14
