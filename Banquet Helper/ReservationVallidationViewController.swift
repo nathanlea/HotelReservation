@@ -19,6 +19,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
     var popDatePickerStartTime : PopDatePicker?
     var popDatePickerEndTime : PopDatePicker?
     var dateStringSelected : String = ""
+    var  selectedEventType : String = ""
     
     //let initDate : NSDate? = formatter.dateFromString(dateTextField.text!)
     
@@ -142,8 +143,23 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let _ = segue.destinationViewController as? ViewController1 {
+        if let vc = segue.destinationViewController as? CateringOptionsViewController {
+            let formatter = NSDateFormatter()
+
+            formatter.dateStyle = .MediumStyle
+            formatter.timeStyle = .NoStyle
+            reservationSegueInformation.dateOfEvent = formatter.dateFromString(dateTextField.text!)!
+            formatter.dateStyle = .NoStyle
+            formatter.timeStyle = .ShortStyle
+            reservationSegueInformation.startTime = formatter.dateFromString(startTimeTextField.text!)!
+            reservationSegueInformation.endTime = formatter.dateFromString(endTimeTextField.text!)!
+            reservationSegueInformation.eventType = selectedEventType
+            reservationSegueInformation.headCount = Int(headCountTextField.text!)!
             
+            vc.customerModel = customerModel
+            vc.hotelModel = hotelModel
+            vc.meetingRoomModel = meetingRoomModel
+            vc.reservationModel = reservationSegueInformation
         }
     }
     
@@ -173,7 +189,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(customerModel?.FirstName, customerModel?.LastName, hotelModel?.HotelName, meetingRoomModel?.RoomName)
+        print(customerModel?.FirstName); print(customerModel?.LastName); print(hotelModel?.HotelName); print(meetingRoomModel?.RoomName)
         for equipmentModel in equipmentModels!{
             print(equipmentModel.Name)
         }
@@ -266,8 +282,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
         
         let item:IGLDropDownItem = dropDownMenu.dropDownItems[index] as! IGLDropDownItem
         print("Selected: \(item.text)")
-        
-        
+        selectedEventType = item.text
     }
     
     /*

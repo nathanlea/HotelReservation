@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0F2EC81C0410C000248510 /* CateringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F2EC71C0410C000248510 /* CateringModel.swift */; };
+		0E0F2ECC1C04220700248510 /* EquipmentForReservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F2ECB1C04220700248510 /* EquipmentForReservation.swift */; };
 		0E73A1301BFFE88400793C4E /* RoomListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73A12F1BFFE88400793C4E /* RoomListTableTableViewController.swift */; };
 		0E8274991C03CA9900B06390 /* PopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8274981C03CA9900B06390 /* PopDatePicker.swift */; };
 		0E82749B1C03CA9E00B06390 /* PopDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82749A1C03CA9E00B06390 /* PopDateViewController.swift */; };
@@ -96,6 +98,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0F2EC71C0410C000248510 /* CateringModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CateringModel.swift; sourceTree = "<group>"; };
+		0E0F2ECB1C04220700248510 /* EquipmentForReservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentForReservation.swift; sourceTree = "<group>"; };
 		0E73A12F1BFFE88400793C4E /* RoomListTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListTableTableViewController.swift; sourceTree = "<group>"; };
 		0E8274981C03CA9900B06390 /* PopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDatePicker.swift; sourceTree = "<group>"; };
 		0E82749A1C03CA9E00B06390 /* PopDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDateViewController.swift; sourceTree = "<group>"; };
@@ -261,25 +265,29 @@
 				0E82749E1C03CAA800B06390 /* PopDatePicker */,
 				1C3F2E6E1C00113F00973295 /* Banquet Helper */,
 				1C02546F1BFADB1500F7039E /* BaseModel.swift */,
-				1C2E817B1C02C9F8009D31B4 /* SingleRoomTableViewController.swift */,
 				1C9832C51C03B6E60083AB8B /* EquipmentModel.swift */,
+				0E0F2ECB1C04220700248510 /* EquipmentForReservation.swift */,
 				1C73C3CC1BFC52550091042B /* GenericHotelListCell.swift */,
 				1C73C3CD1BFC52550091042B /* HotelListTableViewController.swift */,
 				4E6856731C02449700199B1E /* MenuViewController.swift */,
 				0E73A12F1BFFE88400793C4E /* RoomListTableTableViewController.swift */,
+				1C2E817B1C02C9F8009D31B4 /* SingleRoomTableViewController.swift */,
+				D82450131BF2F55D00F7053A /* ReservationVallidationViewController.swift */,
 				4ED96D901BFB93A0002E75C9 /* SignUpController.swift */,
 				4ED96D921BFB93D1002E75C9 /* signInController.swift */,
 				4ED96D941BFB93F8002E75C9 /* SignInTestController.swift */,
 				1C0254701BFADB1500F7039E /* CustomerModel.swift */,
 				1C0254711BFADB1500F7039E /* HotelModel.swift */,
+				0E0F2EC71C0410C000248510 /* CateringModel.swift */,
 				1C0254721BFADB1500F7039E /* HotelRepository.swift */,
 				1C0254731BFADB1500F7039E /* MeetingRoomModel.swift */,
 				1C0254741BFADB1500F7039E /* PagedViewController.swift */,
 				1C0254751BFADB1500F7039E /* ReservedTimeModel.swift */,
+				6FBC74C21C02B61B007ECB3E /* ReservationPackage.swift */,
 				5B9B6CB21C02BE17006061B5 /* CateringOptionsViewController.swift */,
 				5B9B6CB31C02BE17006061B5 /* EquipmentOptionsViewController.swift */,
+				D82653F31BF97CC10053748D /* SummaryViewController.swift */,
 				1C73C3D01BFC536F0091042B /* Main.storyboard */,
-				6FBC74C21C02B61B007ECB3E /* ReservationPackage.swift */,
 				1C0254761BFADB1500F7039E /* Table.swift */,
 				D8244FD91BF2F3BE00F7053A /* AppDelegate.swift */,
 				D8244FDB1BF2F3BE00F7053A /* ViewController.swift */,
@@ -288,7 +296,6 @@
 				D824500E1BF2F55D00F7053A /* HotelReservation.xcdatamodeld */,
 				D82450111BF2F55D00F7053A /* PageItemController.swift */,
 				D82450121BF2F55D00F7053A /* PageViewController.swift */,
-				D82450131BF2F55D00F7053A /* ReservationVallidationViewController.swift */,
 				D82450141BF2F55D00F7053A /* SignUpViewController.swift */,
 				D82450151BF2F55D00F7053A /* TableViewController.swift */,
 				D82450161BF2F55D00F7053A /* userAccount.swift */,
@@ -300,7 +307,6 @@
 				D8244FE51BF2F3BE00F7053A /* LaunchScreen.storyboard */,
 				D8244FE81BF2F3BE00F7053A /* Info.plist */,
 				D8244FE01BF2F3BE00F7053A /* Banquet_Helper.xcdatamodeld */,
-				D82653F31BF97CC10053748D /* SummaryViewController.swift */,
 				1C3F2E701C00118500973295 /* MeetingRoomListCell.swift */,
 				1CE689781C00C9AC008BFABD /* DataTypeExtensions.swift */,
 			);
@@ -607,6 +613,8 @@
 				D82450291BF2F55D00F7053A /* ViewControllerDerrian.swift in Sources */,
 				4E6856741C02449700199B1E /* MenuViewController.swift in Sources */,
 				D824501D1BF2F55D00F7053A /* Hotel_Reservation.xcdatamodeld in Sources */,
+				0E0F2ECC1C04220700248510 /* EquipmentForReservation.swift in Sources */,
+				0E0F2EC81C0410C000248510 /* CateringModel.swift in Sources */,
 				1C73C3CE1BFC52550091042B /* GenericHotelListCell.swift in Sources */,
 				D82450261BF2F55D00F7053A /* view1controller.swift in Sources */,
 				D82450251BF2F55D00F7053A /* userAccount.swift in Sources */,

@@ -10,6 +10,7 @@ import UIKit
 
 class ReservationPackage {
 
+    var ID: Int
     var dateOfEvent: NSDate
     var startTime: NSDate
     var endTime: NSDate
@@ -22,6 +23,7 @@ class ReservationPackage {
         endTime = NSDate()
         eventType = ""
         headCount = 0
+        ID = random()
     }
 
 }
