@@ -118,7 +118,8 @@ class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIP
     }
     
     // The number of columns of data
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
+    {
         return 1
     }
     
