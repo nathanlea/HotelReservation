@@ -9,6 +9,12 @@
 import UIKit
 
 class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    internal var customerModel : CustomerModel?
+    internal var hotelModel : HotelModel?
+    internal var meetingRoomModel :MeetingRoomModel?
+    internal var cateringModel : CateringModel?
+    internal var reservationModel : ReservationPackage?    
 
     @IBOutlet weak var Alcoholpicker: UIPickerView!
     @IBOutlet weak var Cateringpicker: UIPickerView!
@@ -64,17 +70,37 @@ class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIP
         if let vc = segue.destinationViewController as? EquipmentOptionsViewController {
             if(segue.identifier == "NextSegue")
             {
-            vc.additionalnotes1 = AdditionalNotes1.text
-            vc.additionalnotes2 = AdditionalNotes2.text
-            vc.cateringchoice = selectedcateringchoice
-            vc.alcoholchoice = selectedalcoholchoice
+                /*vc.additionalnotes1 = AdditionalNotes1.text
+                vc.additionalnotes2 = AdditionalNotes2.text
+                vc.cateringchoice = selectedcateringchoice
+                vc.alcoholchoice = selectedalcoholchoice*/
+                
+                cateringModel?.FoodOption = selectedcateringchoice
+                cateringModel?.FoodAdditionalNotes = AdditionalNotes1.text
+                cateringModel?.AlcoholChoice = selectedalcoholchoice
+                cateringModel?.AlcoholAdditionalNotes = AdditionalNotes2.text
+                
+                vc.cateringModel = cateringModel
+                vc.hotelModel = hotelModel
+                vc.customerModel = customerModel
+                vc.reservationModel = reservationModel
             }
            if(segue.identifier == "Skipsegue")
             {
-                vc.additionalnotes1 = ""
+                /*vc.additionalnotes1 = ""
                 vc.additionalnotes2 = ""
                 vc.cateringchoice = cateringpickerData[2]
-                vc.alcoholchoice = alcoholData[0]
+                vc.alcoholchoice = alcoholData[0]*/
+                
+                cateringModel?.FoodOption = cateringpickerData[2]
+                cateringModel?.FoodAdditionalNotes = ""
+                cateringModel?.AlcoholChoice = alcoholData[0]
+                cateringModel?.AlcoholAdditionalNotes = ""
+                
+                vc.cateringModel = cateringModel
+                vc.hotelModel = hotelModel
+                vc.customerModel = customerModel
+                vc.reservationModel = reservationModel
             }
         }
     }

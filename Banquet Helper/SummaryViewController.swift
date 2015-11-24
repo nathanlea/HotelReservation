@@ -10,6 +10,14 @@ import Foundation
 import UIKit
 //Main View Controller Class
 class SummaryViewController: UIViewController {
+    
+    internal var customerModel : CustomerModel?
+    internal var hotelModel : HotelModel?
+    internal var cateringModel : CateringModel?
+    internal var reservationModel : ReservationPackage?
+    internal var equipmentForReservation : [EquipmentForReservation]?
+    
+    
     internal var ProjectorCount = 0
     internal var ProjectorScreenCount = 0
     internal var LaptopCount = 0
@@ -31,32 +39,21 @@ class SummaryViewController: UIViewController {
     @IBOutlet weak var TotalPrice: UILabel!
     @IBOutlet weak var TotalPriceSubtitle: UILabel!
     @IBOutlet weak var TotalPriceAmt: UILabel!
-    
     @IBOutlet weak var RoomLabel: UILabel!
     @IBOutlet weak var CateringLabel: UILabel!
     @IBOutlet weak var EquipmentBranch: UILabel!
-    
     @IBOutlet weak var Roomcountlabel: UILabel!
     @IBOutlet weak var Cateringcostlabel: UILabel!
     @IBOutlet weak var Equipmentcostlabel: UILabel!
-    
     @IBOutlet var LabelCollection: [UILabel]!
-    
     @IBOutlet weak var HotelPriceperHour: UILabel!
     @IBOutlet weak var NoofHours: UILabel!
-    
     @IBOutlet weak var CateringPrice: UILabel!
     @IBOutlet weak var NoofPeople: UILabel!
-    
     @IBOutlet var EquipmentCollection: [UILabel]!
-    
     @IBOutlet weak var SubmitButton: UIButton!
-    
     @IBOutlet weak var CateringChoiceLabel: UILabel!
-    
     @IBOutlet weak var CostPerHead: UILabel!
-   
-    
     @IBOutlet var Separators: [UILabel]!
     
     
@@ -76,6 +73,7 @@ class SummaryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*
         print("Notes here: \(additionalnotes)")
         print("count1 :\(ProjectorCount)")
         print("count2 :\(ProjectorScreenCount)")
@@ -86,7 +84,7 @@ class SummaryViewController: UIViewController {
         print("count7 :\(OverheadProjectorCount)")
         print("count8 :\(MircophoneCount)")
         print("count9 :\(WhiteboardCount)")
-        print("count10 :\(LoudSpeakerCount)")
+        print("count10 :\(LoudSpeakerCount)")*/
         TotalPrice.textColor = labelColor
         TotalPriceSubtitle.textColor = nextColor
         TotalPriceAmt.textColor = skipColor
@@ -105,29 +103,28 @@ class SummaryViewController: UIViewController {
             b.textColor = skipColor
         }
         
-        EquipmentCollection[0].text! = String(ProjectorCount)
-        EquipmentCollection[1].text! = String(ProjectorScreenCount)
-        EquipmentCollection[2].text! = String(LaptopCount)
-        EquipmentCollection[3].text! = String(CDDVDCount)
-        EquipmentCollection[4].text! = String(DigitalAudioCount)
-        EquipmentCollection[5].text! = String(VideoCassetteCount)
-        EquipmentCollection[6].text! = String(OverheadProjectorCount)
-        EquipmentCollection[7].text! = String(MircophoneCount)
-        EquipmentCollection[8].text! = String(WhiteboardCount)
-        EquipmentCollection[9].text! = String(LoudSpeakerCount)
-        CateringChoiceLabel.text = cateringchoicepassed
+        EquipmentCollection[0].text! = String((equipmentForReservation as [EquipmentForReservation]!)[0].Quantity!) //String(ProjectorCount)
+        EquipmentCollection[1].text! = String((equipmentForReservation as [EquipmentForReservation]!)[1].Quantity!)
+        EquipmentCollection[2].text! = String((equipmentForReservation as [EquipmentForReservation]!)[2].Quantity!)
+        EquipmentCollection[3].text! = String((equipmentForReservation as [EquipmentForReservation]!)[3].Quantity!)
+        EquipmentCollection[4].text! = String((equipmentForReservation as [EquipmentForReservation]!)[4].Quantity!)
+        EquipmentCollection[5].text! = String((equipmentForReservation as [EquipmentForReservation]!)[5].Quantity!)
+        EquipmentCollection[6].text! = String((equipmentForReservation as [EquipmentForReservation]!)[6].Quantity!)
+        EquipmentCollection[7].text! = String((equipmentForReservation as [EquipmentForReservation]!)[7].Quantity!)
+        EquipmentCollection[8].text! = String((equipmentForReservation as [EquipmentForReservation]!)[8].Quantity!)
+        EquipmentCollection[9].text! = String((equipmentForReservation as [EquipmentForReservation]!)[9].Quantity!)
+        
+        CateringChoiceLabel.text = cateringModel?.FoodOption
         if(cateringchoicepassed == "Buffet($45 per head)")
         {
-         CostPerHead.text = "$45"
+            CostPerHead.text = "$45"
             CateringCost = 45
-        }
-        if(cateringchoicepassed == "Ala-Carte($30 per head)")
+        } else if(cateringchoicepassed == "Ala-Carte($30 per head)")
         {
             CostPerHead.text = "$30"
             CateringCost = 30
             
-        }
-        if(cateringchoicepassed == "No catering")
+        } else if(cateringchoicepassed == "No catering")
         {
             CostPerHead.text = "$0"
             CateringCost = 0
