@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C47a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X9h-6n-ri4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X9h-6n-ri4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -815,7 +815,7 @@
                                     <color key="titleShadowColor" red="0.9137254901960784" green="0.83921568627450982" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gFC-Wa-Z1q" kind="show" identifier="ShowCateringOptions" id="Kdd-fX-UML"/>
+                                    <action selector="nextButton:" destination="Eh5-LH-DY5" eventType="touchUpInside" id="ulB-yF-9TW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -827,14 +827,16 @@
                     <connections>
                         <outlet property="dateTextField" destination="Oyu-H3-H1i" id="irN-D5-j8Q"/>
                         <outlet property="endTimeTextField" destination="bP0-zk-gfx" id="llk-r4-U27"/>
+                        <outlet property="eventTypeField" destination="9B4-JS-P2E" id="Fqu-Ft-bZV"/>
                         <outlet property="headCountTextField" destination="BO2-8e-tNJ" id="dBm-GS-bAq"/>
                         <outlet property="startTimeTextField" destination="gFf-PC-R5D" id="wDu-Lr-HUM"/>
+                        <segue destination="kOD-GU-qVN" kind="show" identifier="comfirmed" id="zqS-kD-TuM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMp-zd-2aO" sceneMemberID="firstResponder"/>
                 <exit id="bTa-Uf-QkG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="-1209"/>
+            <point key="canvasLocation" x="1570" y="-1201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9G5-24-iUn">
@@ -1917,7 +1919,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzl-dt-mQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5349" y="-1187"/>
+            <point key="canvasLocation" x="4477" y="-1201"/>
         </scene>
         <!--EQUIPMENT OPTIONS-->
         <scene sceneID="w16-dO-hvM">
@@ -2375,7 +2377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szJ-dQ-OVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4469" y="-1187"/>
+            <point key="canvasLocation" x="3513" y="-1201"/>
         </scene>
         <!--CATERING OPTIONS-->
         <scene sceneID="X2T-SL-T41">
@@ -2482,27 +2484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDO-Fb-FIR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3640" y="-1187"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="F48-yr-mnh">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gFC-Wa-Z1q" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f1z-Qg-9JZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="kOD-GU-qVN" kind="relationship" relationship="rootViewController" id="jeY-6d-5UX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CHd-hK-Era" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2769" y="-1187"/>
+            <point key="canvasLocation" x="2456" y="-1201"/>
         </scene>
         <!--SingleRoomViewController-->
         <scene sceneID="dp7-Cl-5Ix">
@@ -2703,13 +2685,13 @@
         <image name="StepperPlus.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="4lp-9v-v6X"/>
+        <segue reference="KJT-Eh-gBp"/>
         <segue reference="G0b-Cv-j94"/>
         <segue reference="SWN-wN-OPd"/>
         <segue reference="IgE-dg-ygI"/>
-        <segue reference="tlP-aV-mbo"/>
         <segue reference="8LN-zc-rJG"/>
         <segue reference="6Ho-4o-Itr"/>
         <segue reference="3bg-ly-44h"/>
-        <segue reference="KJT-Eh-gBp"/>
     </inferredMetricsTieBreakers>
 </document>

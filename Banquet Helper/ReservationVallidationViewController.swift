@@ -173,6 +173,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
     
     // Start time text field outlet and action
     @IBOutlet weak var startTimeTextField: UITextField!
+    @IBOutlet weak var eventTypeField: UITextField!
     @IBAction func startTimeTextFieldEditing(sender: UITextField) {
     }
     
@@ -188,6 +189,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Testing")
         
         print(customerModel?.FirstName); print(customerModel?.LastName); print(hotelModel?.HotelName); print(meetingRoomModel?.RoomName)
         for equipmentModel in equipmentModels!{
@@ -210,6 +212,100 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
         setupInit()
     }
     
+    @IBAction func nextButton(sender: UIButton) {
+        
+        if( dateTextField.text!.isEmpty)
+        {
+            let alert = UIAlertView()
+            alert.title = "No Date Entered"
+            alert.message = "Please Enter A Date For The Event."
+            alert.addButtonWithTitle("Ok")
+            alert.show()
+        }
+        else if(startTimeTextField.text!.isEmpty)
+        {
+            let alert = UIAlertView()
+            alert.title = "No Start Time Entered"
+            alert.message = "Please Enter a Start time"
+            alert.addButtonWithTitle("Ok")
+            alert.show()
+            
+        }
+            
+        else if( endTimeTextField.text!.isEmpty)
+        {
+            let alert = UIAlertView()
+            alert.title = "No End Time Entered"
+            alert.message = "Please Enter a End Time"
+            alert.addButtonWithTitle("Ok")
+            alert.show()
+        }
+        else if( eventTypeField.text!.isEmpty)
+        {
+            let alert = UIAlertView()
+            alert.title = "No Password Entered"
+            alert.message = "Please Enter the Type of Event"
+            alert.addButtonWithTitle("Ok")
+            alert.show()
+        }
+        else if( headCountTextField.text!.isEmpty)
+        {
+            let alert = UIAlertView()
+            alert.title = "No People Entered"
+            alert.message = "Please Enter the Number of Expected people"
+            alert.addButtonWithTitle("Ok")
+            alert.show()
+        }
+            
+            
+        else
+        {
+            //comfirmed
+            self.performSegueWithIdentifier("confirmed", sender: nil)
+            
+            
+           let repository = HotelRepository()
+            repository.GetSpecific(Table.Name.Customers, parameters: self.customerModel.getExistingCustomerJsonParameters(emailField.text!, password: passField.text!)){
+                (json: NSDictionary, ok: Bool) in
+                
+                if(ok){
+                    self.customerModel = CustomerModel(jsonObject: json)
+                    self.passName = self.customerModel.FirstName!
+                    if(self.customerModel.Id != nil){
+                        dispatch_async( dispatch_get_main_queue(), {
+                            
+                            self.performSegueWithIdentifier("signedIn", sender: nil)
+                        })
+                    }
+                    
+                }
+                else{
+                    dispatch_async( dispatch_get_main_queue(), {
+                        let alert = UIAlertView()
+                        alert.title = "Record Not Found"
+                        alert.message = "Username or Password is incorrect, please try again or Sign Up if you don't have an account."
+                        alert.addButtonWithTitle("Ok")
+                        alert.show()
+                    })
+                }
+            }*/
+        }
+        
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if(segue.identifier == "confirmed")
+        {
+            let secondVC: MenuViewController = segue.destinationViewController as! MenuViewController
+            secondVC.email = emailField.text!
+            secondVC.name = nameField.text!
+            secondVC.phone = phoneField.text!
+            secondVC.password = passField.text!
+            secondVC.customerModel = self.customerModel
+        }
+        
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

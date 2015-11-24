@@ -18,6 +18,8 @@ class SingleRoomTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Customer Test: \(customerModel?.FirstName), \(customerModel?.LastName), \(hotelModel?.HotelName), \(meetingRoomModel?.RoomName)")
+    
         
         self.title = meetingRoomModel?.RoomName
         repository.Get(Table.Name.AvailableEquipment){
