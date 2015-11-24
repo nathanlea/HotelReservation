@@ -10,6 +10,7 @@ import UIKit
 
 class RoomListTableViewController: UITableViewController {
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel: ReservationFullModel?
     internal var hotelModel : HotelModel?
     let repository = HotelRepository()
     var genericArray = [Any]()
@@ -99,6 +100,7 @@ class RoomListTableViewController: UITableViewController {
         controller.customerModel = customerModel
         controller.meetingRoomModel = meetingRoomModels[indexPath!.row]
         controller.hotelModel = hotelModel
+        controller.reservationFullModel = reservationFullModel!
         
         
     }    /*

@@ -11,9 +11,10 @@ import UIKit
 class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel : ReservationFullModel?
     internal var hotelModel : HotelModel?
     internal var meetingRoomModel :MeetingRoomModel?
-    internal var cateringModel : CateringModel?
+    internal var cateringModel = CateringModel()
     internal var reservationModel : ReservationPackage?    
 
     @IBOutlet weak var Alcoholpicker: UIPickerView!
@@ -75,15 +76,17 @@ class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIP
                 vc.cateringchoice = selectedcateringchoice
                 vc.alcoholchoice = selectedalcoholchoice*/
                 
-                cateringModel?.FoodOption = selectedcateringchoice
-                cateringModel?.FoodAdditionalNotes = AdditionalNotes1.text
-                cateringModel?.AlcoholChoice = selectedalcoholchoice
-                cateringModel?.AlcoholAdditionalNotes = AdditionalNotes2.text
+                cateringModel.FoodOption = selectedcateringchoice
+                cateringModel.FoodAdditionalNotes = AdditionalNotes1.text
+                cateringModel.AlcoholChoice = selectedalcoholchoice
+                cateringModel.AlcoholAdditionalNotes = AdditionalNotes2.text
                 
                 vc.cateringModel = cateringModel
                 vc.hotelModel = hotelModel
                 vc.customerModel = customerModel
                 vc.reservationModel = reservationModel
+                vc.meetingRoomModel = meetingRoomModel
+                vc.reservationFullModel = reservationFullModel!
             }
            if(segue.identifier == "Skipsegue")
             {
@@ -92,15 +95,17 @@ class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIP
                 vc.cateringchoice = cateringpickerData[2]
                 vc.alcoholchoice = alcoholData[0]*/
                 
-                cateringModel?.FoodOption = cateringpickerData[2]
-                cateringModel?.FoodAdditionalNotes = ""
-                cateringModel?.AlcoholChoice = alcoholData[0]
-                cateringModel?.AlcoholAdditionalNotes = ""
+                cateringModel.FoodOption = cateringpickerData[2]
+                cateringModel.FoodAdditionalNotes = ""
+                cateringModel.AlcoholChoice = alcoholData[0]
+                cateringModel.AlcoholAdditionalNotes = ""
                 
                 vc.cateringModel = cateringModel
                 vc.hotelModel = hotelModel
                 vc.customerModel = customerModel
                 vc.reservationModel = reservationModel
+                vc.meetingRoomModel = meetingRoomModel
+                vc.reservationFullModel = reservationFullModel!
             }
         }
     }
@@ -135,7 +140,7 @@ class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIP
         cateringpickerData = ["Buffet($45 per head)", "Ala-Carte($30 per head)", "No catering"]
         alcoholData = ["No", "Yes"]
         selectedalcoholchoice = alcoholData[0]
-        selectedcateringchoice = cateringpickerData[2]
+        selectedcateringchoice = cateringpickerData[0]
     }
 
     override func didReceiveMemoryWarning() {

@@ -23,4 +23,8 @@ class CateringModel : BaseModel {
         self.AlcoholAdditionalNotes = jsonObject["AlcoholAdditionalNotes"] as? String
         self.AlcoholChoice = jsonObject["AlcoholChoice"] as? String
     }
+    
+    init() {
+        
+    }
 }

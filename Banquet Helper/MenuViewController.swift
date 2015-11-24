@@ -10,6 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel = ReservationFullModel()
     var name:String = "User"
     var email:String = ""
     var phone:String = ""
@@ -47,20 +48,25 @@ class MenuViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
-        switch(segue.identifier!){
+        switch(segue.identifier!) {
         case "reserveRoomSegue":
         let navc = segue.destinationViewController as! UINavigationController
         let hotelListVC = navc.viewControllers.first as! HotelListTableViewController
         hotelListVC.customerModel = customerModel!
+        hotelListVC.reservationFullModel = reservationFullModel
         
         case "meetwithaplannersegue":
             
             let navc = segue.destinationViewController as! UINavigationController
             let destinationVC = navc.viewControllers.first as! CVCalendarViewController
+            destinationVC.customerModel = customerModel
+            destinationVC.reservationFullModel = reservationFullModel
             //pass variables if you need them
         case "itinerarysegue":
             let navc = segue.destinationViewController as! UINavigationController
             let destinationVC = navc.viewControllers.first as! TableViewController
+            destinationVC.customerModel = customerModel
+            destinationVC.reservationFullModel = reservationFullModel
             //passvariables if you need them
             
         default:

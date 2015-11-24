@@ -10,10 +10,13 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    @IBAction func ViewOrderSummary(sender: AnyObject) {
-        print("BUTTON TOUCHED")
-        
-    }
+    internal var customerModel : CustomerModel?
+    internal var reservationFullModel : ReservationFullModel?
+    internal var hotelModel : HotelModel?
+    internal var cateringModel : CateringModel?
+    internal var reservationModel : ReservationPackage?
+    internal var equipmentForReservation : [EquipmentForReservation]?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +34,14 @@ class TableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let vc = segue.destinationViewController as? MenuViewController {
+            vc.customerModel = customerModel
+            vc.reservationFullModel = reservationFullModel!
+            
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -41,14 +52,41 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        if((reservationFullModel?.hotelModel.count)! == 1) {
+            return 0
+        } else {
+            return (reservationFullModel?.hotelModel.count)! - 1
+        }
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("IternaryCard", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("IternaryCard", forIndexPath: indexPath) as! CustomTableViewCell
+
+        
+        let item = indexPath.item + 1
+        
+        cell.NameLabel.text = ((reservationFullModel?.hotelModel)! as [HotelModel])[item].HotelName
+        
+        let formatter = NSDateFormatter()
+        
+        formatter.dateStyle = .NoStyle
+        formatter.timeStyle = .ShortStyle
+        
+        cell.TimeLabel.text = formatter.stringFromDate(((reservationFullModel?.reservationModel)! as [ReservationPackage])[item].startTime)
+        cell.LocationLabel.text = ((reservationFullModel?.hotelModel)! as [HotelModel])[item].StreetAddress!
+        
+        var day = ((reservationFullModel?.reservationModel)! as [ReservationPackage])[item].dateOfEvent
+        
+        let calendar = NSCalendar.currentCalendar()
+        let comp = calendar.components([.Month, .Day], fromDate: day)
+        
+        cell.DayLabel.text = String(comp.day)
+        cell.MonthLabel.text = String(comp.month)
 
         // Configure the cell...
+        
+        //reservationFullModel
         
         //cell.contentView.layer.borderWidth = 1
         //cell.contentView.layer.borderColor = UIColor.blackColor().CGColor//UIColor(red: 227, green: 134, blue: 114, alpha: 1).CGColor

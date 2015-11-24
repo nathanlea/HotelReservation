@@ -14,10 +14,12 @@ class EquipmentOptionsViewController: UIViewController {
     //These are not all max of 10, someone should fix this
     
     internal var customerModel : CustomerModel?
+    internal var reservationFullModel : ReservationFullModel?
     internal var hotelModel : HotelModel?
     internal var cateringModel : CateringModel?
+    internal var meetingRoomModel :MeetingRoomModel?
     internal var reservationModel: ReservationPackage?
-    internal var equipmentForReservation : [EquipmentForReservation]?
+    internal var equipmentForReservation = [EquipmentForReservation()]
     
     var maxValue = 5
     @IBOutlet weak var Notes: UITextView!
@@ -76,26 +78,27 @@ class EquipmentOptionsViewController: UIViewController {
              if(segue.identifier == "NextSegueEq")
             {
                 vc.additionalnotes = Notes.text
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Projector", quantity: Int(Countlabels[0].text!)!, pricePerUnit: 0.0))
+                equipmentForReservation.removeAll()
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Projector", quantity: Int(Countlabels[0].text!)!, pricePerUnit: 0.0))
                 //vc.ProjectorCount = Int(Countlabels[0].text!)!
                 //vc.ProjectorScreenCount = Int(Countlabels[1].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Projector Screnn", quantity: Int(Countlabels[0].text!)!, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Projector Screnn", quantity: Int(Countlabels[0].text!)!, pricePerUnit: 0.0))
                 //vc.LaptopCount = Int(Countlabels[2].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Laptop", quantity: Int(Countlabels[2].text!)!, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Laptop", quantity: Int(Countlabels[2].text!)!, pricePerUnit: 0.0))
                 //vc.CDDVDCount = Int(Countlabels[3].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "CDDVD", quantity: Int(Countlabels[3].text!)!, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "CDDVD", quantity: Int(Countlabels[3].text!)!, pricePerUnit: 0.0))
                 //vc.DigitalAudioCount = Int(Countlabels[4].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Digital Audio", quantity: Int(Countlabels[4].text!)!, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Digital Audio", quantity: Int(Countlabels[4].text!)!, pricePerUnit: 0.0))
                 //vc.VideoCassetteCount = Int(Countlabels[5].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Video Cassette", quantity: Int(Countlabels[5].text!)!, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Video Cassette", quantity: Int(Countlabels[5].text!)!, pricePerUnit: 0.0))
                 //vc.OverheadProjectorCount = Int(Countlabels[6].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Overhead Projector", quantity: Int(Countlabels[6].text!)!, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Overhead Projector", quantity: Int(Countlabels[6].text!)!, pricePerUnit: 0.0))
                 //vc.MircophoneCount = Int(Countlabels[7].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Microphone", quantity: Int(Countlabels[7].text!)!, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Microphone", quantity: Int(Countlabels[7].text!)!, pricePerUnit: 0.0))
                 //vc.WhiteboardCount = Int(Countlabels[8].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Whiteboard", quantity: Int(Countlabels[8].text!)!, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Whiteboard", quantity: Int(Countlabels[8].text!)!, pricePerUnit: 0.0))
                 //vc.LoudSpeakerCount = Int(Countlabels[9].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Loud Speaker", quantity: Int(Countlabels[9].text!)!, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Loud Speaker", quantity: Int(Countlabels[9].text!)!, pricePerUnit: 0.0))
                 
                 //vc.cateringchoicepassed = cateringchoice
                 //equipmentModel?.append(EquipmentModel(id: (customerModel?.Id)!, name: "Projector", quantity: Int(Countlabels[0].text!)!, pricePreUnit: 0.0))
@@ -105,32 +108,34 @@ class EquipmentOptionsViewController: UIViewController {
                 vc.cateringModel = cateringModel
                 vc.reservationModel = reservationModel
                 vc.equipmentForReservation = equipmentForReservation
+                vc.meetingRoomModel = meetingRoomModel
+                vc.reservationFullModel = reservationFullModel!
                 
             }
             if(segue.identifier == "SkipsegueEq")
             {
                 vc.additionalnotes = ""
-                
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Projector", quantity: 0, pricePerUnit: 0.0))
+                equipmentForReservation.removeAll()
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Projector", quantity: 0, pricePerUnit: 0.0))
                 //vc.ProjectorCount = Int(Countlabels[0].text!)!
                 //vc.ProjectorScreenCount = Int(Countlabels[1].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Projector Screnn", quantity: 0, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Projector Screnn", quantity: 0, pricePerUnit: 0.0))
                 //vc.LaptopCount = Int(Countlabels[2].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Laptop", quantity: 0, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Laptop", quantity: 0, pricePerUnit: 0.0))
                 //vc.CDDVDCount = Int(Countlabels[3].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "CDDVD", quantity: 0, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "CDDVD", quantity: 0, pricePerUnit: 0.0))
                 //vc.DigitalAudioCount = Int(Countlabels[4].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Digital Audio", quantity: 0, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Digital Audio", quantity: 0, pricePerUnit: 0.0))
                 //vc.VideoCassetteCount = Int(Countlabels[5].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Video Cassette", quantity: 0, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Video Cassette", quantity: 0, pricePerUnit: 0.0))
                 //vc.OverheadProjectorCount = Int(Countlabels[6].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Overhead Projector", quantity: 0, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Overhead Projector", quantity: 0, pricePerUnit: 0.0))
                 //vc.MircophoneCount = Int(Countlabels[7].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Microphone", quantity: 0, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Microphone", quantity: 0, pricePerUnit: 0.0))
                 //vc.WhiteboardCount = Int(Countlabels[8].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Whiteboard", quantity: 0, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Whiteboard", quantity: 0, pricePerUnit: 0.0))
                 //vc.LoudSpeakerCount = Int(Countlabels[9].text!)!
-                equipmentForReservation?.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Loud Speaker", quantity: 0, pricePerUnit: 0.0))
+                equipmentForReservation.append(EquipmentForReservation(id: (customerModel?.Id)!, reservationId: reservationModel!.ID, name: "Loud Speaker", quantity: 0, pricePerUnit: 0.0))
                 
                 /*
                 vc.ProjectorCount = 0
@@ -150,6 +155,8 @@ class EquipmentOptionsViewController: UIViewController {
                 vc.cateringModel = cateringModel
                 vc.reservationModel = reservationModel
                 vc.equipmentForReservation = equipmentForReservation
+                vc.meetingRoomModel = meetingRoomModel
+                vc.reservationFullModel = reservationFullModel!
             }
         }
     }

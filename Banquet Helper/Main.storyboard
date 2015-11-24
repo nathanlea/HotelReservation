@@ -33,8 +33,17 @@
             <string>Lato-LightItalic</string>
             <string>Lato-LightItalic</string>
             <string>Lato-LightItalic</string>
+            <string>Lato-LightItalic</string>
+            <string>Lato-LightItalic</string>
+            <string>Lato-LightItalic</string>
+        </mutableArray>
+        <mutableArray key="Lato-MediumItalic.ttf">
+            <string>Lato-MediumItalic</string>
         </mutableArray>
         <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
@@ -338,7 +347,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0a-Ee-Hbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317" y="-3758"/>
+            <point key="canvasLocation" x="1117" y="-3686"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IVi-Aa-Evh">
@@ -367,7 +376,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="347" id="uHt-ta-kIU">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IternaryCard" rowHeight="347" id="uHt-ta-kIU" customClass="CustomTableViewCell" customModule="Banquet_Helper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="768" height="347"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="uHt-ta-kIU" id="XuN-VT-Ey7">
@@ -428,7 +437,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:30a" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImJ-ox-iKE" userLabel="Time">
-                                                    <rect key="frame" x="73" y="0.0" width="93" height="36"/>
+                                                    <rect key="frame" x="73" y="0.0" width="214" height="36"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                                     <color key="textColor" red="0.25490196078431371" green="0.2627450980392157" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
@@ -443,14 +452,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Smith" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnx-g8-NXQ" userLabel="Name">
-                                                    <rect key="frame" x="73" y="34" width="93" height="23"/>
+                                                    <rect key="frame" x="73" y="34" width="477" height="23"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
                                                     <color key="textColor" red="0.25490196079999999" green="0.26274509800000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dallas, TX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ4-Vn-P1T" userLabel="Address">
-                                                    <rect key="frame" x="0.0" y="307" width="96" height="27"/>
+                                                    <rect key="frame" x="0.0" y="307" width="665" height="27"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="22"/>
                                                     <color key="textColor" red="0.25490196079999999" green="0.26274509800000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -464,6 +473,14 @@
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="DayLabel" destination="YpC-eb-zwH" id="H9H-h7-fHm"/>
+                                    <outlet property="ImageViewLabel" destination="3YX-fw-cKC" id="Nkf-yj-pAR"/>
+                                    <outlet property="LocationLabel" destination="ZZ4-Vn-P1T" id="x2o-Sx-CyY"/>
+                                    <outlet property="MonthLabel" destination="WfQ-18-koK" id="X2Y-nc-X95"/>
+                                    <outlet property="NameLabel" destination="lnx-g8-NXQ" id="r1n-j8-dOg"/>
+                                    <outlet property="TimeLabel" destination="ImJ-ox-iKE" id="0ay-Xg-BRk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -508,7 +525,7 @@
             </objects>
             <point key="canvasLocation" x="-4981" y="-3442"/>
         </scene>
-        <!--Hotel List Table View Controller-->
+        <!--Hotel List-->
         <scene sceneID="cH5-cp-RKR">
             <objects>
                 <tableViewController id="WD8-a3-hNB" customClass="HotelListTableViewController" customModule="Banquet_Helper" sceneMemberID="viewController">
@@ -557,7 +574,7 @@
                             <outlet property="delegate" destination="WD8-a3-hNB" id="TI9-7T-Lrl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="lNM-rd-A4u"/>
+                    <navigationItem key="navigationItem" title="Hotel List" id="lNM-rd-A4u"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULS-iG-hZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -576,7 +593,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <segue destination="t7f-AD-6mP" kind="show" id="j4n-kV-Bmx"/>
@@ -616,7 +633,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-6g-q6a">
                                 <rect key="frame" x="187" y="165" width="395" height="128"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -744,15 +761,6 @@
                                     <action selector="dateTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="2rR-YE-I7y"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9B4-JS-P2E">
-                                <rect key="frame" x="103" y="263" width="335" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                                <connections>
-                                    <action selector="endTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="Lzd-7B-GCl"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time Start" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFf-PC-R5D">
                                 <rect key="frame" x="103" y="187" width="335" height="30"/>
                                 <animations/>
@@ -771,8 +779,8 @@
                                     <action selector="endTimeTextFieldEditing:" destination="Eh5-LH-DY5" eventType="editingDidEnd" id="SJg-LV-F1g"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Ritz-Carlton" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6r-cC-hg4">
-                                <rect key="frame" x="144" y="20" width="253" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Ritz-Carlton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6r-cC-hg4">
+                                <rect key="frame" x="68" y="20" width="404" height="42"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -806,7 +814,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ih5-5p-zTL">
-                                <rect key="frame" x="0.0" y="557" width="540" height="43"/>
+                                <rect key="frame" x="0.0" y="577" width="540" height="43"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.9137254901960784" green="0.83921568627450982" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="25"/>
@@ -820,17 +828,17 @@
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hotel Name" id="buN-MW-D3J"/>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="Roomtitle" destination="J6r-cC-hg4" id="bw7-vV-Qm6"/>
                         <outlet property="dateTextField" destination="Oyu-H3-H1i" id="irN-D5-j8Q"/>
                         <outlet property="endTimeTextField" destination="bP0-zk-gfx" id="llk-r4-U27"/>
-                        <outlet property="eventTypeField" destination="9B4-JS-P2E" id="Fqu-Ft-bZV"/>
                         <outlet property="headCountTextField" destination="BO2-8e-tNJ" id="dBm-GS-bAq"/>
                         <outlet property="startTimeTextField" destination="gFf-PC-R5D" id="wDu-Lr-HUM"/>
-                        <segue destination="kOD-GU-qVN" kind="show" identifier="comfirmed" id="zqS-kD-TuM"/>
+                        <segue destination="kOD-GU-qVN" kind="show" identifier="confirmed" id="zqS-kD-TuM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMp-zd-2aO" sceneMemberID="firstResponder"/>
@@ -939,6 +947,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXH-WD-SOx">
                                 <rect key="frame" x="0.0" y="484" width="768" height="497"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="fqO-FC-leZ" kind="embed" id="rt6-oM-8o3"/>
                                 </connections>
@@ -1070,7 +1079,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Reserve"/>
                                 <connections>
-                                    <segue destination="uwQ-7c-ljj" kind="show" id="FGm-9K-fFt"/>
+                                    <segue destination="uwQ-7c-ljj" kind="show" identifier="ToItinerary" id="FGm-9K-fFt"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="768" placeholderIntrinsicHeight="31" translatesAutoresizingMaskIntoConstraints="NO" id="H7x-ue-ArN" customClass="CVCalendarMenuView" customModule="CVCalendar">
@@ -1083,7 +1092,7 @@
                             </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Reserve" width="748" id="rdi-ft-cE9"/>
@@ -1114,7 +1123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Za7-y4-ObF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2726" y="346"/>
+            <point key="canvasLocation" x="2294" y="314"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="1gA-ep-pAf">
@@ -1342,7 +1351,7 @@
             </objects>
             <point key="canvasLocation" x="-3124" y="-3442"/>
         </scene>
-        <!--Room List Table View Controller-->
+        <!--Room List-->
         <scene sceneID="WFL-49-ieE">
             <objects>
                 <tableViewController id="zhD-Mw-1bb" customClass="RoomListTableViewController" customModule="Banquet_Helper" sceneMemberID="viewController">
@@ -1412,7 +1421,7 @@
                             <outlet property="delegate" destination="zhD-Mw-1bb" id="POr-3J-tAA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="abw-Vk-lZI"/>
+                    <navigationItem key="navigationItem" title="Room List" id="abw-Vk-lZI"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yte-4e-Svo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1550,16 +1559,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECj-1e-2qG">
-                                <rect key="frame" x="647" y="182" width="101" height="37"/>
+                                <rect key="frame" x="592" y="182" width="156" height="37"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hotel Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQx-Ra-0Lb">
-                                <rect key="frame" x="64" y="227" width="165" height="34"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1571,7 +1573,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeH-UA-6aU">
-                                <rect key="frame" x="672" y="260" width="76" height="29"/>
+                                <rect key="frame" x="640" y="260" width="108" height="29"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1585,14 +1587,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9g-KI-7Gk">
-                                <rect key="frame" x="672" y="294" width="76" height="30"/>
+                                <rect key="frame" x="640" y="294" width="108" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_____________________________________________________________________________________________________________" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1l-5K-zHX">
-                                <rect key="frame" x="64" y="336" width="723" height="21"/>
+                                <rect key="frame" x="0.0" y="336" width="1276" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1606,7 +1608,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWB-lh-nbs">
-                                <rect key="frame" x="647" y="365" width="101" height="34"/>
+                                <rect key="frame" x="592" y="365" width="156" height="34"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1634,14 +1636,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-Qd-NtX">
-                                <rect key="frame" x="672" y="486" width="76" height="31"/>
+                                <rect key="frame" x="629" y="486" width="119" height="31"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_____________________________________________________________________________________________________________" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgi-2I-Z0Z">
-                                <rect key="frame" x="64" y="525" width="723" height="21"/>
+                                <rect key="frame" x="0.0" y="525" width="1314" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1828,14 +1830,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avR-ma-V67">
-                                <rect key="frame" x="560" y="80" width="188" height="53"/>
+                                <rect key="frame" x="490" y="80" width="258" height="53"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="50"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny1-Z1-Rc5">
-                                <rect key="frame" x="672" y="448" width="76" height="30"/>
+                                <rect key="frame" x="629" y="448" width="119" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1848,9 +1850,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hotel Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQx-Ra-0Lb">
+                                <rect key="frame" x="64" y="227" width="488" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
@@ -1859,8 +1868,11 @@
                         <outlet property="CateringPrice" destination="ny1-Z1-Rc5" id="6Hw-Im-qEd"/>
                         <outlet property="Cateringcostlabel" destination="XWB-lh-nbs" id="77S-9V-4q6"/>
                         <outlet property="CostPerHead" destination="ny1-Z1-Rc5" id="6H2-Ak-GvN"/>
+                        <outlet property="EquipTotal" destination="nNX-Z8-bMM" id="RVX-Ta-2iV"/>
                         <outlet property="EquipmentBranch" destination="GoU-Un-W3K" id="s4U-34-fah"/>
                         <outlet property="Equipmentcostlabel" destination="nNX-Z8-bMM" id="Zqk-mZ-41Z"/>
+                        <outlet property="FeeLabel" destination="0FP-1U-gM9" id="jjG-zJ-5Jy"/>
+                        <outlet property="HotelName" destination="sQx-Ra-0Lb" id="4oR-o7-esn"/>
                         <outlet property="HotelPriceperHour" destination="eeH-UA-6aU" id="GZ3-ht-Lwp"/>
                         <outlet property="NoofHours" destination="p9g-KI-7Gk" id="iZH-GH-aQa"/>
                         <outlet property="NoofPeople" destination="HMM-Qd-NtX" id="awB-0I-dZ4"/>
@@ -1945,378 +1957,8 @@
                                     <segue destination="QJW-U6-XGM" kind="show" identifier="NextSegueEq" id="e38-Xk-MYq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Equipment Available:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxw-PE-4bU">
-                                <rect key="frame" x="20" y="113" width="323" height="41"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projector" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-v6-nNM">
-                                <rect key="frame" x="20" y="157" width="130" height="38"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projection Screen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGP-kf-OED">
-                                <rect key="frame" x="20" y="196" width="239" height="37"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Power Outlets" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCB-ly-p3L">
-                                <rect key="frame" x="20" y="241" width="192" height="31"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Request Additional Equipment:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcz-SU-OO2">
-                                <rect key="frame" x="20" y="280" width="474" height="47"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projector" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktp-2u-PQq">
-                                <rect key="frame" x="20" y="574" width="114" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projection Screen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIn-oi-UIC">
-                                <rect key="frame" x="20" y="670" width="212" height="37"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Laptop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTd-1W-Myi">
-                                <rect key="frame" x="20" y="423" width="87" height="33"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CD/DVD Player" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-Mk-VgN">
-                                <rect key="frame" x="20" y="523" width="192" height="33"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digital Audio Recorder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfa-k2-uio">
-                                <rect key="frame" x="20" y="473" width="270" height="33"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(MP3 Format)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8du-U7-q4e">
-                                <rect key="frame" x="20" y="501" width="125" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VHS Video Cassette Player" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baM-QZ-aP5">
-                                <rect key="frame" x="20" y="720" width="323" height="37"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(PAL/NTSC Compatible)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6d-TO-nsJ">
-                                <rect key="frame" x="20" y="746" width="216" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overhead Projector" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j63-bx-n0G">
-                                <rect key="frame" x="20" y="772" width="239" height="33"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Transparencies/Paper Compatible)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrR-fb-Qtr">
-                                <rect key="frame" x="20" y="801" width="311" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Microphones" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPE-yl-M11">
-                                <rect key="frame" x="20" y="372" width="163" height="34"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Whiteboards" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pk3-bh-jV2">
-                                <rect key="frame" x="20" y="624" width="160" height="28"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additional Notes:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f15-1y-3F6">
-                                <rect key="frame" x="20" y="822" width="229" height="32"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYZ-90-FRS">
-                                <rect key="frame" x="499" y="674" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperMinus.png"/>
-                                <connections>
-                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="ipN-RK-Gr1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJn-qE-alm">
-                                <rect key="frame" x="645" y="674" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperPlus.png"/>
-                                <connections>
-                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="3I7-RB-7wF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX6-wr-vCo">
-                                <rect key="frame" x="499" y="424" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperMinus.png"/>
-                                <connections>
-                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="ffL-6C-sci"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bv9-EF-qjq">
-                                <rect key="frame" x="645" y="424" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperPlus.png"/>
-                                <connections>
-                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="DJT-Ak-jWe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fx3-VR-VEG">
-                                <rect key="frame" x="499" y="524" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperMinus.png"/>
-                                <connections>
-                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="MP1-6G-Qcn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydN-Ii-Rws">
-                                <rect key="frame" x="645" y="524" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperPlus.png"/>
-                                <connections>
-                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="UB4-lP-Mr3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOq-x4-NUg">
-                                <rect key="frame" x="499" y="474" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperMinus.png"/>
-                                <connections>
-                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="GyQ-o9-qtU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmD-ec-mj1">
-                                <rect key="frame" x="645" y="474" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperPlus.png"/>
-                                <connections>
-                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="0Go-a3-xIn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2y-xS-8S2">
-                                <rect key="frame" x="499" y="724" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperMinus.png"/>
-                                <connections>
-                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="1Sr-m5-ygC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWz-0Z-aKy">
-                                <rect key="frame" x="645" y="724" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperPlus.png"/>
-                                <connections>
-                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="ism-U4-kAA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05g-wY-wMQ">
-                                <rect key="frame" x="499" y="774" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperMinus.png"/>
-                                <connections>
-                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="jI2-bc-LsB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wau-5O-slW">
-                                <rect key="frame" x="645" y="774" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperPlus.png"/>
-                                <connections>
-                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="H1O-Iv-59k"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsW-H7-bFE">
-                                <rect key="frame" x="499" y="374" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperMinus.png"/>
-                                <connections>
-                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="mp2-Ue-PXq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qk-2d-g1k">
-                                <rect key="frame" x="645" y="374" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperPlus.png"/>
-                                <connections>
-                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="nRO-LX-raL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuT-oy-jfa">
-                                <rect key="frame" x="501" y="624" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperMinus.png"/>
-                                <connections>
-                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="7L5-Hf-aDg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSg-M3-hOK">
-                                <rect key="frame" x="645" y="624" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperPlus.png"/>
-                                <connections>
-                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="6yt-k0-ril"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZV-Vw-3u5">
-                                <rect key="frame" x="499" y="324" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperMinus.png"/>
-                                <connections>
-                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="z5O-Rm-6e1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkO-9d-wsD">
-                                <rect key="frame" x="645" y="324" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperPlus.png"/>
-                                <connections>
-                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="XjZ-4z-uCc"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-uI-FyR">
-                                <rect key="frame" x="553" y="574" width="89" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1d-wd-e5j">
-                                <rect key="frame" x="553" y="424" width="89" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URB-nV-AKn">
-                                <rect key="frame" x="553" y="526" width="89" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYV-Kc-4Fc">
-                                <rect key="frame" x="553" y="475" width="89" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQe-dH-Z1t">
-                                <rect key="frame" x="553" y="724" width="89" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tea-Gr-Uth">
-                                <rect key="frame" x="553" y="774" width="89" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXL-5X-9iy">
-                                <rect key="frame" x="553" y="374" width="89" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aT-OW-41z">
-                                <rect key="frame" x="553" y="626" width="89" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRQ-fD-EXZ">
-                                <rect key="frame" x="553" y="324" width="89" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hna-Xy-W8i">
-                                <rect key="frame" x="645" y="574" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperPlus.png"/>
-                                <connections>
-                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="dr6-Ba-lFa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXv-80-JEG">
-                                <rect key="frame" x="499" y="574" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StepperMinus.png"/>
-                                <connections>
-                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="c7H-T7-Ixb"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gpm-VD-t4c">
-                                <rect key="frame" x="20" y="862" width="728" height="111"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loudspeakers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIx-kf-sHx">
-                                <rect key="frame" x="20" y="317" width="173" height="43"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fy-cQ-Mjq">
-                                <rect key="frame" x="553" y="674" width="89" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfr-tR-cAn">
-                                <rect key="frame" x="635" y="61" width="113" height="44"/>
+                                <rect key="frame" x="635" y="20" width="113" height="44"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
                                 <state key="normal" title="Skip &gt;&gt;"/>
@@ -2325,9 +1967,379 @@
                                     <segue destination="QJW-U6-XGM" kind="show" identifier="SkipsegueEq" id="KJT-Eh-gBp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Equipment Available:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxw-PE-4bU">
+                                <rect key="frame" x="20" y="67" width="323" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projector" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-v6-nNM">
+                                <rect key="frame" x="20" y="111" width="130" height="38"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projection Screen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGP-kf-OED">
+                                <rect key="frame" x="20" y="150" width="239" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Power Outlets" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCB-ly-p3L">
+                                <rect key="frame" x="20" y="195" width="192" height="31"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Request Additional Equipment:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcz-SU-OO2">
+                                <rect key="frame" x="20" y="234" width="474" height="47"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projector" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktp-2u-PQq">
+                                <rect key="frame" x="20" y="528" width="114" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projection Screen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIn-oi-UIC">
+                                <rect key="frame" x="20" y="624" width="212" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Laptop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTd-1W-Myi">
+                                <rect key="frame" x="20" y="377" width="87" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CD/DVD Player" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-Mk-VgN">
+                                <rect key="frame" x="20" y="477" width="192" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digital Audio Recorder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfa-k2-uio">
+                                <rect key="frame" x="20" y="427" width="270" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(MP3 Format)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8du-U7-q4e">
+                                <rect key="frame" x="20" y="455" width="125" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VHS Video Cassette Player" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baM-QZ-aP5">
+                                <rect key="frame" x="20" y="674" width="323" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(PAL/NTSC Compatible)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6d-TO-nsJ">
+                                <rect key="frame" x="20" y="700" width="216" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overhead Projector" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j63-bx-n0G">
+                                <rect key="frame" x="20" y="726" width="239" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Transparencies/Paper Compatible)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrR-fb-Qtr">
+                                <rect key="frame" x="20" y="755" width="311" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Microphones" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPE-yl-M11">
+                                <rect key="frame" x="20" y="326" width="163" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Whiteboards" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pk3-bh-jV2">
+                                <rect key="frame" x="20" y="578" width="160" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additional Notes:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f15-1y-3F6">
+                                <rect key="frame" x="20" y="776" width="229" height="32"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYZ-90-FRS">
+                                <rect key="frame" x="499" y="628" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperMinus.png"/>
+                                <connections>
+                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="ipN-RK-Gr1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJn-qE-alm">
+                                <rect key="frame" x="645" y="628" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperPlus.png"/>
+                                <connections>
+                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="3I7-RB-7wF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX6-wr-vCo">
+                                <rect key="frame" x="499" y="378" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperMinus.png"/>
+                                <connections>
+                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="ffL-6C-sci"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bv9-EF-qjq">
+                                <rect key="frame" x="645" y="378" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperPlus.png"/>
+                                <connections>
+                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="DJT-Ak-jWe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fx3-VR-VEG">
+                                <rect key="frame" x="499" y="478" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperMinus.png"/>
+                                <connections>
+                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="MP1-6G-Qcn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydN-Ii-Rws">
+                                <rect key="frame" x="645" y="478" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperPlus.png"/>
+                                <connections>
+                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="UB4-lP-Mr3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOq-x4-NUg">
+                                <rect key="frame" x="499" y="428" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperMinus.png"/>
+                                <connections>
+                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="GyQ-o9-qtU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmD-ec-mj1">
+                                <rect key="frame" x="645" y="428" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperPlus.png"/>
+                                <connections>
+                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="0Go-a3-xIn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2y-xS-8S2">
+                                <rect key="frame" x="499" y="678" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperMinus.png"/>
+                                <connections>
+                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="1Sr-m5-ygC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWz-0Z-aKy">
+                                <rect key="frame" x="645" y="678" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperPlus.png"/>
+                                <connections>
+                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="ism-U4-kAA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05g-wY-wMQ">
+                                <rect key="frame" x="499" y="728" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperMinus.png"/>
+                                <connections>
+                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="jI2-bc-LsB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wau-5O-slW">
+                                <rect key="frame" x="645" y="728" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperPlus.png"/>
+                                <connections>
+                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="H1O-Iv-59k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsW-H7-bFE">
+                                <rect key="frame" x="499" y="328" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperMinus.png"/>
+                                <connections>
+                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="mp2-Ue-PXq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qk-2d-g1k">
+                                <rect key="frame" x="645" y="328" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperPlus.png"/>
+                                <connections>
+                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="nRO-LX-raL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuT-oy-jfa">
+                                <rect key="frame" x="501" y="578" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperMinus.png"/>
+                                <connections>
+                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="7L5-Hf-aDg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSg-M3-hOK">
+                                <rect key="frame" x="645" y="578" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperPlus.png"/>
+                                <connections>
+                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="6yt-k0-ril"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZV-Vw-3u5">
+                                <rect key="frame" x="499" y="278" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperMinus.png"/>
+                                <connections>
+                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="z5O-Rm-6e1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkO-9d-wsD">
+                                <rect key="frame" x="645" y="278" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperPlus.png"/>
+                                <connections>
+                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="XjZ-4z-uCc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-uI-FyR">
+                                <rect key="frame" x="553" y="528" width="89" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1d-wd-e5j">
+                                <rect key="frame" x="553" y="378" width="89" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URB-nV-AKn">
+                                <rect key="frame" x="553" y="480" width="89" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYV-Kc-4Fc">
+                                <rect key="frame" x="553" y="429" width="89" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQe-dH-Z1t">
+                                <rect key="frame" x="553" y="678" width="89" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tea-Gr-Uth">
+                                <rect key="frame" x="553" y="728" width="89" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXL-5X-9iy">
+                                <rect key="frame" x="553" y="328" width="89" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aT-OW-41z">
+                                <rect key="frame" x="553" y="580" width="89" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRQ-fD-EXZ">
+                                <rect key="frame" x="553" y="278" width="89" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hna-Xy-W8i">
+                                <rect key="frame" x="645" y="528" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperPlus.png"/>
+                                <connections>
+                                    <action selector="test:" destination="pMa-NN-5OY" eventType="touchUpInside" id="dr6-Ba-lFa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXv-80-JEG">
+                                <rect key="frame" x="499" y="528" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StepperMinus.png"/>
+                                <connections>
+                                    <action selector="DecrementCount:" destination="pMa-NN-5OY" eventType="touchUpInside" id="c7H-T7-Ixb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gpm-VD-t4c">
+                                <rect key="frame" x="20" y="816" width="728" height="111"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loudspeakers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIx-kf-sHx">
+                                <rect key="frame" x="20" y="271" width="173" height="43"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fy-cQ-Mjq">
+                                <rect key="frame" x="553" y="628" width="89" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
@@ -2392,7 +2404,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQA-LI-1gS">
-                                <rect key="frame" x="638" y="63" width="110" height="44"/>
+                                <rect key="frame" x="638" y="8" width="110" height="44"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
                                 <state key="normal" title="Skip &gt;&gt;"/>
@@ -2401,45 +2413,6 @@
                                     <segue destination="pMa-NN-5OY" kind="show" identifier="Skipsegue" id="G0b-Cv-j94"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food/Beverages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIY-Uv-gCa">
-                                <rect key="frame" x="20" y="115" width="253" height="42"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alcohol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqv-Ag-xLb">
-                                <rect key="frame" x="20" y="592" width="120" height="33"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additional Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxW-MY-kj0">
-                                <rect key="frame" x="20" y="356" width="253" height="33"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-Ze-3RJ">
-                                <rect key="frame" x="20" y="657" width="728" height="71"/>
-                                <animations/>
-                            </pickerView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxq-vr-NW5">
-                                <rect key="frame" x="20" y="408" width="728" height="142"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vSp-YW-uBp">
-                                <rect key="frame" x="20" y="836" width="728" height="140"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5P7-Bb-ei2">
                                 <rect key="frame" x="0.0" y="984" width="768" height="40"/>
                                 <animations/>
@@ -2452,20 +2425,59 @@
                                     <segue destination="pMa-NN-5OY" kind="show" identifier="NextSegue" id="ZKN-4C-Z26"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food/Beverages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIY-Uv-gCa">
+                                <rect key="frame" x="20" y="60" width="253" height="42"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alcohol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqv-Ag-xLb">
+                                <rect key="frame" x="20" y="537" width="120" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additional Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxW-MY-kj0">
+                                <rect key="frame" x="20" y="301" width="253" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-Ze-3RJ">
+                                <rect key="frame" x="20" y="602" width="728" height="71"/>
+                                <animations/>
+                            </pickerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxq-vr-NW5">
+                                <rect key="frame" x="20" y="353" width="728" height="142"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vSp-YW-uBp">
+                                <rect key="frame" x="20" y="781" width="728" height="140"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additional Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFn-pE-HUb">
-                                <rect key="frame" x="20" y="778" width="253" height="37"/>
+                                <rect key="frame" x="20" y="723" width="253" height="37"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="33"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-sR-ZcT">
-                                <rect key="frame" x="20" y="194" width="728" height="95"/>
+                                <rect key="frame" x="20" y="139" width="728" height="95"/>
                                 <animations/>
                             </pickerView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="CATERING OPTIONS" id="oKs-0k-yda"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -2514,7 +2526,7 @@
                             <color key="barTintColor" red="0.91372549020000005" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                         </toolbar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PictureCell" id="O43-Gu-5bB" userLabel="PictureCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PictureCell" id="O43-Gu-5bB" userLabel="PictureCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="768" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="249" tableViewCell="O43-Gu-5bB" id="5g4-QQ-ZHW">
@@ -2556,17 +2568,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="448"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d4-bK-tUZ" userLabel="ActualRoomDescription">
-                                            <rect key="frame" x="55" y="35" width="656" height="353"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XG-0u-ogX" userLabel="RoomDescriptionTitleLabel">
                                             <rect key="frame" x="55" y="8" width="705" height="24"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="Lato-MediumItalic" family="Lato" pointSize="25"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d4-bK-tUZ" userLabel="ActualRoomDescription">
+                                            <rect key="frame" x="55" y="35" width="656" height="353"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="21"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -2590,14 +2602,14 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0km-FD-itD" userLabel="DetailLabel">
                                             <rect key="frame" x="528" y="16" width="150" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="19"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Max Occupancy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smL-UO-g9E">
                                             <rect key="frame" x="54" y="9" width="283" height="26"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="21"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -2622,28 +2634,28 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projector" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p12-Md-xTK" userLabel="EquipmentList">
                                             <rect key="frame" x="55" y="37" width="656" height="187"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sq.Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbm-Yx-T8G" userLabel="Sq.Area">
                                             <rect key="frame" x="55" y="246" width="61" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsN-J8-7mO" userLabel="AreaOfRoom">
                                             <rect key="frame" x="528" y="246" width="150" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EquipmentAvailable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adQ-m6-xwK">
-                                            <rect key="frame" x="55" y="8" width="185" height="26"/>
+                                            <rect key="frame" x="55" y="8" width="200" height="28"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="23"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -2685,11 +2697,11 @@
         <image name="StepperPlus.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="IgE-dg-ygI"/>
         <segue reference="4lp-9v-v6X"/>
         <segue reference="KJT-Eh-gBp"/>
-        <segue reference="G0b-Cv-j94"/>
+        <segue reference="ZKN-4C-Z26"/>
         <segue reference="SWN-wN-OPd"/>
-        <segue reference="IgE-dg-ygI"/>
         <segue reference="8LN-zc-rJG"/>
         <segue reference="6Ho-4o-Itr"/>
         <segue reference="3bg-ly-44h"/>

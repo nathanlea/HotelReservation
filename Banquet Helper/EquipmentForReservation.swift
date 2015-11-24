@@ -32,6 +32,10 @@ class EquipmentForReservation : BaseModel {
         self.PricePerUnit = pricePerUnit
     }
     
+    init () {
+        
+    }
+    
     func getEquipmentUrlString()->String{
         return "https://cs.okstate.edu/~kevinda/hotels.php/apps15blue/LBGam/apps15blue/"+Table.Name.AvailableEquipment.rawValue
     }
