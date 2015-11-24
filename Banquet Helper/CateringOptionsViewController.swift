@@ -102,6 +102,7 @@ class CateringOptionsViewController: UIViewController, UIPickerViewDelegate, UIP
                 vc.hotelModel = hotelModel
                 vc.customerModel = customerModel
                 vc.reservationModel = reservationModel
+                vc.meetingRoomModel = meetingRoomModel
             }
         }
     }

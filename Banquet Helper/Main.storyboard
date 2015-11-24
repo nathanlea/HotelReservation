@@ -32,8 +32,18 @@
             <string>Lato-LightItalic</string>
             <string>Lato-LightItalic</string>
             <string>Lato-LightItalic</string>
+            <string>Lato-LightItalic</string>
+            <string>Lato-LightItalic</string>
+            <string>Lato-LightItalic</string>
+            <string>Lato-LightItalic</string>
+        </mutableArray>
+        <mutableArray key="Lato-MediumItalic.ttf">
+            <string>Lato-MediumItalic</string>
         </mutableArray>
         <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
@@ -1850,8 +1860,10 @@
                         <outlet property="CateringPrice" destination="ny1-Z1-Rc5" id="6Hw-Im-qEd"/>
                         <outlet property="Cateringcostlabel" destination="XWB-lh-nbs" id="77S-9V-4q6"/>
                         <outlet property="CostPerHead" destination="ny1-Z1-Rc5" id="6H2-Ak-GvN"/>
+                        <outlet property="EquipTotal" destination="nNX-Z8-bMM" id="RVX-Ta-2iV"/>
                         <outlet property="EquipmentBranch" destination="GoU-Un-W3K" id="s4U-34-fah"/>
                         <outlet property="Equipmentcostlabel" destination="nNX-Z8-bMM" id="Zqk-mZ-41Z"/>
+                        <outlet property="FeeLabel" destination="0FP-1U-gM9" id="jjG-zJ-5Jy"/>
                         <outlet property="HotelName" destination="sQx-Ra-0Lb" id="4oR-o7-esn"/>
                         <outlet property="HotelPriceperHour" destination="eeH-UA-6aU" id="GZ3-ht-Lwp"/>
                         <outlet property="NoofHours" destination="p9g-KI-7Gk" id="iZH-GH-aQa"/>
@@ -2548,17 +2560,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="448"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d4-bK-tUZ" userLabel="ActualRoomDescription">
-                                            <rect key="frame" x="55" y="35" width="656" height="353"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XG-0u-ogX" userLabel="RoomDescriptionTitleLabel">
                                             <rect key="frame" x="55" y="8" width="705" height="24"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="Lato-MediumItalic" family="Lato" pointSize="25"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d4-bK-tUZ" userLabel="ActualRoomDescription">
+                                            <rect key="frame" x="55" y="35" width="656" height="353"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="21"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -2582,14 +2594,14 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0km-FD-itD" userLabel="DetailLabel">
                                             <rect key="frame" x="528" y="16" width="150" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="19"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Max Occupancy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smL-UO-g9E">
                                             <rect key="frame" x="54" y="9" width="283" height="26"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="21"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -2614,28 +2626,28 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projector" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p12-Md-xTK" userLabel="EquipmentList">
                                             <rect key="frame" x="55" y="37" width="656" height="187"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sq.Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbm-Yx-T8G" userLabel="Sq.Area">
                                             <rect key="frame" x="55" y="246" width="61" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsN-J8-7mO" userLabel="AreaOfRoom">
                                             <rect key="frame" x="528" y="246" width="150" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EquipmentAvailable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adQ-m6-xwK">
-                                            <rect key="frame" x="55" y="8" width="185" height="26"/>
+                                            <rect key="frame" x="55" y="8" width="200" height="28"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="23"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -2678,11 +2690,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IgE-dg-ygI"/>
-        <segue reference="tlP-aV-mbo"/>
+        <segue reference="4lp-9v-v6X"/>
+        <segue reference="KJT-Eh-gBp"/>
+        <segue reference="ZKN-4C-Z26"/>
         <segue reference="5Q1-xC-vtf"/>
         <segue reference="8LN-zc-rJG"/>
-        <segue reference="ZKN-4C-Z26"/>
-        <segue reference="KJT-Eh-gBp"/>
         <segue reference="6Ho-4o-Itr"/>
         <segue reference="3bg-ly-44h"/>
     </inferredMetricsTieBreakers>
