@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ReservationValidationViewController: UIViewController, IGLDropDownMenuDelegate {
+class ReservationValidationViewController: UIViewController, UITextFieldDelegate, IGLDropDownMenuDelegate {
     internal var customerModel : CustomerModel?
     internal var hotelModel : HotelModel?
     internal var meetingRoomModel :MeetingRoomModel?

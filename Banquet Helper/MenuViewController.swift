@@ -46,11 +46,26 @@ class MenuViewController: UIViewController {
     */
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if(segue.identifier == "reserveRoomSegue"){
+        
+        switch(segue.identifier!){
+        case "reserveRoomSegue":
+        let navc = segue.destinationViewController as! UINavigationController
+        let hotelListVC = navc.viewControllers.first as! HotelListTableViewController
+        hotelListVC.customerModel = customerModel!
+        
+        case "meetwithaplannersegue":
+            
             let navc = segue.destinationViewController as! UINavigationController
-            let hotelListVC = navc.viewControllers.first as! HotelListTableViewController
-            hotelListVC.customerModel = customerModel!
+            let destinationVC = navc.viewControllers.first as! CVCalendarViewController
+            //pass variables if you need them
+        case "itinerarysegue":
+            let navc = segue.destinationViewController as! UINavigationController
+            let destinationVC = navc.viewControllers.first as! TableViewController
+            //passvariables if you need them
+            
+        default:
+            break
+            
         }
     }
-
 }
