@@ -22,6 +22,12 @@ class SummaryViewController: UIViewController {
     internal var LoudSpeakerCount = 0
     internal var additionalnotes = ""
     internal var cateringchoicepassed = ""
+    internal var RoomCostPerHour = 10
+    internal var NoofRoomHours = 20
+    var CateringCost = 0
+    internal var NoofPeopleAttending = 20
+    var tempresult1 = 0
+    var tempresult2 = 0
     @IBOutlet weak var TotalPrice: UILabel!
     @IBOutlet weak var TotalPriceSubtitle: UILabel!
     @IBOutlet weak var TotalPriceAmt: UILabel!
@@ -49,6 +55,10 @@ class SummaryViewController: UIViewController {
     @IBOutlet weak var CateringChoiceLabel: UILabel!
     
     @IBOutlet weak var CostPerHead: UILabel!
+   
+    
+    @IBOutlet var Separators: [UILabel]!
+    
     
     var skipColor = UIColor(red: 0.8, green: 0.5, blue: 0.4, alpha: 1.0)
     var labelColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0)
@@ -90,15 +100,11 @@ class SummaryViewController: UIViewController {
         for a in LabelCollection {
             a.textColor = labelColor
         }
-        /* Roomcountlabel.text =
-        String(Int(HotelPriceperHour.text!)! * Int(NoofHours.text!)!)
         
-        Cateringcostlabel.text =
-        String(Int(CateringPrice.text!)! * Int(NoofPeople.text!)!)
+        for b in Separators {
+            b.textColor = skipColor
+        }
         
-        TotalPriceAmt.text =
-        String(Int(Roomcountlabel.text!)! + Int(Cateringcostlabel.text!)!)
-        */
         EquipmentCollection[0].text! = String(ProjectorCount)
         EquipmentCollection[1].text! = String(ProjectorScreenCount)
         EquipmentCollection[2].text! = String(LaptopCount)
@@ -113,17 +119,40 @@ class SummaryViewController: UIViewController {
         if(cateringchoicepassed == "Buffet($45 per head)")
         {
          CostPerHead.text = "$45"
+            CateringCost = 45
         }
         if(cateringchoicepassed == "Ala-Carte($30 per head)")
         {
             CostPerHead.text = "$30"
+            CateringCost = 30
             
         }
         if(cateringchoicepassed == "No catering")
         {
             CostPerHead.text = "$0"
+            CateringCost = 0
             
         }
+        //should be passed
+        HotelPriceperHour.text = "$" + String(RoomCostPerHour)
+        NoofHours.text = String(NoofRoomHours)
+        //should be passed
+        NoofPeople.text = String(NoofPeopleAttending)
+        
+        tempresult1 = RoomCostPerHour * NoofRoomHours
+        tempresult2 = CateringCost * NoofPeopleAttending
+        
+        Roomcountlabel.text = "$" +
+            String(tempresult1)
+        
+        Cateringcostlabel.text = "$" +
+        String(tempresult2)
+        
+        TotalPriceAmt.text =
+            "$" +
+            String(tempresult1 + tempresult2)
+
+        
         
     }
     

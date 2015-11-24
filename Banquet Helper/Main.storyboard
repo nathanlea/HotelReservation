@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C47a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X9h-6n-ri4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X9h-6n-ri4">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
+        <mutableArray key="Lato-Black.ttf">
+            <string>Lato-Black</string>
         </mutableArray>
         <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+            <string>Lato-Bold</string>
             <string>Lato-Bold</string>
             <string>Lato-Bold</string>
         </mutableArray>
@@ -122,6 +119,19 @@
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
         </mutableArray>
         <mutableArray key="Lato-Semibold.ttf">
             <string>Lato-Semibold</string>
@@ -140,10 +150,12 @@
             <string>Lato-Semibold</string>
             <string>Lato-Semibold</string>
             <string>Lato-Semibold</string>
+            <string>Lato-Semibold</string>
+            <string>Lato-Semibold</string>
+            <string>Lato-Semibold</string>
+            <string>Lato-Semibold</string>
         </mutableArray>
         <mutableArray key="Lato-Thin.ttf">
-            <string>Lato-Thin</string>
-            <string>Lato-Thin</string>
             <string>Lato-Thin</string>
             <string>Lato-Thin</string>
             <string>Lato-Thin</string>
@@ -507,7 +519,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenericHotelListCell" rowHeight="321" id="z9c-YC-tis" customClass="GenericHotelListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="28" width="768" height="321"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="321"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z9c-YC-tis" id="a0y-fQ-faO">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="320"/>
@@ -766,7 +778,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Note: If reserving for more than one day, please call 1-88-236-2427" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR2-T2-6Ms">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Note: If reserving for more than one day, please call 1-888-236-2427" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR2-T2-6Ms">
                                 <rect key="frame" x="125" y="383" width="291" height="60"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97647058823529409" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
@@ -869,7 +881,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRx-XE-qMH">
                                 <rect key="frame" x="38" y="820" width="348" height="125"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -880,7 +892,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xe-tm-nTj">
                                 <rect key="frame" x="387" y="820" width="346" height="128"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1120,44 +1132,38 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mfZ-uA-krU">
-                                <rect key="frame" x="395" y="448" width="319" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6U-kg-dQf">
                                 <rect key="frame" x="69" y="356" width="196" height="58"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="23"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSV-1h-OfO">
                                 <rect key="frame" x="69" y="261" width="196" height="58"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="23"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIX-Vx-GTs">
                                 <rect key="frame" x="69" y="515" width="196" height="58"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="23"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ReType Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-ZF-Z4o">
                                 <rect key="frame" x="69" y="597" width="196" height="58"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="23"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1C-f6-Eef">
                                 <rect key="frame" x="69" y="434" width="196" height="58"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="23"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1191,7 +1197,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgg-eR-L1Z">
                                 <rect key="frame" x="395" y="189" width="116" height="41"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1199,17 +1205,10 @@
                                     <action selector="toSignIn:" destination="FUY-Kh-Yoo" eventType="touchUpInside" id="rZ8-v4-qEq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBw-1O-5Uf">
-                                <rect key="frame" x="271" y="189" width="116" height="41"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYf-zg-UQN">
                                 <rect key="frame" x="271" y="798" width="240" height="128"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1217,6 +1216,19 @@
                                     <action selector="signUpButton:" destination="FUY-Kh-Yoo" eventType="primaryActionTriggered" id="zwn-kg-ouG"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mfZ-uA-krU">
+                                <rect key="frame" x="395" y="448" width="319" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBw-1O-5Uf">
+                                <rect key="frame" x="271" y="189" width="116" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1251,7 +1263,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3w-bM-84m">
                                 <rect key="frame" x="278" y="215" width="116" height="41"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1286,7 +1298,7 @@
                                 <rect key="frame" x="411" y="384" width="308" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HT8-iE-uYe">
                                 <rect key="frame" x="411" y="495" width="308" height="30"/>
@@ -1297,7 +1309,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gy3-w8-q9m">
                                 <rect key="frame" x="278" y="774" width="240" height="128"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1308,7 +1320,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH4-hD-rPZ">
                                 <rect key="frame" x="394" y="215" width="116" height="41"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1339,7 +1351,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MeetingRoomCell" rowHeight="240" id="yyU-b9-wiI" customClass="GenericHotelListCell" customModule="Banquet_Helper">
-                                <rect key="frame" x="0.0" y="28" width="768" height="240"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yyU-b9-wiI" id="voi-MJ-ZEb">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="239"/>
@@ -1432,7 +1444,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4em-cj-FAs">
                                 <rect key="frame" x="251" y="188" width="280" height="139"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="22"/>
                                 <state key="normal" title="Reserve a Room">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1443,7 +1455,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTv-En-vRM">
                                 <rect key="frame" x="251" y="368" width="280" height="139"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="22"/>
                                 <state key="normal" title="Meet with a Planner">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1454,7 +1466,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdp-6i-Slh">
                                 <rect key="frame" x="211" y="73" width="374" height="52"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="26"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1469,7 +1481,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqW-JF-fgK">
                                 <rect key="frame" x="258" y="728" width="273" height="139"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="22"/>
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1480,7 +1492,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lz-pc-yxn">
                                 <rect key="frame" x="258" y="548" width="280" height="139"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="22"/>
                                 <state key="normal" title="Intenerary">
                                     <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1502,10 +1514,10 @@
             </objects>
             <point key="canvasLocation" x="-2231" y="-3449"/>
         </scene>
-        <!--Summary View Controller-->
+        <!--SUMMARY-->
         <scene sceneID="peb-LZ-90p">
             <objects>
-                <viewController id="QJW-U6-XGM" customClass="SummaryViewController" customModule="Banquet_Helper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SUMMARY" id="QJW-U6-XGM" customClass="SummaryViewController" customModule="Banquet_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dln-Zb-Uos"/>
                         <viewControllerLayoutGuide type="bottom" id="dew-tw-WfS"/>
@@ -1536,7 +1548,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECj-1e-2qG">
-                                <rect key="frame" x="647" y="188" width="101" height="31"/>
+                                <rect key="frame" x="647" y="182" width="101" height="37"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1578,7 +1590,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_____________________________________________________________________________________________________________" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1l-5K-zHX">
-                                <rect key="frame" x="0.0" y="337" width="787" height="21"/>
+                                <rect key="frame" x="64" y="336" width="723" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1627,7 +1639,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_____________________________________________________________________________________________________________" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgi-2I-Z0Z">
-                                <rect key="frame" x="0.0" y="525" width="787" height="21"/>
+                                <rect key="frame" x="64" y="525" width="723" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1641,7 +1653,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNX-Z8-bMM">
-                                <rect key="frame" x="647" y="561" width="101" height="35"/>
+                                <rect key="frame" x="647" y="554" width="101" height="42"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1814,7 +1826,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avR-ma-V67">
-                                <rect key="frame" x="625" y="92" width="123" height="41"/>
+                                <rect key="frame" x="560" y="80" width="188" height="53"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="50"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1898,6 +1910,9 @@
                         <outletCollection property="EquipmentCollection" destination="YAh-b3-ZCA" collectionClass="NSMutableArray" id="OVI-Da-muK"/>
                         <outletCollection property="EquipmentCollection" destination="Mof-g3-Ce8" collectionClass="NSMutableArray" id="IjI-NB-b3B"/>
                         <outletCollection property="EquipmentCollection" destination="Kw9-GK-d6p" collectionClass="NSMutableArray" id="gwo-xw-RPH"/>
+                        <outletCollection property="Separators" destination="f6J-b9-ToV" collectionClass="NSMutableArray" id="0pe-ce-eYu"/>
+                        <outletCollection property="Separators" destination="Q1l-5K-zHX" collectionClass="NSMutableArray" id="LPZ-xx-CZL"/>
+                        <outletCollection property="Separators" destination="xgi-2I-Z0Z" collectionClass="NSMutableArray" id="8Y3-h3-5s6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzl-dt-mQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2299,9 +2314,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfr-tR-cAn">
-                                <rect key="frame" x="665" y="61" width="83" height="44"/>
+                                <rect key="frame" x="635" y="61" width="113" height="44"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
                                 <state key="normal" title="Skip &gt;&gt;"/>
                                 <connections>
                                     <action selector="SkipClick:" destination="pMa-NN-5OY" eventType="touchUpInside" id="zwp-ig-eIQ"/>
@@ -2375,9 +2390,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQA-LI-1gS">
-                                <rect key="frame" x="665" y="63" width="83" height="44"/>
+                                <rect key="frame" x="638" y="63" width="110" height="44"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="33"/>
                                 <state key="normal" title="Skip &gt;&gt;"/>
                                 <connections>
                                     <action selector="Skipbutton:" destination="kOD-GU-qVN" eventType="touchUpInside" id="9LU-NI-fN7"/>
@@ -2406,7 +2421,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-Ze-3RJ">
-                                <rect key="frame" x="20" y="633" width="728" height="137"/>
+                                <rect key="frame" x="20" y="657" width="728" height="71"/>
                                 <animations/>
                             </pickerView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxq-vr-NW5">
@@ -2443,7 +2458,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-sR-ZcT">
-                                <rect key="frame" x="20" y="154" width="728" height="194"/>
+                                <rect key="frame" x="20" y="194" width="728" height="95"/>
                                 <animations/>
                             </pickerView>
                         </subviews>
@@ -2500,7 +2515,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.91372549020000005" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="bottom" id="aq1-bM-HiO">
-                            <rect key="frame" x="0.0" y="869" width="768" height="44"/>
+                            <rect key="frame" x="0.0" y="933" width="768" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <animations/>
                             <color key="backgroundColor" red="0.91372549020000005" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -2518,7 +2533,7 @@
                         </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PictureCell" id="O43-Gu-5bB" userLabel="PictureCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="768" height="45"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="249" tableViewCell="O43-Gu-5bB" id="5g4-QQ-ZHW">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
@@ -2553,7 +2568,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RoomDescriptionCell" rowHeight="449" id="RSj-rb-QHm" userLabel="RoomDescriptionCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="73" width="768" height="449"/>
+                                <rect key="frame" x="0.0" y="137" width="768" height="449"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" layoutMarginsFollowReadableWidth="YES" tableViewCell="RSj-rb-QHm" id="0K8-Zv-EHw">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="448"/>
@@ -2584,7 +2599,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OccupancyCell" id="pTS-C0-lpg" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="522" width="768" height="45"/>
+                                <rect key="frame" x="0.0" y="586" width="768" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pTS-C0-lpg" id="RmQ-sz-5VQ">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
@@ -2616,7 +2631,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EquipmentAvailableCell" rowHeight="302" id="beQ-DY-bYX" userLabel="EquipmentAvailableCell" customClass="GenericHotelListCell" customModule="Banquet_Helper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="567" width="768" height="302"/>
+                                <rect key="frame" x="0.0" y="631" width="768" height="302"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="beQ-DY-bYX" id="5gp-W8-HYO">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="301"/>
@@ -2693,8 +2708,6 @@
         <segue reference="G0b-Cv-j94"/>
         <segue reference="SWN-wN-OPd"/>
         <segue reference="IgE-dg-ygI"/>
-        <segue reference="8LN-zc-rJG"/>
-        <segue reference="6Ho-4o-Itr"/>
-        <segue reference="h9n-85-Ngh"/>
+        <segue reference="3bg-ly-44h"/>
     </inferredMetricsTieBreakers>
 </document>
