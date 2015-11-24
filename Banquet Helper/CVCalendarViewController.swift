@@ -15,6 +15,12 @@ class CVCalendarViewController: UIViewController {
     var eventPlannerIndex = 0
     var currentDate = 0
     
+    internal var customerModel : CustomerModel?
+    internal var hotelModel : HotelModel?
+    internal var cateringModel : CateringModel?
+    internal var reservationModel : ReservationPackage?
+    internal var equipmentForReservation : [EquipmentForReservation]?
+    
     
     @IBOutlet weak var calendarView: CVCalendarView!
     @IBOutlet weak var menuView: CVCalendarMenuView!
@@ -97,6 +103,14 @@ class CVCalendarViewController: UIViewController {
         //updateScheduleButtons(currentDate)
         
         (self.childViewControllers.last as! PageViewController).parent = self
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ToItinerary" {//let vc = segue.destinationViewController as? MenuViewController {
+            let navc = segue.destinationViewController as! UINavigationController
+            let hotelListVC = navc.viewControllers.first as! TableViewController
+            hotelListVC.customerModel = customerModel!
+        }
     }
     
     //Button Action Targets

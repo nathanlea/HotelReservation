@@ -10,6 +10,12 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    internal var customerModel : CustomerModel?
+    internal var hotelModel : HotelModel?
+    internal var cateringModel : CateringModel?
+    internal var reservationModel : ReservationPackage?
+    internal var equipmentForReservation : [EquipmentForReservation]?
+    
     @IBAction func ViewOrderSummary(sender: AnyObject) {
         print("BUTTON TOUCHED")
         
@@ -30,6 +36,12 @@ class TableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let vc = segue.destinationViewController as? MenuViewController {
+            vc.customerModel = customerModel
+        }
     }
 
     // MARK: - Table view data source

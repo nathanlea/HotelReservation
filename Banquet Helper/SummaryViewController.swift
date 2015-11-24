@@ -14,6 +14,7 @@ class SummaryViewController: UIViewController {
     internal var customerModel : CustomerModel?
     internal var hotelModel : HotelModel?
     internal var cateringModel : CateringModel?
+    internal var meetingRoomModel :MeetingRoomModel?
     internal var reservationModel : ReservationPackage?
     internal var equipmentForReservation : [EquipmentForReservation]?
     
@@ -30,12 +31,12 @@ class SummaryViewController: UIViewController {
     internal var LoudSpeakerCount = 0
     internal var additionalnotes = ""
     internal var cateringchoicepassed = ""
-    internal var RoomCostPerHour = 10
-    internal var NoofRoomHours = 20
+    internal var RoomCostPerHour = 0.0
+    internal var NoofRoomHours = 0.0
     var CateringCost = 0
     internal var NoofPeopleAttending = 20
-    var tempresult1 = 0
-    var tempresult2 = 0
+    var tempresult1 = 0.0
+    var tempresult2 = 0.0
     @IBOutlet weak var TotalPrice: UILabel!
     @IBOutlet weak var TotalPriceSubtitle: UILabel!
     @IBOutlet weak var TotalPriceAmt: UILabel!
@@ -55,6 +56,7 @@ class SummaryViewController: UIViewController {
     @IBOutlet weak var CateringChoiceLabel: UILabel!
     @IBOutlet weak var CostPerHead: UILabel!
     @IBOutlet var Separators: [UILabel]!
+    @IBOutlet weak var HotelName: UILabel!
     
     
     var skipColor = UIColor(red: 0.8, green: 0.5, blue: 0.4, alpha: 1.0)
@@ -65,8 +67,12 @@ class SummaryViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let _ = segue.destinationViewController as? CVCalendarViewController {
-            
+        if let vc = segue.destinationViewController as? CVCalendarViewController {
+            vc.customerModel = customerModel
+            vc.hotelModel = hotelModel
+            vc.cateringModel = cateringModel
+            vc.reservationModel = reservationModel
+            vc.equipmentForReservation = equipmentForReservation
         }
     }
     
@@ -115,29 +121,40 @@ class SummaryViewController: UIViewController {
         EquipmentCollection[9].text! = String((equipmentForReservation as [EquipmentForReservation]!)[9].Quantity!)
         
         CateringChoiceLabel.text = cateringModel?.FoodOption
-        if(cateringchoicepassed == "Buffet($45 per head)")
+        if(cateringModel?.FoodOption == "Buffet($45 per head)")
         {
             CostPerHead.text = "$45"
             CateringCost = 45
-        } else if(cateringchoicepassed == "Ala-Carte($30 per head)")
+        } else if(cateringModel?.FoodOption == "Ala-Carte($30 per head)")
         {
             CostPerHead.text = "$30"
             CateringCost = 30
             
-        } else if(cateringchoicepassed == "No catering")
+        } else if(cateringModel?.FoodOption == "No catering")
         {
             CostPerHead.text = "$0"
             CateringCost = 0
             
         }
         //should be passed
+        
+        let cal = NSCalendar.currentCalendar()
+        let components = cal.components([.Hour], fromDate: (reservationModel?.startTime)!, toDate: (reservationModel?.endTime)!, options: [])
+        NoofRoomHours = Double(components.hour)
+        NoofPeopleAttending = (reservationModel?.headCount)!
+        RoomCostPerHour = (meetingRoomModel?.CostPerHour)!
+        HotelName.text = meetingRoomModel?.RoomName
+        
+        
         HotelPriceperHour.text = "$" + String(RoomCostPerHour)
         NoofHours.text = String(NoofRoomHours)
+        
+        
         //should be passed
         NoofPeople.text = String(NoofPeopleAttending)
         
         tempresult1 = RoomCostPerHour * NoofRoomHours
-        tempresult2 = CateringCost * NoofPeopleAttending
+        tempresult2 = Double(CateringCost) * Double(NoofPeopleAttending)
         
         Roomcountlabel.text = "$" +
             String(tempresult1)

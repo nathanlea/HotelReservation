@@ -21,6 +21,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
     var dateStringSelected : String = ""
     var  selectedEventType : String = ""
     
+    @IBOutlet weak var Roomtitle: UILabel!
     //let initDate : NSDate? = formatter.dateFromString(dateTextField.text!)
     
     let MaxDaysReservationForsight = 14
@@ -173,7 +174,6 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
     
     // Start time text field outlet and action
     @IBOutlet weak var startTimeTextField: UITextField!
-    @IBOutlet weak var eventTypeField: UITextField!
     @IBAction func startTimeTextFieldEditing(sender: UITextField) {
     }
     
@@ -190,6 +190,8 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Testing")
+        
+        Roomtitle.text = meetingRoomModel?.RoomName
         
         print(customerModel?.FirstName); print(customerModel?.LastName); print(hotelModel?.HotelName); print(meetingRoomModel?.RoomName)
         for equipmentModel in equipmentModels!{
@@ -240,14 +242,6 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
             alert.addButtonWithTitle("Ok")
             alert.show()
         }
-        else if( eventTypeField.text!.isEmpty)
-        {
-            let alert = UIAlertView()
-            alert.title = "No Password Entered"
-            alert.message = "Please Enter the Type of Event"
-            alert.addButtonWithTitle("Ok")
-            alert.show()
-        }
         else if( headCountTextField.text!.isEmpty)
         {
             let alert = UIAlertView()
@@ -261,7 +255,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
         else
         {
             //comfirmed
-            self.performSegueWithIdentifier("confirmed", sender: nil)
+            self.performSegueWithIdentifier("confirmed", sender: self)
             /*
             
            let repository = HotelRepository()
