@@ -69,6 +69,7 @@
     
     self.textLabel = [[UILabel alloc] init];
     self.textLabel.numberOfLines = 1;
+    self.textLabel.font = [UIFont fontWithName:@"Lato-LightItalic" size:25];
     self.textLabel.textColor = [UIColor grayColor];
     [self addSubview:self.textLabel];
     
