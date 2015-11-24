@@ -142,7 +142,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
         self.performSegueWithIdentifier("mysegue2", sender: self)
         
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+   /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let vc = segue.destinationViewController as? CateringOptionsViewController {
             let formatter = NSDateFormatter()
 
@@ -161,7 +161,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
             vc.meetingRoomModel = meetingRoomModel
             vc.reservationModel = reservationSegueInformation
         }
-    }
+    }*/
     
     // === Outlets and actions
     
@@ -262,7 +262,7 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
         {
             //comfirmed
             self.performSegueWithIdentifier("confirmed", sender: nil)
-            
+            /*
             
            let repository = HotelRepository()
             repository.GetSpecific(Table.Name.Customers, parameters: self.customerModel.getExistingCustomerJsonParameters(emailField.text!, password: passField.text!)){
@@ -293,15 +293,43 @@ class ReservationValidationViewController: UIViewController, UITextFieldDelegate
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+        let vc = segue.destinationViewController as? CateringOptionsViewController
         if(segue.identifier == "confirmed")
         {
-            let secondVC: MenuViewController = segue.destinationViewController as! MenuViewController
-            secondVC.email = emailField.text!
-            secondVC.name = nameField.text!
-            secondVC.phone = phoneField.text!
-            secondVC.password = passField.text!
-            secondVC.customerModel = self.customerModel
+            let formatter = NSDateFormatter()
+            
+            formatter.dateStyle = .MediumStyle
+            formatter.timeStyle = .NoStyle
+            reservationSegueInformation.dateOfEvent = formatter.dateFromString(dateTextField.text!)!
+            formatter.dateStyle = .NoStyle
+            formatter.timeStyle = .ShortStyle
+            reservationSegueInformation.startTime = formatter.dateFromString(startTimeTextField.text!)!
+            reservationSegueInformation.endTime = formatter.dateFromString(endTimeTextField.text!)!
+            reservationSegueInformation.eventType = selectedEventType
+            reservationSegueInformation.headCount = Int(headCountTextField.text!)!
+            
+            vc!.customerModel = customerModel
+            vc!.hotelModel = hotelModel
+            vc!.meetingRoomModel = meetingRoomModel
+            vc!.reservationModel = reservationSegueInformation
+        }
+        if let vc = segue.destinationViewController as? CateringOptionsViewController {
+            let formatter = NSDateFormatter()
+            
+            formatter.dateStyle = .MediumStyle
+            formatter.timeStyle = .NoStyle
+            reservationSegueInformation.dateOfEvent = formatter.dateFromString(dateTextField.text!)!
+            formatter.dateStyle = .NoStyle
+            formatter.timeStyle = .ShortStyle
+            reservationSegueInformation.startTime = formatter.dateFromString(startTimeTextField.text!)!
+            reservationSegueInformation.endTime = formatter.dateFromString(endTimeTextField.text!)!
+            reservationSegueInformation.eventType = selectedEventType
+            reservationSegueInformation.headCount = Int(headCountTextField.text!)!
+            
+            vc.customerModel = customerModel
+            vc.hotelModel = hotelModel
+            vc.meetingRoomModel = meetingRoomModel
+            vc.reservationModel = reservationSegueInformation
         }
         
     }
